@@ -4142,14 +4142,26 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 #research #img {
   background-image: url(../img/neurons2.png);
 }
+@media (max-width: 768px) {
+  /* line 52, ../sass/_about.scss */
+  #research #img {
+    background-size: 200%;
+  }
+}
+@media (max-width: 480px) {
+  /* line 52, ../sass/_about.scss */
+  #research #img {
+    background-size: 250%;
+  }
+}
 
-/* line 55, ../sass/_about.scss */
+/* line 61, ../sass/_about.scss */
 #questions-text {
   width: 100%;
   height: 100%;
   display: table;
 }
-/* line 59, ../sass/_about.scss */
+/* line 65, ../sass/_about.scss */
 #questions-text p {
   display: table-cell;
   width: 50%;
@@ -4161,7 +4173,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   transition: all 300ms ease-in-out;
 }
 @media (max-width: 630px) {
-  /* line 59, ../sass/_about.scss */
+  /* line 65, ../sass/_about.scss */
   #questions-text p {
     width: 100%;
     height: auto;
@@ -4169,13 +4181,13 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
     margin: 20px 0;
     display: block;
   }
-  /* line 74, ../sass/_about.scss */
+  /* line 80, ../sass/_about.scss */
   #questions-text p:last-of-type {
     margin-top: 0;
   }
 }
 
-/* line 80, ../sass/_about.scss */
+/* line 86, ../sass/_about.scss */
 #questions #img {
   background-image: url(../img/molecules2.jpg);
 }

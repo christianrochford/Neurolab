@@ -51,6 +51,12 @@
 }
 #research #img{
 	background-image: url(../img/neurons2.png);
+	@include breakpoint(tablet){
+		background-size: 200%;
+	}
+	@include breakpoint(mobile-landscape){
+		background-size: 250%;
+	}
 }
 #questions-text{
 	width: 100%;
