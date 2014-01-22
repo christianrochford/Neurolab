@@ -1,0 +1,12 @@
+#wrapper{
+	width: 100%;
+	-webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+#wrapper.menu{
+	@include breakpoint (tablet){
+		margin-left: -160px;
+	}
+}
