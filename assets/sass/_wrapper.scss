@@ -8,5 +8,7 @@
 #wrapper.menu{
 	@include breakpoint (tablet){
 		margin-left: -160px;
+		position: relative;
+		z-index: 1;
 	}
 }

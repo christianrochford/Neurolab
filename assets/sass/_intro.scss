@@ -13,8 +13,9 @@
 		}
 	}
 	#quote{
-		width: 100%;
+		width: 90%;
 		height: 30%;
+		margin: 0 5%;
 		display: table;
 		@include breakpoint(mobile-landscape){
 			height: 50%;
