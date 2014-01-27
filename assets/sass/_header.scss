@@ -37,22 +37,33 @@
 		    -o-transition: right 300ms ease-in-out;
 		    transition: right 300ms ease-in-out;
 			@include breakpoint (tablet){
-				background-color: $white;
-				width: 160px;
-				position: absolute;
+				display: none;
+				width: 100%;
+				height: 100%;
+				background-color: $blue;
+				background-color: $blue-opaque-dark;
+				position: fixed;
 				margin-top: 0;
 				top: 46px;
-				right: -160px;
-				z-index: 999;
+				left: 0;
 			}
 			ul{
 				width: 100%;
-
+				@include breakpoint (mobile-landscape){
+					margin-top: 15px;
+				}
 				li{
 					width: 16.6666%;
 					float: left;
 					@include breakpoint (tablet){
 						width: 100%;
+						line-height: 5em;
+					}
+					@include breakpoint (mobile-landscape){
+						line-height: 2em;
+					}
+					@include breakpoint (mobile-landscape){
+						line-height: 3em;
 					}
 					a{
 						display: block;
@@ -63,9 +74,13 @@
 							color: $blue-opaque;
 						}
 						@include breakpoint (tablet){
-							font-size: 1.6em;
-							text-align: left;
-							padding: 10px 0 0 20px;
+							font-family: $museobold, Helvetica, sans;
+							color: $white;
+							font-size: 2em;
+							text-align: center;
+							&:hover, &:focus, &:active{
+								color: $grey;
+							}
 						}
 					}
 					&:after{
@@ -82,9 +97,6 @@
 					}
 				}
 			}
-		}
-		nav.on{
-			right: 0;
 		}
 		#menu{
 			display: none;
@@ -122,26 +134,36 @@
 			}
 		}
 		#menu.on{
-			right: 120px;
 			.menu-bar{
 				height: 2px;
 			}
 			#menu-bar1{
-				width: 10px;
-				top: 3px;
-				left: 15px;
+				width: 30px;
+				top: 7px;
+				left: 0;
 				transform:rotate(45deg);
 				-ms-transform:rotate(45deg);
 				-webkit-transform:rotate(45deg);
 			}
+			#menu-bar2{
+				display: none;
+			}
 			#menu-bar3{
-				top: 11px;
-				left:15px;
-				width: 10px;
+				width: 30px;
+				top: 7px;
+				left:0;
 				transform:rotate(-45deg);
 				-ms-transform:rotate(-45deg);
 				-webkit-transform:rotate(-45deg);
 			}
+		}
+		#menu-close{
+			display: none;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			top: 10px;
+			right: 15px;
 		}
 	}
 }

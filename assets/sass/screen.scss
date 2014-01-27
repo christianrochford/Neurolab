@@ -4,11 +4,11 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import"colors";
 @import "base";
 @import "fonts";
 @import "foundation3";
 @import "mixins";
-@import"colors";
 @import "header";
 @import "wrapper";
 @import "intro";

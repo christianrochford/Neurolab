@@ -17,8 +17,8 @@
 		<h1><a href="index.html">bestmannlab</a></h1>
 		<nav>
 			<ul>
-				<li><a href="#about">about</a></li>
-				<li><a href="#research">research</a></li>
+				<li><a href="#about" id="to-about">about</a></li>
+				<li><a href="#research" id="to-research">research</a></li>
 				<li><a href="team.html">team</a></li>
 				<li><a href="news.html">news</a></li>
 				<li><a href="publications.html">publications</a></li>
@@ -30,6 +30,7 @@
 			<span class="menu-bar" id="menu-bar2"></span>
 			<span class="menu-bar" id="menu-bar3"></span>
 		</a>
+		<a href="#" id="menu-close"></a>
 	</header>
 	<div id="wrapper">
 		<div id="intro">
@@ -42,45 +43,44 @@
 			</div>
 		</div>
 		<div id="about">
+			<div id="img" data-0="background-position:0px 0px;" data-100000="background-position:0px -30000px;"></div>
+			<div id="title-wrap">
+				<h2 id="title">About</h2>
+			</div>
+		</div>
+		<div id="about-content">
 			<div class="twelve columns">
 				<div id="about-text">
 					<p>A fundamental feature of our behaviour is the ability to flexibly and efficiently prepare and specify our actions in response to changes in the world. Our current research focuses on how the value of actions, our temporal expectations, or the emotional valence of events are ultimately transformed into actions.</p>
 				</div>
 			</div>
-			<div id="img" data-0="background-position:0px 0px;" data-100000="background-position:0px -30000px;"></div>
-			<div class="arrow-wrap">
-				<a href="#research" id="about-arrow-down" class="icon-arrow-down" aria-hidden="true"></a>
-			</div>
 		</div>
 		<div id="research">
+			<div id="img" data-0="background-position:0px 0px;" data-130000="background-position:0px -20000px;"></div>
+			<div id="title-wrap">
+				<h2 id="title">Research</h2>
+			</div>
+		</div>
+		<div id="research-content">
 			<div class="twelve columns">
 				<div id="research-text">
 					<p>Perception, cognition, and action selection have traditionally been considered (and studied) as largely independent processes. The brain, however, is unlikely to adhere to these text book divisions, and while functional specialization is critical, activity deployment in the brain does not follow these boundaries.</p>
 				</div>
 			</div>
-			<div id="img" data-0="background-position:0px 0px;" data-100000="background-position:0px -20000px;"></div>
-			<div class="arrow-wrap">
-				<a href="#questions" id="research-arrow-down" class="icon-arrow-down" aria-hidden="true"></a>
-			</div>
 		</div>
 		<div id="questions">
+			<div id="img" data-0="background-position:0px 0px;" data-220000="background-position:0px -20000px;"></div>
 			<div class="twelve columns">
 				<div id="questions-text">
 					<p>One of the unresolved questions that have bedazzled neuroscientists ever since <a href="http://en.wikipedia.org/wiki/Charles_Scott_Sherrington">Charles Sherrington</a> provided the first detailed ‘motor map’ of the primate motor cortex: How does our brain transform our thoughts into actions?</p>
 					<p>Addressing this question is important for understanding how the brain enables interaction with an ever-changing and uncertain environment, and how this ability declines with ageing or in pathological conditions that are characterised by impairments of both action and cognition, such as Parkinson’s Disease, Depression, or Stroke.</p>
 				</div>
 			</div>
-			<div id="img" data-0="background-position:0px 0px;" data-100000="background-position:0px -20000px;"></div>
 		</div>
 	</div>
 	<script src="assets/js/jquery-1.10.2.min.js"></script>
 	<script src="assets/js/jquery.scrollTo.min.js"></script>
 	<script src="assets/js/skrollr.min.js"></script>
 	<script src="assets/js/app.js"></script>
-	<script type="text/javascript">
-        skrollr.init({
-                forceHeight: false
-        });
-        </script>
 </body>
 </html>
