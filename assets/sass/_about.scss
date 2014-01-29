@@ -41,6 +41,9 @@
 	background-image: url(../img/neurons2.jpg);
 }
 #about-content, #research-content{
+	height: 100%;
+	float: left;
+	position: relative;
 	.twelve{
 		height: 100%;
 		float: left;
@@ -95,6 +98,18 @@
 		@include breakpoint(mobile-landscape){
 			font-size: 1em;
 		}
+	}
+}
+#research{
+	.icon-arrow-down{
+		color: $white;
+	}
+}
+#research-content{
+	.arrow-wrap {
+    	// position: relative;
+    	// bottom: 0;
+    	// height: 100px;
 	}
 }
 #questions {

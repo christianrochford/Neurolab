@@ -3874,6 +3874,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 .home header nav ul li {
   width: 16.6666%;
   float: left;
+  position: relative;
 }
 @media (max-width: 768px) {
   /* line 55, ../sass/_header.scss */
@@ -3894,31 +3895,31 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
     line-height: 3em;
   }
 }
-/* line 68, ../sass/_header.scss */
+/* line 69, ../sass/_header.scss */
 .home header nav ul li a {
   display: block;
   width: 100%;
   color: #3e75bb;
   text-align: center;
 }
-/* line 73, ../sass/_header.scss */
+/* line 74, ../sass/_header.scss */
 .home header nav ul li a:hover, .home header nav ul li a:focus, .home header nav ul li a:active {
   color: rgba(62, 117, 187, 0.5);
 }
 @media (max-width: 768px) {
-  /* line 68, ../sass/_header.scss */
+  /* line 69, ../sass/_header.scss */
   .home header nav ul li a {
     font-family: "museo_sans_700regular", Helvetica, sans;
     color: white;
     font-size: 2em;
     text-align: center;
   }
-  /* line 81, ../sass/_header.scss */
+  /* line 82, ../sass/_header.scss */
   .home header nav ul li a:hover, .home header nav ul li a:focus, .home header nav ul li a:active {
     color: #999999;
   }
 }
-/* line 86, ../sass/_header.scss */
+/* line 87, ../sass/_header.scss */
 .home header nav ul li:after {
   content: '/';
   color: #3e75bb;
@@ -3926,16 +3927,23 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   top: -20px;
 }
 @media (max-width: 768px) {
-  /* line 86, ../sass/_header.scss */
+  /* line 87, ../sass/_header.scss */
   .home header nav ul li:after {
-    display: none;
+    content: '_';
+    color: white;
+    font-size: 4em;
+    position: absolute;
+    left: 50%;
+    top: -62px;
+    z-index: -1;
+    margin-left: -12px;
   }
 }
-/* line 95, ../sass/_header.scss */
+/* line 103, ../sass/_header.scss */
 .home header nav ul li:first-child:after {
   content: '';
 }
-/* line 101, ../sass/_header.scss */
+/* line 109, ../sass/_header.scss */
 .home header #menu {
   display: none;
   width: 25px;
@@ -3949,12 +3957,12 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   transition: right 300ms ease-in-out;
 }
 @media (max-width: 768px) {
-  /* line 101, ../sass/_header.scss */
+  /* line 109, ../sass/_header.scss */
   .home header #menu {
     display: block;
   }
 }
-/* line 115, ../sass/_header.scss */
+/* line 123, ../sass/_header.scss */
 .home header #menu .menu-bar {
   display: block;
   background-color: #3e75bb;
@@ -3966,23 +3974,23 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-/* line 126, ../sass/_header.scss */
+/* line 134, ../sass/_header.scss */
 .home header #menu #menu-bar1 {
   top: 0;
 }
-/* line 129, ../sass/_header.scss */
+/* line 137, ../sass/_header.scss */
 .home header #menu #menu-bar2 {
   top: 7px;
 }
-/* line 132, ../sass/_header.scss */
+/* line 140, ../sass/_header.scss */
 .home header #menu #menu-bar3 {
   top: 14px;
 }
-/* line 137, ../sass/_header.scss */
+/* line 145, ../sass/_header.scss */
 .home header #menu.on .menu-bar {
   height: 2px;
 }
-/* line 140, ../sass/_header.scss */
+/* line 148, ../sass/_header.scss */
 .home header #menu.on #menu-bar1 {
   width: 30px;
   top: 7px;
@@ -3991,11 +3999,11 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-/* line 148, ../sass/_header.scss */
+/* line 156, ../sass/_header.scss */
 .home header #menu.on #menu-bar2 {
   display: none;
 }
-/* line 151, ../sass/_header.scss */
+/* line 159, ../sass/_header.scss */
 .home header #menu.on #menu-bar3 {
   width: 30px;
   top: 7px;
@@ -4004,7 +4012,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
-/* line 160, ../sass/_header.scss */
+/* line 168, ../sass/_header.scss */
 .home header #menu-close {
   display: none;
   width: 30px;
@@ -4147,19 +4155,25 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   background-image: url(../img/neurons2.jpg);
 }
 
-/* line 44, ../sass/_about.scss */
+/* line 43, ../sass/_about.scss */
+#about-content, #research-content {
+  height: 100%;
+  float: left;
+  position: relative;
+}
+/* line 47, ../sass/_about.scss */
 #about-content .twelve, #research-content .twelve {
   height: 100%;
   float: left;
 }
-/* line 48, ../sass/_about.scss */
+/* line 51, ../sass/_about.scss */
 #about-content #about-text, #about-content #research-text, #research-content #about-text, #research-content #research-text {
   width: 80%;
   height: 100%;
   margin: 0 10%;
   display: table;
 }
-/* line 54, ../sass/_about.scss */
+/* line 57, ../sass/_about.scss */
 #about-content p, #research-content p {
   font-size: 2em;
   width: 80%;
@@ -4169,25 +4183,25 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   text-align: center;
 }
 @media (max-width: 768px) {
-  /* line 54, ../sass/_about.scss */
+  /* line 57, ../sass/_about.scss */
   #about-content p, #research-content p {
     font-size: 1.5em;
   }
 }
 @media (max-width: 480px) {
-  /* line 54, ../sass/_about.scss */
+  /* line 57, ../sass/_about.scss */
   #about-content p, #research-content p {
     font-size: 1em;
   }
 }
 
-/* line 69, ../sass/_about.scss */
+/* line 72, ../sass/_about.scss */
 #questions-text {
   width: 100%;
   height: 100%;
   display: table;
 }
-/* line 73, ../sass/_about.scss */
+/* line 76, ../sass/_about.scss */
 #questions-text p {
   display: table-cell;
   width: 50%;
@@ -4199,7 +4213,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   transition: all 300ms ease-in-out;
 }
 @media (max-width: 630px) {
-  /* line 73, ../sass/_about.scss */
+  /* line 76, ../sass/_about.scss */
   #questions-text p {
     width: 100%;
     height: auto;
@@ -4207,51 +4221,85 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
     margin: 20px 0;
     display: block;
   }
-  /* line 88, ../sass/_about.scss */
+  /* line 91, ../sass/_about.scss */
   #questions-text p:last-of-type {
     margin-top: 0;
   }
 }
 @media (max-width: 768px) {
-  /* line 73, ../sass/_about.scss */
+  /* line 76, ../sass/_about.scss */
   #questions-text p {
     font-size: 1.5em;
   }
 }
 @media (max-width: 480px) {
-  /* line 73, ../sass/_about.scss */
+  /* line 76, ../sass/_about.scss */
   #questions-text p {
     font-size: 1em;
   }
 }
 
-/* line 101, ../sass/_about.scss */
+/* line 104, ../sass/_about.scss */
+#research .icon-arrow-down {
+  color: white;
+}
+
+/* line 116, ../sass/_about.scss */
 #questions #img {
   background-image: url(../img/molecules2.jpg);
   height: 100%;
 }
-/* line 105, ../sass/_about.scss */
+/* line 120, ../sass/_about.scss */
 #questions .twelve {
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 111, ../sass/_about.scss */
+/* line 126, ../sass/_about.scss */
 #questions .twelve #questions-text p {
   color: white;
   font-size: 2em;
   text-align: center;
 }
 @media (max-width: 768px) {
-  /* line 111, ../sass/_about.scss */
+  /* line 126, ../sass/_about.scss */
   #questions .twelve #questions-text p {
     font-size: 1.5em;
   }
 }
 @media (max-width: 480px) {
-  /* line 111, ../sass/_about.scss */
+  /* line 126, ../sass/_about.scss */
   #questions .twelve #questions-text p {
     font-size: 0.85em;
+  }
+}
+
+/* line 1, ../sass/_arrow-down.scss */
+.arrow-wrap {
+  width: 50%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+}
+/* line 6, ../sass/_arrow-down.scss */
+.arrow-wrap .icon-arrow-down {
+  color: #3e75bb;
+  font-size: 1.6em;
+  width: 60px;
+  margin-left: -30px;
+  filter: opacity(50);
+  opacity: 0.5;
+}
+/* line 13, ../sass/_arrow-down.scss */
+.arrow-wrap .icon-arrow-down:hover, .arrow-wrap .icon-arrow-down:focus, .arrow-wrap .icon-arrow-down:active {
+  cursor: pointer;
+  filter: opacity(100);
+  opacity: 1;
+}
+@media (max-width: 480px) {
+  /* line 6, ../sass/_arrow-down.scss */
+  .arrow-wrap .icon-arrow-down {
+    font-size: 1.2em;
   }
 }
