@@ -38,34 +38,13 @@
 		    transition: right 300ms ease-in-out;
 			@include breakpoint (tablet){
 				display: none;
-				width: 100%;
-				height: 100%;
-				background-color: $blue;
-				background-color: $blue-opaque-dark;
-				position: fixed;
-				margin-top: 0;
-				top: 46px;
-				left: 0;
 			}
 			ul{
 				width: 100%;
-				@include breakpoint (mobile-landscape){
-					margin-top: 15px;
-				}
 				li{
 					width: 16.6666%;
 					float: left;
 					position: relative;
-					@include breakpoint (tablet){
-						width: 100%;
-						line-height: 5em;
-					}
-					@include breakpoint (mobile-landscape){
-						line-height: 2em;
-					}
-					@include breakpoint (mobile-landscape){
-						line-height: 3em;
-					}
 					a{
 						display: block;
 						width: 100%;
@@ -74,31 +53,12 @@
 						&:hover, &:focus, &:active{
 							color: $blue-opaque;
 						}
-						@include breakpoint (tablet){
-							font-family: $museobold, Helvetica, sans;
-							color: $white;
-							font-size: 2em;
-							text-align: center;
-							&:hover, &:focus, &:active{
-								color: $grey;
-							}
-						}
 					}
 					&:after{
 						content: '/';
 						color: $blue;
 						position: relative;
 						top: -20px;
-						@include breakpoint (tablet){
-							content: '_';
-						    color: white;
-						    font-size: 4em;
-						    position: absolute;
-						    left: 50%;
-						    top: -62px;
-						    z-index: -1;
-						    margin-left: -12px;
-						}
 					}
 					&:first-child:after{
 						content: '';

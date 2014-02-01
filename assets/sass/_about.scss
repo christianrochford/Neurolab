@@ -2,7 +2,7 @@
 	position: relative;
 	width: 100%;
 	float: left;
-	#img{
+	#img, #img2{
 		width: 100%;
 		height: 100%;
 		float: left;
@@ -10,6 +10,15 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: 50% 50%;
+		@include breakpoint(tablet){
+			display: none;
+		}
+	}
+	#img2{
+		display: none;
+		@include breakpoint(tablet){
+			display: block;
+		}
 	}
 	#title-wrap{
 		background: $blue;
@@ -37,7 +46,7 @@
 		}
 	}
 }
-#research #img{
+#research #img, #research #img2{
 	background-image: url(../img/neurons2.jpg);
 }
 #about-content, #research-content{
@@ -105,15 +114,8 @@
 		color: $white;
 	}
 }
-#research-content{
-	.arrow-wrap {
-    	// position: relative;
-    	// bottom: 0;
-    	// height: 100px;
-	}
-}
 #questions {
-	#img{
+	#img, #img2{
 		background-image: url(../img/molecules2.jpg);
 		height: 100%;
 	}
