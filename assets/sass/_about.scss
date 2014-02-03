@@ -32,6 +32,9 @@
 		margin-top: -50px;
 		position: absolute;
 		display: table;
+		@include breakpoint(mobile-landscape){
+			background: transparent;
+		}
 		#title{
 			font-family: $museobold, Helvetica, sans;
 			font-size: 2.6em;
@@ -124,6 +127,9 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+		@include breakpoint(mobile-landscape){
+			padding: 0;
+		}
 		#questions-text{
 			p{
 				color: $white;

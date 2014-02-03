@@ -1,10 +1,13 @@
 (function(){
 
 // set page height
-$('#intro').css({height:$(window).height()-46 + 'px'});
 
-$('#about, #about-content, #research, #research-content, #questions').css({height:$(window).height()-46});
-
+$('#intro, #about, #about-content, #research, #research-content').css({height:$(window).height()-46 + 'px'});
+if($(window).width()>320){
+	$('#questions').css({height:$(window).height()-46 + 'px'});
+} else {
+	$('#questions').css({height:$(window).height()+ 10 + 'px'});
+}
 // desktop menu 
 $('#to-about').on('click', function(e){
 	e.preventDefault();
@@ -71,7 +74,9 @@ $('#research-content-arrow-down').on('click', function(){
 	$('html, body').animate({scrollTop: $('#questions').offset().top -46}, 500);
 })
 
+// initialise vertical slider
+$(function(){
+	Slider.init();
+});
+
 }());
-
-
-	

@@ -3801,7 +3801,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 
 /* line 2, ../sass/_header.scss */
-.home header {
+.home header, .team header {
   width: 100%;
   height: 46px;
   background-color: white;
@@ -3812,7 +3812,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   box-shadow: 0 0 5px 0px #3e75bb;
 }
 /* line 11, ../sass/_header.scss */
-.home header h1 {
+.home header h1, .team header h1 {
   font-family: "museo_sans_700regular", Helvetica, sans;
   font-size: 2.6em;
   font-weight: 900;
@@ -3827,17 +3827,17 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 @media (max-width: 480px) {
   /* line 11, ../sass/_header.scss */
-  .home header h1 {
+  .home header h1, .team header h1 {
     font-size: 1.6em;
     padding-top: 10px;
   }
 }
 /* line 27, ../sass/_header.scss */
-.home header h1 a {
+.home header h1 a, .team header h1 a {
   color: #3e75bb;
 }
 /* line 31, ../sass/_header.scss */
-.home header nav {
+.home header nav, .team header nav {
   width: 60%;
   float: right;
   margin-top: 15px;
@@ -3848,44 +3848,44 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 @media (max-width: 768px) {
   /* line 31, ../sass/_header.scss */
-  .home header nav {
+  .home header nav, .team header nav {
     display: none;
   }
 }
 /* line 42, ../sass/_header.scss */
-.home header nav ul {
+.home header nav ul, .team header nav ul {
   width: 100%;
 }
 /* line 44, ../sass/_header.scss */
-.home header nav ul li {
+.home header nav ul li, .team header nav ul li {
   width: 16.6666%;
   float: left;
   position: relative;
 }
 /* line 48, ../sass/_header.scss */
-.home header nav ul li a {
+.home header nav ul li a, .team header nav ul li a {
   display: block;
   width: 100%;
   color: #3e75bb;
   text-align: center;
 }
 /* line 53, ../sass/_header.scss */
-.home header nav ul li a:hover, .home header nav ul li a:focus, .home header nav ul li a:active {
+.home header nav ul li a:hover, .home header nav ul li a:focus, .home header nav ul li a:active, .team header nav ul li a:hover, .team header nav ul li a:focus, .team header nav ul li a:active {
   color: rgba(62, 117, 187, 0.5);
 }
 /* line 57, ../sass/_header.scss */
-.home header nav ul li:after {
+.home header nav ul li:after, .team header nav ul li:after {
   content: '/';
   color: #3e75bb;
   position: relative;
   top: -20px;
 }
 /* line 63, ../sass/_header.scss */
-.home header nav ul li:first-child:after {
+.home header nav ul li:first-child:after, .team header nav ul li:first-child:after {
   content: '';
 }
 /* line 69, ../sass/_header.scss */
-.home header #menu {
+.home header #menu, .team header #menu {
   display: none;
   width: 25px;
   height: 20px;
@@ -3899,12 +3899,12 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 @media (max-width: 768px) {
   /* line 69, ../sass/_header.scss */
-  .home header #menu {
+  .home header #menu, .team header #menu {
     display: block;
   }
 }
 /* line 83, ../sass/_header.scss */
-.home header #menu .menu-bar {
+.home header #menu .menu-bar, .team header #menu .menu-bar {
   display: block;
   background-color: #3e75bb;
   width: 25px;
@@ -3916,23 +3916,23 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   transition: all 300ms ease-in-out;
 }
 /* line 94, ../sass/_header.scss */
-.home header #menu #menu-bar1 {
+.home header #menu #menu-bar1, .team header #menu #menu-bar1 {
   top: 0;
 }
 /* line 97, ../sass/_header.scss */
-.home header #menu #menu-bar2 {
+.home header #menu #menu-bar2, .team header #menu #menu-bar2 {
   top: 7px;
 }
 /* line 100, ../sass/_header.scss */
-.home header #menu #menu-bar3 {
+.home header #menu #menu-bar3, .team header #menu #menu-bar3 {
   top: 14px;
 }
 /* line 105, ../sass/_header.scss */
-.home header #menu.on .menu-bar {
+.home header #menu.on .menu-bar, .team header #menu.on .menu-bar {
   height: 2px;
 }
 /* line 108, ../sass/_header.scss */
-.home header #menu.on #menu-bar1 {
+.home header #menu.on #menu-bar1, .team header #menu.on #menu-bar1 {
   width: 30px;
   top: 7px;
   left: 0;
@@ -3941,11 +3941,11 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -webkit-transform: rotate(45deg);
 }
 /* line 116, ../sass/_header.scss */
-.home header #menu.on #menu-bar2 {
+.home header #menu.on #menu-bar2, .team header #menu.on #menu-bar2 {
   display: none;
 }
 /* line 119, ../sass/_header.scss */
-.home header #menu.on #menu-bar3 {
+.home header #menu.on #menu-bar3, .team header #menu.on #menu-bar3 {
   width: 30px;
   top: 7px;
   left: 0;
@@ -3954,7 +3954,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -webkit-transform: rotate(-45deg);
 }
 /* line 128, ../sass/_header.scss */
-.home header #menu-close {
+.home header #menu-close, .team header #menu-close {
   display: none;
   width: 30px;
   height: 30px;
@@ -4175,7 +4175,13 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   position: absolute;
   display: table;
 }
-/* line 35, ../sass/_about.scss */
+@media (max-width: 480px) {
+  /* line 23, ../sass/_about.scss */
+  #about #title-wrap, #research #title-wrap, #questions #title-wrap {
+    background: transparent;
+  }
+}
+/* line 38, ../sass/_about.scss */
 #about #title-wrap #title, #research #title-wrap #title, #questions #title-wrap #title {
   font-family: "museo_sans_700regular", Helvetica, sans;
   font-size: 2.6em;
@@ -4189,30 +4195,30 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   text-align: center;
 }
 
-/* line 49, ../sass/_about.scss */
+/* line 52, ../sass/_about.scss */
 #research #img, #research #img2 {
   background-image: url(../img/neurons2.jpg);
 }
 
-/* line 52, ../sass/_about.scss */
+/* line 55, ../sass/_about.scss */
 #about-content, #research-content {
   height: 100%;
   float: left;
   position: relative;
 }
-/* line 56, ../sass/_about.scss */
+/* line 59, ../sass/_about.scss */
 #about-content .twelve, #research-content .twelve {
   height: 100%;
   float: left;
 }
-/* line 60, ../sass/_about.scss */
+/* line 63, ../sass/_about.scss */
 #about-content #about-text, #about-content #research-text, #research-content #about-text, #research-content #research-text {
   width: 80%;
   height: 100%;
   margin: 0 10%;
   display: table;
 }
-/* line 66, ../sass/_about.scss */
+/* line 69, ../sass/_about.scss */
 #about-content p, #research-content p {
   font-size: 2em;
   width: 80%;
@@ -4222,25 +4228,25 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   text-align: center;
 }
 @media (max-width: 768px) {
-  /* line 66, ../sass/_about.scss */
+  /* line 69, ../sass/_about.scss */
   #about-content p, #research-content p {
     font-size: 1.5em;
   }
 }
 @media (max-width: 480px) {
-  /* line 66, ../sass/_about.scss */
+  /* line 69, ../sass/_about.scss */
   #about-content p, #research-content p {
     font-size: 1em;
   }
 }
 
-/* line 81, ../sass/_about.scss */
+/* line 84, ../sass/_about.scss */
 #questions-text {
   width: 100%;
   height: 100%;
   display: table;
 }
-/* line 85, ../sass/_about.scss */
+/* line 88, ../sass/_about.scss */
 #questions-text p {
   display: table-cell;
   width: 50%;
@@ -4252,7 +4258,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   transition: all 300ms ease-in-out;
 }
 @media (max-width: 630px) {
-  /* line 85, ../sass/_about.scss */
+  /* line 88, ../sass/_about.scss */
   #questions-text p {
     width: 100%;
     height: auto;
@@ -4260,55 +4266,61 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
     margin: 20px 0;
     display: block;
   }
-  /* line 100, ../sass/_about.scss */
+  /* line 103, ../sass/_about.scss */
   #questions-text p:last-of-type {
     margin-top: 0;
   }
 }
 @media (max-width: 768px) {
-  /* line 85, ../sass/_about.scss */
+  /* line 88, ../sass/_about.scss */
   #questions-text p {
     font-size: 1.5em;
   }
 }
 @media (max-width: 480px) {
-  /* line 85, ../sass/_about.scss */
+  /* line 88, ../sass/_about.scss */
   #questions-text p {
     font-size: 1em;
   }
 }
 
-/* line 113, ../sass/_about.scss */
+/* line 116, ../sass/_about.scss */
 #research .icon-arrow-down {
   color: white;
 }
 
-/* line 118, ../sass/_about.scss */
+/* line 121, ../sass/_about.scss */
 #questions #img, #questions #img2 {
   background-image: url(../img/molecules2.jpg);
   height: 100%;
 }
-/* line 122, ../sass/_about.scss */
+/* line 125, ../sass/_about.scss */
 #questions .twelve {
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 128, ../sass/_about.scss */
+@media (max-width: 480px) {
+  /* line 125, ../sass/_about.scss */
+  #questions .twelve {
+    padding: 0;
+  }
+}
+/* line 134, ../sass/_about.scss */
 #questions .twelve #questions-text p {
   color: white;
   font-size: 2em;
   text-align: center;
 }
 @media (max-width: 768px) {
-  /* line 128, ../sass/_about.scss */
+  /* line 134, ../sass/_about.scss */
   #questions .twelve #questions-text p {
     font-size: 1.5em;
   }
 }
 @media (max-width: 480px) {
-  /* line 128, ../sass/_about.scss */
+  /* line 134, ../sass/_about.scss */
   #questions .twelve #questions-text p {
     font-size: 0.85em;
   }
@@ -4341,4 +4353,161 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   .arrow-wrap .icon-arrow-down {
     font-size: 1.2em;
   }
+}
+
+/* line 1, ../sass/_team.scss */
+.team {
+  height: 100%;
+}
+/* line 3, ../sass/_team.scss */
+.team .ps-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #3e75bb;
+  background: #fff;
+  z-index: -1;
+}
+/* line 11, ../sass/_team.scss */
+.team .ps-container div {
+  position: absolute;
+  width: 50%;
+}
+/* line 14, ../sass/_team.scss */
+.team .ps-container div div {
+  position: absolute;
+}
+/* line 19, ../sass/_team.scss */
+.team .ps-contentwrapper {
+  top: 46px;
+  bottom: 0px;
+  overflow: hidden;
+  z-index: 1000;
+}
+/* line 24, ../sass/_team.scss */
+.team .ps-contentwrapper .ps-content {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+/* line 29, ../sass/_team.scss */
+.team .ps-contentwrapper .ps-content h2 {
+  font-family: "museo_sans_700regular", Helvetica, sans;
+  color: #3e75bb;
+  text-align: left;
+}
+/* line 34, ../sass/_team.scss */
+.team .ps-contentwrapper .ps-content p {
+  font-family: "museo_sans_700regular", Helvetica, sans;
+  font-size: 1.6em;
+  color: #999999;
+  text-transform: lowercase;
+}
+/* line 40, ../sass/_team.scss */
+.team .ps-contentwrapper .ps-content a:last-child {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3e75bb;
+  letter-spacing: 4px;
+  float: right;
+  padding: 3px;
+  text-indent: 4px;
+}
+/* line 48, ../sass/_team.scss */
+.team .ps-contentwrapper .ps-content a:last-child:before {
+  font-family: 'bestmannlab';
+  content: '\e610';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  padding-right: 5px;
+}
+/* line 59, ../sass/_team.scss */
+.team .ps-slidewrapper {
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 64, ../sass/_team.scss */
+.team .ps-slidewrapper .ps-slides {
+  top: 0px;
+  bottom: 200px;
+  width: 100%;
+}
+/* line 68, ../sass/_team.scss */
+.team .ps-slidewrapper .ps-slides div {
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 0 9999px rgba(179, 157, 250, 0.1);
+  position: absolute;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+/* line 79, ../sass/_team.scss */
+.team .ps-slidewrapper nav {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1000;
+}
+/* line 86, ../sass/_team.scss */
+.team .ps-slidewrapper nav a {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  float: left;
+  outline: none;
+  box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
+  background-color: #fff;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  transition: box-shadow 0.4s ease-in-out;
+}
+/* line 98, ../sass/_team.scss */
+.team .ps-slidewrapper nav a:hover, .team .ps-slidewrapper nav a:focus, .team .ps-slidewrapper nav a:active {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
+}
+/* line 102, ../sass/_team.scss */
+.team .ps-slidewrapper nav a:after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+/* line 116, ../sass/_team.scss */
+.team .ps-slidewrapper nav a:first-child {
+  box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
+}
+/* line 118, ../sass/_team.scss */
+.team .ps-slidewrapper nav a:first-child:hover, .team .ps-slidewrapper nav a:first-child:focus, .team .ps-slidewrapper nav a:first-child:active {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
+}
+/* line 122, ../sass/_team.scss */
+.team .ps-slidewrapper nav a:first-child:after {
+  transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  margin: -80px 0 0 -50px;
+}
+/* line 132, ../sass/_team.scss */
+.team .ps-move {
+  transition: top 400ms ease-out;
 }
