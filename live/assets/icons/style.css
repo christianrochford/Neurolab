@@ -1,0 +1,82 @@
+@font-face {
+	font-family: 'bestmannlab';
+	src:url('fonts/bestmannlab.eot');
+	src:url('fonts/bestmannlab.eot?#iefix') format('embedded-opentype'),
+		url('fonts/bestmannlab.woff') format('woff'),
+		url('fonts/bestmannlab.ttf') format('truetype'),
+		url('fonts/bestmannlab.svg#bestmannlab') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'bestmannlab';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-social:before {
+	content: "\e600";
+}
+.icon-social-link:before {
+	content: "\e601";
+}
+.icon-slider-right:before {
+	content: "\e602";
+}
+.icon-slider-left:before {
+	content: "\e603";
+}
+.icon-search:before {
+	content: "\e604";
+}
+.icon-play:before {
+	content: "\e605";
+}
+.icon-play-hover:before {
+	content: "\e606";
+}
+.icon-menu:before {
+	content: "\e607";
+}
+.icon-menu-arrow:before {
+	content: "\e608";
+}
+.icon-mail:before {
+	content: "\e609";
+}
+.icon-exclamation:before {
+	content: "\e60a";
+}
+.icon-exclamation-round:before {
+	content: "\e60b";
+}
+.icon-download:before {
+	content: "\e60c";
+}
+.icon-contact:before {
+	content: "\e60d";
+}
+.icon-close:before {
+	content: "\e60e";
+}
+.icon-close-modal:before {
+	content: "\e60f";
+}
+.icon-arrow-down:before {
+	content: "\e610";
+}
+.icon-ampersand:before {
+	content: "\e611";
+}
+.icon-svg:before {
+	content: "\e612";
+}

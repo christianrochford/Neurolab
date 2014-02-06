@@ -1,0 +1,22 @@
+.arrow-wrap {
+  width: 50%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  .icon-arrow-down {
+    color: #3e75bb;
+    font-size: 1.6em;
+    width: 60px;
+    margin-left: -30px;
+    filter: opacity(50);
+    opacity: 0.5;
+    &:hover, &:focus, &:active{
+      cursor: pointer;
+      filter: opacity(100);
+      opacity: 1;
+    }
+    @include breakpoint(mobile-landscape){
+        font-size: 1.2em;
+    }
+  }
+}

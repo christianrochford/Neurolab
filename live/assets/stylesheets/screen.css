@@ -267,7 +267,7 @@ html {
 
 /* line 7, ../sass/_foundation3.scss */
 body {
-  font-family: 'droid_serifregular';
+  font-family: 'bonvenocflight';
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
@@ -3838,7 +3838,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 /* line 31, ../sass/_header.scss */
 .home header nav, .team header nav {
-  width: 60%;
+  width: 20%;
   float: right;
   margin-top: 15px;
   -webkit-transition: right 300ms ease-in-out;
@@ -3858,7 +3858,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 /* line 44, ../sass/_header.scss */
 .home header nav ul li, .team header nav ul li {
-  width: 16.6666%;
+  width: 50%%;
   float: left;
   position: relative;
 }
@@ -4359,263 +4359,155 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 .team {
   height: 100%;
 }
-
-/* line 4, ../sass/_team.scss */
-.ps-container {
+/* line 3, ../sass/_team.scss */
+.team .ps-container {
   position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
   color: #3e75bb;
-  background: white;
-  z-index: 0;
+  background: #fff;
+  z-index: -1;
 }
-
-/* line 14, ../sass/_team.scss */
-.ps-container > div {
+/* line 11, ../sass/_team.scss */
+.team .ps-container div {
   position: absolute;
   width: 50%;
 }
-
-/* line 19, ../sass/_team.scss */
-.ps-container > div > div,
-.ps-slidewrapper > nav,
-.ps-slides > div {
+/* line 14, ../sass/_team.scss */
+.team .ps-container div div {
   position: absolute;
 }
-
-/* line 25, ../sass/_team.scss */
-.ps-contentwrapper {
+/* line 19, ../sass/_team.scss */
+.team .ps-contentwrapper {
   top: 46px;
   bottom: 0px;
   overflow: hidden;
   z-index: 1000;
 }
-
-/* line 32, ../sass/_team.scss */
-.ps-content {
-  background: white;
+/* line 24, ../sass/_team.scss */
+.team .ps-contentwrapper .ps-content {
+  background: #fff;
   width: 100%;
   height: 100%;
   padding: 50px;
 }
-
-/* line 39, ../sass/_team.scss */
-.ps-content h2 {
+/* line 29, ../sass/_team.scss */
+.team .ps-contentwrapper .ps-content h2 {
   font-family: "museo_sans_700regular", Helvetica, sans;
+  color: #3e75bb;
   text-align: left;
-  padding: 10px 15px;
-  margin: 10px 0 30px;
 }
-
-/* line 46, ../sass/_team.scss */
-.ps-content p {
-  line-height: 26px;
-  font-size: 12px;
-  letter-spacing: 2px;
-  word-spacing: 10px;
-  padding: 10px 15px;
+/* line 34, ../sass/_team.scss */
+.team .ps-contentwrapper .ps-content p {
+  font-family: "museo_sans_700regular", Helvetica, sans;
+  font-size: 1.6em;
+  color: #999999;
+  text-transform: lowercase;
 }
-
-/* line 54, ../sass/_team.scss */
-.ps-content a:last-child {
+/* line 40, ../sass/_team.scss */
+.team .ps-contentwrapper .ps-content a:last-child {
   font-size: 14px;
   font-weight: 700;
-  color: #555;
+  color: #3e75bb;
   letter-spacing: 4px;
   float: right;
   padding: 3px;
   text-indent: 4px;
 }
-
-/* line 64, ../sass/_team.scss */
-.no-touch .ps-content a:last-child:hover {
-  color: #3e75bb;
-  border-color: #3e75bb;
+/* line 48, ../sass/_team.scss */
+.team .ps-contentwrapper .ps-content a:last-child:before {
+  font-family: 'bestmannlab';
+  content: '\e610';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  padding-right: 5px;
 }
-
-/* line 69, ../sass/_team.scss */
-.ps-slidewrapper {
+/* line 59, ../sass/_team.scss */
+.team .ps-slidewrapper {
   right: 0px;
   top: 0px;
   height: 100%;
   overflow: hidden;
 }
-
-/* line 76, ../sass/_team.scss */
-.ps-slides {
+/* line 64, ../sass/_team.scss */
+.team .ps-slidewrapper .ps-slides {
   top: 0px;
   bottom: 200px;
   width: 100%;
 }
-
-/* line 82, ../sass/_team.scss */
-.ps-slides > div {
+/* line 68, ../sass/_team.scss */
+.team .ps-slidewrapper .ps-slides div {
   width: 100%;
   height: 100%;
-  box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
+  box-shadow: inset 0 0 0 9999px rgba(179, 157, 250, 0.1);
+  position: absolute;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
-
-/* line 88, ../sass/_team.scss */
-.ps-slidewrapper > nav {
+/* line 79, ../sass/_team.scss */
+.team .ps-slidewrapper nav {
+  position: absolute;
   width: 100%;
   height: 200px;
   bottom: 0px;
   right: 0px;
   z-index: 1000;
 }
-
-/* line 96, ../sass/_team.scss */
-.ps-slidewrapper > nav > a {
+/* line 86, ../sass/_team.scss */
+.team .ps-slidewrapper nav a {
   width: 50%;
   height: 100%;
   position: relative;
   float: left;
-  box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
   outline: none;
-}
-
-/* line 105, ../sass/_team.scss */
-.ps-slidewrapper > nav > a:first-child {
   box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
-}
-
-/* line 109, ../sass/_team.scss */
-.no-touch .ps-slidewrapper > nav > a {
-  -webkit-transition: box-shadow 0.4s ease-in-out;
-  -moz-transition: box-shadow 0.4s ease-in-out;
-  -ms-transition: box-shadow 0.4s ease-in-out;
-  -o-transition: box-shadow 0.4s ease-in-out;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
   transition: box-shadow 0.4s ease-in-out;
 }
-
-/* line 117, ../sass/_team.scss */
-.no-touch .ps-slidewrapper > nav > a:hover {
+/* line 98, ../sass/_team.scss */
+.team .ps-slidewrapper nav a:hover, .team .ps-slidewrapper nav a:focus, .team .ps-slidewrapper nav a:active {
+  cursor: pointer;
   box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
 }
-
-/* line 121, ../sass/_team.scss */
-.no-touch .ps-slidewrapper > nav > a:first-child:hover {
-  box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
-}
-
-/* line 125, ../sass/_team.scss */
-.ps-slidewrapper > nav > a:after {
+/* line 102, ../sass/_team.scss */
+.team .ps-slidewrapper nav a:after {
   content: '';
   position: absolute;
   width: 100px;
   height: 100px;
   top: 50%;
   left: 50%;
-  margin: -20px 0 0 -50px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+  margin: -25px 0 0 -25px;
   transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   border-left: 1px solid white;
   border-top: 1px solid white;
 }
-
-/* line 142, ../sass/_team.scss */
-.ps-slidewrapper > nav > a:first-child:after {
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
+/* line 116, ../sass/_team.scss */
+.team .ps-slidewrapper nav a:first-child {
+  box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
+}
+/* line 118, ../sass/_team.scss */
+.team .ps-slidewrapper nav a:first-child:hover, .team .ps-slidewrapper nav a:first-child:focus, .team .ps-slidewrapper nav a:first-child:active {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
+}
+/* line 122, ../sass/_team.scss */
+.team .ps-slidewrapper nav a:first-child:after {
   transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
   margin: -80px 0 0 -50px;
 }
-
-/* line 151, ../sass/_team.scss */
-.ps-slides > div,
-.ps-slidewrapper > nav > a {
-  background-color: white;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* line 159, ../sass/_team.scss */
-.ps-move {
-  -webkit-transition: top 400ms ease-out;
-  -moz-transition: top 400ms ease-out;
-  -o-transition: top 400ms ease-out;
-  -ms-transition: top 400ms ease-out;
+/* line 132, ../sass/_team.scss */
+.team .ps-move {
   transition: top 400ms ease-out;
-}
-
-@media screen and (max-width: 860px) {
-  /* line 169, ../sass/_team.scss */
-  .js .ps-container > div {
-    width: 100%;
-  }
-
-  /* line 173, ../sass/_team.scss */
-  .js .ps-header {
-    height: 50px;
-  }
-
-  /* line 177, ../sass/_team.scss */
-  .js .ps-header h1 {
-    line-height: 50px;
-    padding: 0px 20px;
-    letter-spacing: 4px;
-  }
-
-  /* line 183, ../sass/_team.scss */
-  .js .ps-slides {
-    bottom: 320px;
-    top: 50px;
-  }
-
-  /* line 188, ../sass/_team.scss */
-  .js .ps-slidewrapper > nav {
-    height: 100px;
-  }
-
-  /* line 192, ../sass/_team.scss */
-  .js .ps-contentwrapper {
-    top: auto;
-    height: 220px;
-    bottom: 100px;
-  }
-
-  /* line 198, ../sass/_team.scss */
-  .js .ps-content {
-    padding: 10px;
-  }
-
-  /* line 202, ../sass/_team.scss */
-  .js .ps-content h2 {
-    border-right: none;
-    font-size: 18px;
-    margin: 10px 0;
-    padding-top: 0;
-  }
-
-  /* line 209, ../sass/_team.scss */
-  .js .ps-content span.ps-price {
-    font-size: 18px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-weight: 700;
-    margin-bottom: 0;
-  }
-
-  /* line 218, ../sass/_team.scss */
-  .js .ps-content p {
-    line-height: 20px;
-    border: none;
-    padding: 5px 10px;
-    height: 80px;
-    overflow-y: scroll;
-  }
-
-  /* line 226, ../sass/_team.scss */
-  .js .ps-content a:last-child {
-    font-size: 13px;
-    margin: 10px 20px 0 0;
-  }
 }
