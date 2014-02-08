@@ -3858,7 +3858,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 /* line 44, ../sass/_header.scss */
 .home header nav ul li, .team header nav ul li {
-  width: 50%%;
+  width: 50%;
   float: left;
   position: relative;
 }

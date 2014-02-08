@@ -3801,7 +3801,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 
 /* line 2, ../sass/_header.scss */
-.home header, .team header {
+.home header, .team header, .news header {
   width: 100%;
   height: 46px;
   background-color: white;
@@ -3812,7 +3812,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   box-shadow: 0 0 5px 0px #3e75bb;
 }
 /* line 11, ../sass/_header.scss */
-.home header h1, .team header h1 {
+.home header h1, .team header h1, .news header h1 {
   font-family: "museo_sans_700regular", Helvetica, sans;
   font-size: 2.6em;
   font-weight: 900;
@@ -3827,17 +3827,17 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 @media (max-width: 480px) {
   /* line 11, ../sass/_header.scss */
-  .home header h1, .team header h1 {
+  .home header h1, .team header h1, .news header h1 {
     font-size: 1.6em;
     padding-top: 10px;
   }
 }
 /* line 27, ../sass/_header.scss */
-.home header h1 a, .team header h1 a {
+.home header h1 a, .team header h1 a, .news header h1 a {
   color: #3e75bb;
 }
 /* line 31, ../sass/_header.scss */
-.home header nav, .team header nav {
+.home header nav, .team header nav, .news header nav {
   width: 60%;
   float: right;
   margin-top: 15px;
@@ -3848,44 +3848,44 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 @media (max-width: 768px) {
   /* line 31, ../sass/_header.scss */
-  .home header nav, .team header nav {
+  .home header nav, .team header nav, .news header nav {
     display: none;
   }
 }
 /* line 42, ../sass/_header.scss */
-.home header nav ul, .team header nav ul {
+.home header nav ul, .team header nav ul, .news header nav ul {
   width: 100%;
 }
 /* line 44, ../sass/_header.scss */
-.home header nav ul li, .team header nav ul li {
+.home header nav ul li, .team header nav ul li, .news header nav ul li {
   width: 16.6666%;
   float: left;
   position: relative;
 }
 /* line 48, ../sass/_header.scss */
-.home header nav ul li a, .team header nav ul li a {
+.home header nav ul li a, .team header nav ul li a, .news header nav ul li a {
   display: block;
   width: 100%;
   color: #3e75bb;
   text-align: center;
 }
 /* line 53, ../sass/_header.scss */
-.home header nav ul li a:hover, .home header nav ul li a:focus, .home header nav ul li a:active, .team header nav ul li a:hover, .team header nav ul li a:focus, .team header nav ul li a:active {
+.home header nav ul li a:hover, .home header nav ul li a:focus, .home header nav ul li a:active, .team header nav ul li a:hover, .team header nav ul li a:focus, .team header nav ul li a:active, .news header nav ul li a:hover, .news header nav ul li a:focus, .news header nav ul li a:active {
   color: rgba(62, 117, 187, 0.5);
 }
 /* line 57, ../sass/_header.scss */
-.home header nav ul li:after, .team header nav ul li:after {
+.home header nav ul li:after, .team header nav ul li:after, .news header nav ul li:after {
   content: '/';
   color: #3e75bb;
   position: relative;
   top: -20px;
 }
 /* line 63, ../sass/_header.scss */
-.home header nav ul li:first-child:after, .team header nav ul li:first-child:after {
+.home header nav ul li:first-child:after, .team header nav ul li:first-child:after, .news header nav ul li:first-child:after {
   content: '';
 }
 /* line 69, ../sass/_header.scss */
-.home header #menu, .team header #menu {
+.home header #menu, .team header #menu, .news header #menu {
   display: none;
   width: 25px;
   height: 20px;
@@ -3899,12 +3899,12 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 @media (max-width: 768px) {
   /* line 69, ../sass/_header.scss */
-  .home header #menu, .team header #menu {
+  .home header #menu, .team header #menu, .news header #menu {
     display: block;
   }
 }
 /* line 83, ../sass/_header.scss */
-.home header #menu .menu-bar, .team header #menu .menu-bar {
+.home header #menu .menu-bar, .team header #menu .menu-bar, .news header #menu .menu-bar {
   display: block;
   background-color: #3e75bb;
   width: 25px;
@@ -3916,23 +3916,23 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   transition: all 300ms ease-in-out;
 }
 /* line 94, ../sass/_header.scss */
-.home header #menu #menu-bar1, .team header #menu #menu-bar1 {
+.home header #menu #menu-bar1, .team header #menu #menu-bar1, .news header #menu #menu-bar1 {
   top: 0;
 }
 /* line 97, ../sass/_header.scss */
-.home header #menu #menu-bar2, .team header #menu #menu-bar2 {
+.home header #menu #menu-bar2, .team header #menu #menu-bar2, .news header #menu #menu-bar2 {
   top: 7px;
 }
 /* line 100, ../sass/_header.scss */
-.home header #menu #menu-bar3, .team header #menu #menu-bar3 {
+.home header #menu #menu-bar3, .team header #menu #menu-bar3, .news header #menu #menu-bar3 {
   top: 14px;
 }
 /* line 105, ../sass/_header.scss */
-.home header #menu.on .menu-bar, .team header #menu.on .menu-bar {
+.home header #menu.on .menu-bar, .team header #menu.on .menu-bar, .news header #menu.on .menu-bar {
   height: 2px;
 }
 /* line 108, ../sass/_header.scss */
-.home header #menu.on #menu-bar1, .team header #menu.on #menu-bar1 {
+.home header #menu.on #menu-bar1, .team header #menu.on #menu-bar1, .news header #menu.on #menu-bar1 {
   width: 30px;
   top: 7px;
   left: 0;
@@ -3941,11 +3941,11 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -webkit-transform: rotate(45deg);
 }
 /* line 116, ../sass/_header.scss */
-.home header #menu.on #menu-bar2, .team header #menu.on #menu-bar2 {
+.home header #menu.on #menu-bar2, .team header #menu.on #menu-bar2, .news header #menu.on #menu-bar2 {
   display: none;
 }
 /* line 119, ../sass/_header.scss */
-.home header #menu.on #menu-bar3, .team header #menu.on #menu-bar3 {
+.home header #menu.on #menu-bar3, .team header #menu.on #menu-bar3, .news header #menu.on #menu-bar3 {
   width: 30px;
   top: 7px;
   left: 0;
@@ -3954,7 +3954,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -webkit-transform: rotate(-45deg);
 }
 /* line 128, ../sass/_header.scss */
-.home header #menu-close, .team header #menu-close {
+.home header #menu-close, .team header #menu-close, .news header #menu-close {
   display: none;
   width: 30px;
   height: 30px;
@@ -4359,8 +4359,14 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 .team {
   height: 100%;
 }
+@media (max-width: 480px) {
+  /* line 1, ../sass/_team.scss */
+  .team {
+    height: 640px;
+  }
+}
 
-/* line 4, ../sass/_team.scss */
+/* line 7, ../sass/_team.scss */
 .ps-container {
   position: absolute;
   width: 100%;
@@ -4370,137 +4376,184 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   background: white;
   z-index: 0;
 }
-
-/* line 14, ../sass/_team.scss */
-.ps-container > div {
+@media (max-width: 480px) {
+  /* line 7, ../sass/_team.scss */
+  .ps-container {
+    height: 640px;
+  }
+}
+/* line 18, ../sass/_team.scss */
+.ps-container div {
   position: absolute;
   width: 50%;
 }
-
-/* line 19, ../sass/_team.scss */
-.ps-container > div > div,
-.ps-slidewrapper > nav,
-.ps-slides > div {
-  position: absolute;
+@media (max-width: 768px) {
+  /* line 18, ../sass/_team.scss */
+  .ps-container div {
+    width: 100%;
+  }
 }
 
-/* line 25, ../sass/_team.scss */
+/* line 27, ../sass/_team.scss */
 .ps-contentwrapper {
   top: 46px;
   bottom: 0px;
   overflow: hidden;
   z-index: 1000;
 }
-
-/* line 32, ../sass/_team.scss */
-.ps-content {
+@media (max-width: 768px) {
+  /* line 27, ../sass/_team.scss */
+  .ps-contentwrapper {
+    height: 50%;
+    top: 50%;
+  }
+}
+@media (max-width: 480px) {
+  /* line 27, ../sass/_team.scss */
+  .ps-contentwrapper {
+    height: 420px;
+    top: 240px;
+  }
+}
+/* line 40, ../sass/_team.scss */
+.ps-contentwrapper .ps-content {
   background: white;
   width: 100%;
   height: 100%;
   padding: 50px;
 }
-
-/* line 39, ../sass/_team.scss */
-.ps-content h2 {
+@media (max-width: 768px) {
+  /* line 40, ../sass/_team.scss */
+  .ps-contentwrapper .ps-content {
+    padding: 10px;
+  }
+}
+/* line 48, ../sass/_team.scss */
+.ps-contentwrapper .ps-content h2 {
   font-family: "museo_sans_700regular", Helvetica, sans;
+  color: #3e75bb;
   text-align: left;
-  padding: 10px 15px;
+  padding: 10px 0;
   margin: 10px 0 30px;
 }
-
-/* line 46, ../sass/_team.scss */
-.ps-content p {
-  line-height: 26px;
-  font-size: 12px;
-  letter-spacing: 2px;
-  word-spacing: 10px;
-  padding: 10px 15px;
+@media (max-width: 768px) {
+  /* line 48, ../sass/_team.scss */
+  .ps-contentwrapper .ps-content h2 {
+    font-size: 18px;
+    padding: 0 0 0 10px;
+    margin: 15px 0;
+  }
 }
-
-/* line 54, ../sass/_team.scss */
-.ps-content a:last-child {
+/* line 60, ../sass/_team.scss */
+.ps-contentwrapper .ps-content p {
+  font-family: 'droid_serifregular';
+  color: #999999;
+  font-weight: normal;
   font-size: 14px;
-  font-weight: 700;
-  color: #555;
-  letter-spacing: 4px;
-  float: right;
-  padding: 3px;
-  text-indent: 4px;
+  line-height: 20px;
+}
+@media (max-width: 768px) {
+  /* line 60, ../sass/_team.scss */
+  .ps-contentwrapper .ps-content p {
+    height: auto;
+    padding: 0 10px;
+  }
 }
 
-/* line 64, ../sass/_team.scss */
-.no-touch .ps-content a:last-child:hover {
-  color: #3e75bb;
-  border-color: #3e75bb;
-}
-
-/* line 69, ../sass/_team.scss */
+/* line 74, ../sass/_team.scss */
 .ps-slidewrapper {
   right: 0px;
   top: 0px;
   height: 100%;
   overflow: hidden;
 }
-
-/* line 76, ../sass/_team.scss */
-.ps-slides {
+/* line 79, ../sass/_team.scss */
+.ps-slidewrapper .ps-slides {
   top: 0px;
   bottom: 200px;
   width: 100%;
 }
-
-/* line 82, ../sass/_team.scss */
-.ps-slides > div {
+@media (max-width: 768px) {
+  /* line 79, ../sass/_team.scss */
+  .ps-slidewrapper .ps-slides {
+    top: 46px;
+    height: 50%;
+  }
+}
+@media (max-width: 480px) {
+  /* line 79, ../sass/_team.scss */
+  .ps-slidewrapper .ps-slides {
+    height: 194px;
+  }
+}
+/* line 90, ../sass/_team.scss */
+.ps-slidewrapper .ps-slides div {
   width: 100%;
   height: 100%;
-  box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
+  position: absolute;
+  background-color: white;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-/* line 88, ../sass/_team.scss */
-.ps-slidewrapper > nav {
+@media (max-width: 768px) {
+  /* line 90, ../sass/_team.scss */
+  .ps-slidewrapper .ps-slides div {
+    background-position: center center;
+  }
+}
+/* line 103, ../sass/_team.scss */
+.ps-slidewrapper nav {
   width: 100%;
   height: 200px;
+  position: absolute;
   bottom: 0px;
   right: 0px;
   z-index: 1000;
 }
-
-/* line 96, ../sass/_team.scss */
-.ps-slidewrapper > nav > a {
+@media (max-width: 768px) {
+  /* line 103, ../sass/_team.scss */
+  .ps-slidewrapper nav {
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 103, ../sass/_team.scss */
+  .ps-slidewrapper nav {
+    top: 240px;
+  }
+}
+/* line 119, ../sass/_team.scss */
+.ps-slidewrapper nav a {
   width: 50%;
   height: 100%;
   position: relative;
   float: left;
   box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
   outline: none;
-}
-
-/* line 105, ../sass/_team.scss */
-.ps-slidewrapper > nav > a:first-child {
-  box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
-}
-
-/* line 109, ../sass/_team.scss */
-.no-touch .ps-slidewrapper > nav > a {
+  background-color: white;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-transition: box-shadow 0.4s ease-in-out;
   -moz-transition: box-shadow 0.4s ease-in-out;
   -ms-transition: box-shadow 0.4s ease-in-out;
   -o-transition: box-shadow 0.4s ease-in-out;
   transition: box-shadow 0.4s ease-in-out;
 }
-
-/* line 117, ../sass/_team.scss */
-.no-touch .ps-slidewrapper > nav > a:hover {
-  box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
+@media (max-width: 768px) {
+  /* line 119, ../sass/_team.scss */
+  .ps-slidewrapper nav a {
+    box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5);
+    background-image: none !important;
+    background-color: transparent;
+  }
 }
-
-/* line 121, ../sass/_team.scss */
-.no-touch .ps-slidewrapper > nav > a:first-child:hover {
-  box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
-}
-
-/* line 125, ../sass/_team.scss */
-.ps-slidewrapper > nav > a:after {
+/* line 140, ../sass/_team.scss */
+.ps-slidewrapper nav a:after {
   content: '';
   position: absolute;
   width: 100px;
@@ -4515,10 +4568,35 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   transform: rotate(45deg);
   border-left: 1px solid white;
   border-top: 1px solid white;
+  -webkit-transition: box-shadow 0.4s ease-in-out;
+  -moz-transition: box-shadow 0.4s ease-in-out;
+  -ms-transition: box-shadow 0.4s ease-in-out;
+  -o-transition: box-shadow 0.4s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out;
 }
-
-/* line 142, ../sass/_team.scss */
-.ps-slidewrapper > nav > a:first-child:after {
+@media (max-width: 768px) {
+  /* line 140, ../sass/_team.scss */
+  .ps-slidewrapper nav a:after {
+    width: 20px;
+    height: 20px;
+    border-left: 1px solid #3e75bb;
+    border-top: 1px solid #3e75bb;
+    margin: -4px 0 0 -12.5px;
+  }
+}
+/* line 168, ../sass/_team.scss */
+.ps-slidewrapper nav a:first-child {
+  box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
+}
+@media (max-width: 768px) {
+  /* line 168, ../sass/_team.scss */
+  .ps-slidewrapper nav a:first-child {
+    box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5);
+    border-right: 1px solid #3e75bb;
+  }
+}
+/* line 174, ../sass/_team.scss */
+.ps-slidewrapper nav a:first-child:after {
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
@@ -4526,96 +4604,28 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   transform: rotate(-135deg);
   margin: -80px 0 0 -50px;
 }
-
-/* line 151, ../sass/_team.scss */
-.ps-slides > div,
-.ps-slidewrapper > nav > a {
-  background-color: white;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
+@media (max-width: 768px) {
+  /* line 174, ../sass/_team.scss */
+  .ps-slidewrapper nav a:first-child:after {
+    margin: -18px 0 0 -12.5px;
+  }
 }
 
-/* line 159, ../sass/_team.scss */
+/* line 191, ../sass/_team.scss */
+.no-touch .ps-slidewrapper > nav > a:hover {
+  box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5);
+}
+
+/* line 195, ../sass/_team.scss */
+.no-touch .ps-slidewrapper > nav > a:first-child:hover {
+  box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5);
+}
+
+/* line 199, ../sass/_team.scss */
 .ps-move {
   -webkit-transition: top 400ms ease-out;
   -moz-transition: top 400ms ease-out;
   -o-transition: top 400ms ease-out;
   -ms-transition: top 400ms ease-out;
   transition: top 400ms ease-out;
-}
-
-@media screen and (max-width: 860px) {
-  /* line 169, ../sass/_team.scss */
-  .js .ps-container > div {
-    width: 100%;
-  }
-
-  /* line 173, ../sass/_team.scss */
-  .js .ps-header {
-    height: 50px;
-  }
-
-  /* line 177, ../sass/_team.scss */
-  .js .ps-header h1 {
-    line-height: 50px;
-    padding: 0px 20px;
-    letter-spacing: 4px;
-  }
-
-  /* line 183, ../sass/_team.scss */
-  .js .ps-slides {
-    bottom: 320px;
-    top: 50px;
-  }
-
-  /* line 188, ../sass/_team.scss */
-  .js .ps-slidewrapper > nav {
-    height: 100px;
-  }
-
-  /* line 192, ../sass/_team.scss */
-  .js .ps-contentwrapper {
-    top: auto;
-    height: 220px;
-    bottom: 100px;
-  }
-
-  /* line 198, ../sass/_team.scss */
-  .js .ps-content {
-    padding: 10px;
-  }
-
-  /* line 202, ../sass/_team.scss */
-  .js .ps-content h2 {
-    border-right: none;
-    font-size: 18px;
-    margin: 10px 0;
-    padding-top: 0;
-  }
-
-  /* line 209, ../sass/_team.scss */
-  .js .ps-content span.ps-price {
-    font-size: 18px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-weight: 700;
-    margin-bottom: 0;
-  }
-
-  /* line 218, ../sass/_team.scss */
-  .js .ps-content p {
-    line-height: 20px;
-    border: none;
-    padding: 5px 10px;
-    height: 80px;
-    overflow-y: scroll;
-  }
-
-  /* line 226, ../sass/_team.scss */
-  .js .ps-content a:last-child {
-    font-size: 13px;
-    margin: 10px 20px 0 0;
-  }
 }

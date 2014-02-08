@@ -58,19 +58,24 @@ if($(window).width() > 767){
 }
 
 // in-page navigation
-$('#intro-arrow-down').on('click', function(){
-		$('html, body').animate({scrollTop: $('#about').offset().top -46}, 500);
-	})
-$('#about-arrow-down').on('click', function(){
+$('#intro-arrow-down').on('click', function(e){
+	e.preventDefault();
+	$('html, body').animate({scrollTop: $('#about').offset().top -46}, 500);
+})
+$('#about-arrow-down').on('click', function(e){
+	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#about-content').offset().top -46}, 500);
 })
-$('#about-content-arrow-down').on('click', function(){
+$('#about-content-arrow-down').on('click', function(e){
+	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#research').offset().top -46}, 500);
 })
-$('#research-arrow-down').on('click', function(){
+$('#research-arrow-down').on('click', function(e){
+	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#research-content').offset().top -46}, 500);
 })
-$('#research-content-arrow-down').on('click', function(){
+$('#research-content-arrow-down').on('click', function(e){
+	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#questions').offset().top -46}, 500);
 })
 
