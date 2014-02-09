@@ -1,0 +1,88 @@
+#alumni{
+	font-family: $museobold, Helvetica, sans;
+	color: $white;
+	text-align: center;
+	display: block;
+	background-color: $blue;
+	background-color: $blue-opaque;
+	width: 200px;
+	height: 30px;
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+	-webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+	&:hover, &:focus, &:active{
+		background-color: $blue;
+	}
+}
+#alumni-modal{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 46px;
+	left: 0;
+	background-color: $blue;
+	background-color: $blue-opaque-dark;
+	@include breakpoint(mobile){
+		height: 90%;
+		position: fixed;
+		overflow: scroll;
+	}
+	.icon-close{
+		color: $white;
+		font-size: 1.6em;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		&:hover, &:focus, &:active{
+			font-size: 1.8em;
+		}
+		@include breakpoint(mobile){
+			top: 10px;
+			right: 10px;
+		}
+	}
+	h2{
+		font-family: $museobold, Helvetica, sans;
+		color: $white;
+		text-align: center;
+		margin: 10px 0;
+		padding: 20px 0 10px;
+		text-transform: lowercase;
+		@include breakpoint(tablet-small){
+			font-size: 1.6em;
+			margin: 10px 0 0 10px;
+		}
+	}
+	.alumni-wrap{
+		width: 50%;
+		float: left;
+		padding: 0 20px;
+		@include breakpoint(mobile){
+			width: 100%;
+		}
+		h4, p{
+			font-family: $museobold, Helvetica, sans;
+			color: $white;
+			text-align: center;
+			margin: 10px 0;
+		}
+		h4{
+			text-transform: lowercase;
+			@include breakpoint(tablet-small){
+				font-size: 1.2em;;
+			}
+		}
+		p{
+			@include breakpoint(tablet-small){
+				font-size: 0.8em;;
+			}
+		}
+	}
+}

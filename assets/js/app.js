@@ -2,7 +2,7 @@
 
 // set page height
 
-$('#intro, #about, #about-content, #research, #research-content').css({height:$(window).height()-46 + 'px'});
+$('#intro, #about, #about-content, #research, #research-content, #news-img, #pubs-img').css({height:$(window).height()-46 + 'px'});
 if($(window).width()>320){
 	$('#questions').css({height:$(window).height()-46 + 'px'});
 } else {
@@ -83,10 +83,41 @@ $('#research-content-arrow-down').on('click', function(e){
 	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#questions').offset().top -46}, 500);
 })
+$('#news-arrow-down').on('click', function(e){
+	e.preventDefault();
+	$('html, body').animate({scrollTop: $('#news').offset().top -46}, 500);
+})
+$('#pubs-arrow-down').on('click', function(e){
+	e.preventDefault();
+	$('html, body').animate({scrollTop: $('#pubs').offset().top -46}, 500);
+})
 
 // initialise vertical slider
 $(function(){
 	Slider.init();
 });
+
+// alumni modal
+$('#alumni').on('click', function(e){
+	e.preventDefault();
+	$('#alumni-modal').fadeIn(300);
+	$(this).hide();
+})
+$('#alumni-close').on('click', function(e){
+	e.preventDefault();
+	$('#alumni-modal').fadeOut(300);
+	$('#alumni').show();
+})
+
+// publications
+$('.read-abstract').on('click', function(){
+	$('.abstract').slideUp(300);
+	$(this).prev().slideToggle(300);
+	$(this).addClass('open');
+})
+$('.read-abstract.open').on('click', function(){
+	$('.abstract').slideUp(300);
+	$(this).removeClass('open');
+})
 
 }());

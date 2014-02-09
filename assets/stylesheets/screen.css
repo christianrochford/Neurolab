@@ -3801,7 +3801,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 
 /* line 2, ../sass/_header.scss */
-.home header, .team header, .news header {
+.home header, .team header, .news header, .publications header {
   width: 100%;
   height: 46px;
   background-color: white;
@@ -3812,7 +3812,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   box-shadow: 0 0 5px 0px #3e75bb;
 }
 /* line 11, ../sass/_header.scss */
-.home header h1, .team header h1, .news header h1 {
+.home header h1, .team header h1, .news header h1, .publications header h1 {
   font-family: "museo_sans_700regular", Helvetica, sans;
   font-size: 2.6em;
   font-weight: 900;
@@ -3827,17 +3827,17 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 @media (max-width: 480px) {
   /* line 11, ../sass/_header.scss */
-  .home header h1, .team header h1, .news header h1 {
+  .home header h1, .team header h1, .news header h1, .publications header h1 {
     font-size: 1.6em;
     padding-top: 10px;
   }
 }
 /* line 27, ../sass/_header.scss */
-.home header h1 a, .team header h1 a, .news header h1 a {
+.home header h1 a, .team header h1 a, .news header h1 a, .publications header h1 a {
   color: #3e75bb;
 }
 /* line 31, ../sass/_header.scss */
-.home header nav, .team header nav, .news header nav {
+.home header nav, .team header nav, .news header nav, .publications header nav {
   width: 60%;
   float: right;
   margin-top: 15px;
@@ -3848,22 +3848,22 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 @media (max-width: 768px) {
   /* line 31, ../sass/_header.scss */
-  .home header nav, .team header nav, .news header nav {
+  .home header nav, .team header nav, .news header nav, .publications header nav {
     display: none;
   }
 }
 /* line 42, ../sass/_header.scss */
-.home header nav ul, .team header nav ul, .news header nav ul {
+.home header nav ul, .team header nav ul, .news header nav ul, .publications header nav ul {
   width: 100%;
 }
 /* line 44, ../sass/_header.scss */
-.home header nav ul li, .team header nav ul li, .news header nav ul li {
+.home header nav ul li, .team header nav ul li, .news header nav ul li, .publications header nav ul li {
   width: 16.6666%;
   float: left;
   position: relative;
 }
 /* line 48, ../sass/_header.scss */
-.home header nav ul li a, .team header nav ul li a, .news header nav ul li a {
+.home header nav ul li a, .team header nav ul li a, .news header nav ul li a, .publications header nav ul li a {
   font-family: "museo_sans_700regular", Helvetica, sans;
   display: block;
   width: 100%;
@@ -3871,22 +3871,22 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   text-align: center;
 }
 /* line 54, ../sass/_header.scss */
-.home header nav ul li a:hover, .home header nav ul li a:focus, .home header nav ul li a:active, .team header nav ul li a:hover, .team header nav ul li a:focus, .team header nav ul li a:active, .news header nav ul li a:hover, .news header nav ul li a:focus, .news header nav ul li a:active {
+.home header nav ul li a:hover, .home header nav ul li a:focus, .home header nav ul li a:active, .team header nav ul li a:hover, .team header nav ul li a:focus, .team header nav ul li a:active, .news header nav ul li a:hover, .news header nav ul li a:focus, .news header nav ul li a:active, .publications header nav ul li a:hover, .publications header nav ul li a:focus, .publications header nav ul li a:active {
   color: rgba(62, 117, 187, 0.5);
 }
 /* line 58, ../sass/_header.scss */
-.home header nav ul li:after, .team header nav ul li:after, .news header nav ul li:after {
+.home header nav ul li:after, .team header nav ul li:after, .news header nav ul li:after, .publications header nav ul li:after {
   content: '/';
   color: #3e75bb;
   position: relative;
   top: -20px;
 }
 /* line 64, ../sass/_header.scss */
-.home header nav ul li:first-child:after, .team header nav ul li:first-child:after, .news header nav ul li:first-child:after {
+.home header nav ul li:first-child:after, .team header nav ul li:first-child:after, .news header nav ul li:first-child:after, .publications header nav ul li:first-child:after {
   content: '';
 }
 /* line 70, ../sass/_header.scss */
-.home header #menu, .team header #menu, .news header #menu {
+.home header #menu, .team header #menu, .news header #menu, .publications header #menu {
   display: none;
   width: 25px;
   height: 20px;
@@ -3900,12 +3900,12 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 @media (max-width: 768px) {
   /* line 70, ../sass/_header.scss */
-  .home header #menu, .team header #menu, .news header #menu {
+  .home header #menu, .team header #menu, .news header #menu, .publications header #menu {
     display: block;
   }
 }
 /* line 84, ../sass/_header.scss */
-.home header #menu .menu-bar, .team header #menu .menu-bar, .news header #menu .menu-bar {
+.home header #menu .menu-bar, .team header #menu .menu-bar, .news header #menu .menu-bar, .publications header #menu .menu-bar {
   display: block;
   background-color: #3e75bb;
   width: 25px;
@@ -3917,23 +3917,23 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   transition: all 300ms ease-in-out;
 }
 /* line 95, ../sass/_header.scss */
-.home header #menu #menu-bar1, .team header #menu #menu-bar1, .news header #menu #menu-bar1 {
+.home header #menu #menu-bar1, .team header #menu #menu-bar1, .news header #menu #menu-bar1, .publications header #menu #menu-bar1 {
   top: 0;
 }
 /* line 98, ../sass/_header.scss */
-.home header #menu #menu-bar2, .team header #menu #menu-bar2, .news header #menu #menu-bar2 {
+.home header #menu #menu-bar2, .team header #menu #menu-bar2, .news header #menu #menu-bar2, .publications header #menu #menu-bar2 {
   top: 7px;
 }
 /* line 101, ../sass/_header.scss */
-.home header #menu #menu-bar3, .team header #menu #menu-bar3, .news header #menu #menu-bar3 {
+.home header #menu #menu-bar3, .team header #menu #menu-bar3, .news header #menu #menu-bar3, .publications header #menu #menu-bar3 {
   top: 14px;
 }
 /* line 106, ../sass/_header.scss */
-.home header #menu.on .menu-bar, .team header #menu.on .menu-bar, .news header #menu.on .menu-bar {
+.home header #menu.on .menu-bar, .team header #menu.on .menu-bar, .news header #menu.on .menu-bar, .publications header #menu.on .menu-bar {
   height: 2px;
 }
 /* line 109, ../sass/_header.scss */
-.home header #menu.on #menu-bar1, .team header #menu.on #menu-bar1, .news header #menu.on #menu-bar1 {
+.home header #menu.on #menu-bar1, .team header #menu.on #menu-bar1, .news header #menu.on #menu-bar1, .publications header #menu.on #menu-bar1 {
   width: 30px;
   top: 7px;
   left: 0;
@@ -3942,11 +3942,11 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -webkit-transform: rotate(45deg);
 }
 /* line 117, ../sass/_header.scss */
-.home header #menu.on #menu-bar2, .team header #menu.on #menu-bar2, .news header #menu.on #menu-bar2 {
+.home header #menu.on #menu-bar2, .team header #menu.on #menu-bar2, .news header #menu.on #menu-bar2, .publications header #menu.on #menu-bar2 {
   display: none;
 }
 /* line 120, ../sass/_header.scss */
-.home header #menu.on #menu-bar3, .team header #menu.on #menu-bar3, .news header #menu.on #menu-bar3 {
+.home header #menu.on #menu-bar3, .team header #menu.on #menu-bar3, .news header #menu.on #menu-bar3, .publications header #menu.on #menu-bar3 {
   width: 30px;
   top: 7px;
   left: 0;
@@ -3955,7 +3955,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -webkit-transform: rotate(-45deg);
 }
 /* line 129, ../sass/_header.scss */
-.home header #menu-close, .team header #menu-close, .news header #menu-close {
+.home header #menu-close, .team header #menu-close, .news header #menu-close, .publications header #menu-close {
   display: none;
   width: 30px;
   height: 30px;
@@ -4520,7 +4520,7 @@ html[xmlns] .slides {
   }
 }
 /* line 23, ../sass/_about.scss */
-#about #title-wrap, #research #title-wrap, #questions #title-wrap {
+#about .title-wrap, #research .title-wrap, #questions .title-wrap {
   background: #3e75bb;
   background: rgba(62, 117, 187, 0.5);
   width: 200px;
@@ -4535,12 +4535,12 @@ html[xmlns] .slides {
 }
 @media (max-width: 480px) {
   /* line 23, ../sass/_about.scss */
-  #about #title-wrap, #research #title-wrap, #questions #title-wrap {
+  #about .title-wrap, #research .title-wrap, #questions .title-wrap {
     background: transparent;
   }
 }
 /* line 38, ../sass/_about.scss */
-#about #title-wrap #title, #research #title-wrap #title, #questions #title-wrap #title {
+#about .title-wrap .title, #research .title-wrap .title, #questions .title-wrap .title {
   font-family: "museo_sans_700regular", Helvetica, sans;
   font-size: 2.6em;
   font-weight: 900;
@@ -4573,26 +4573,33 @@ html[xmlns] .slides {
   padding: 0;
 }
 /* line 66, ../sass/_about.scss */
-#about-content #about-text, #about-content #research-text, #research-content #about-text, #research-content #research-text {
+#about-content #about-text, #research-content #about-text {
+  width: 80%;
+  height: 100%;
+  margin: 0 10%;
+  display: table;
+}
+@media (max-width: 480px) {
+  /* line 66, ../sass/_about.scss */
+  #about-content #about-text, #research-content #about-text {
+    width: 80%;
+    margin: 0 10%;
+  }
+}
+/* line 76, ../sass/_about.scss */
+#about-content #research-text, #research-content #research-text {
   width: 100%;
   height: 100%;
   display: table;
 }
 @media (max-width: 480px) {
-  /* line 66, ../sass/_about.scss */
-  #about-content #about-text, #about-content #research-text, #research-content #about-text, #research-content #research-text {
-    width: 80%;
-    margin: 0 10%;
-  }
-}
-@media (max-width: 480px) {
-  /* line 75, ../sass/_about.scss */
+  /* line 76, ../sass/_about.scss */
   #about-content #research-text, #research-content #research-text {
     width: 100%;
     margin: 0;
   }
 }
-/* line 81, ../sass/_about.scss */
+/* line 85, ../sass/_about.scss */
 #about-content p, #research-content p {
   font-size: 2em;
   width: 80%;
@@ -4602,23 +4609,23 @@ html[xmlns] .slides {
   text-align: center;
 }
 @media (max-width: 768px) {
-  /* line 81, ../sass/_about.scss */
+  /* line 85, ../sass/_about.scss */
   #about-content p, #research-content p {
     font-size: 1.5em;
   }
 }
 @media (max-width: 480px) {
-  /* line 81, ../sass/_about.scss */
+  /* line 85, ../sass/_about.scss */
   #about-content p, #research-content p {
     font-size: 1em;
   }
 }
-/* line 95, ../sass/_about.scss */
+/* line 99, ../sass/_about.scss */
 #about-content .flexslider .slides li, #research-content .flexslider .slides li {
   width: 100%;
   height: 100%;
 }
-/* line 98, ../sass/_about.scss */
+/* line 102, ../sass/_about.scss */
 #about-content .flexslider .slides li .text-wrap, #research-content .flexslider .slides li .text-wrap {
   width: 80%;
   height: 100%;
@@ -4626,28 +4633,28 @@ html[xmlns] .slides {
   display: table;
   position: relative;
 }
-/* line 104, ../sass/_about.scss */
+/* line 108, ../sass/_about.scss */
 #about-content .flexslider .slides li .text-wrap p, #research-content .flexslider .slides li .text-wrap p {
   width: 100%;
   margin: 0;
 }
-/* line 108, ../sass/_about.scss */
+/* line 112, ../sass/_about.scss */
 #about-content .flexslider .slides li .text-wrap .list, #research-content .flexslider .slides li .text-wrap .list {
   display: block;
   margin: 200px 0 20px;
 }
 @media (max-width: 480px) {
-  /* line 108, ../sass/_about.scss */
+  /* line 112, ../sass/_about.scss */
   #about-content .flexslider .slides li .text-wrap .list, #research-content .flexslider .slides li .text-wrap .list {
     margin: 50px 0 30px;
   }
 }
-/* line 115, ../sass/_about.scss */
+/* line 119, ../sass/_about.scss */
 #about-content .flexslider .slides li .text-wrap ul, #research-content .flexslider .slides li .text-wrap ul {
   width: 100%;
   margin: 0;
 }
-/* line 118, ../sass/_about.scss */
+/* line 122, ../sass/_about.scss */
 #about-content .flexslider .slides li .text-wrap ul li, #research-content .flexslider .slides li .text-wrap ul li {
   color: #3e75bb;
   font-size: 1.3em;
@@ -4656,20 +4663,20 @@ html[xmlns] .slides {
   margin: 5px 0;
 }
 @media (max-width: 480px) {
-  /* line 118, ../sass/_about.scss */
+  /* line 122, ../sass/_about.scss */
   #about-content .flexslider .slides li .text-wrap ul li, #research-content .flexslider .slides li .text-wrap ul li {
     font-size: 0.8em;
     margin: 0;
   }
 }
 
-/* line 133, ../sass/_about.scss */
+/* line 137, ../sass/_about.scss */
 #questions-text {
   width: 100%;
   height: 100%;
   display: table;
 }
-/* line 137, ../sass/_about.scss */
+/* line 141, ../sass/_about.scss */
 #questions-text p {
   display: table-cell;
   width: 50%;
@@ -4681,7 +4688,7 @@ html[xmlns] .slides {
   transition: all 300ms ease-in-out;
 }
 @media (max-width: 630px) {
-  /* line 137, ../sass/_about.scss */
+  /* line 141, ../sass/_about.scss */
   #questions-text p {
     width: 100%;
     height: auto;
@@ -4689,35 +4696,35 @@ html[xmlns] .slides {
     margin: 20px 0;
     display: block;
   }
-  /* line 152, ../sass/_about.scss */
+  /* line 156, ../sass/_about.scss */
   #questions-text p:last-of-type {
     margin-top: 0;
   }
 }
 @media (max-width: 768px) {
-  /* line 137, ../sass/_about.scss */
+  /* line 141, ../sass/_about.scss */
   #questions-text p {
     font-size: 1.5em;
   }
 }
 @media (max-width: 480px) {
-  /* line 137, ../sass/_about.scss */
+  /* line 141, ../sass/_about.scss */
   #questions-text p {
     font-size: 1em;
   }
 }
 
-/* line 165, ../sass/_about.scss */
+/* line 169, ../sass/_about.scss */
 #research .icon-arrow-down {
   color: white;
 }
 
-/* line 170, ../sass/_about.scss */
+/* line 174, ../sass/_about.scss */
 #questions #img, #questions #img2 {
   background-image: url(../img/molecules2.jpg);
   height: 100%;
 }
-/* line 174, ../sass/_about.scss */
+/* line 178, ../sass/_about.scss */
 #questions .twelve {
   height: 100%;
   position: absolute;
@@ -4725,25 +4732,25 @@ html[xmlns] .slides {
   left: 0;
 }
 @media (max-width: 480px) {
-  /* line 174, ../sass/_about.scss */
+  /* line 178, ../sass/_about.scss */
   #questions .twelve {
     padding: 0;
   }
 }
-/* line 183, ../sass/_about.scss */
+/* line 187, ../sass/_about.scss */
 #questions .twelve #questions-text p {
   color: white;
   font-size: 2em;
   text-align: center;
 }
 @media (max-width: 768px) {
-  /* line 183, ../sass/_about.scss */
+  /* line 187, ../sass/_about.scss */
   #questions .twelve #questions-text p {
     font-size: 1.5em;
   }
 }
 @media (max-width: 480px) {
-  /* line 183, ../sass/_about.scss */
+  /* line 187, ../sass/_about.scss */
   #questions .twelve #questions-text p {
     font-size: 0.85em;
   }
@@ -4762,7 +4769,7 @@ html[xmlns] .slides {
   color: #3e75bb;
   font-size: 1.6em;
   width: 60px;
-  margin-left: -12px;
+  margin-left: -30px;
   filter: opacity(50);
   opacity: 0.5;
 }
@@ -4822,6 +4829,7 @@ html[xmlns] .slides {
 /* line 27, ../sass/_team.scss */
 .ps-contentwrapper {
   top: 46px;
+  right: 0;
   bottom: 0px;
   overflow: hidden;
   z-index: 1000;
@@ -4840,7 +4848,7 @@ html[xmlns] .slides {
     top: 240px;
   }
 }
-/* line 40, ../sass/_team.scss */
+/* line 41, ../sass/_team.scss */
 .ps-contentwrapper .ps-content {
   background: white;
   width: 100%;
@@ -4848,28 +4856,40 @@ html[xmlns] .slides {
   padding: 50px;
 }
 @media (max-width: 768px) {
-  /* line 40, ../sass/_team.scss */
+  /* line 41, ../sass/_team.scss */
   .ps-contentwrapper .ps-content {
     padding: 10px;
   }
 }
-/* line 48, ../sass/_team.scss */
+/* line 49, ../sass/_team.scss */
 .ps-contentwrapper .ps-content h2 {
   font-family: "museo_sans_700regular", Helvetica, sans;
   color: #3e75bb;
   text-align: left;
-  padding: 10px 0;
-  margin: 10px 0 30px;
+  margin: 10px 0;
+  text-transform: lowercase;
 }
 @media (max-width: 768px) {
-  /* line 48, ../sass/_team.scss */
+  /* line 49, ../sass/_team.scss */
   .ps-contentwrapper .ps-content h2 {
     font-size: 18px;
-    padding: 0 0 0 10px;
-    margin: 15px 0;
+    margin: 10px 0 0 10px;
   }
 }
 /* line 60, ../sass/_team.scss */
+.ps-contentwrapper .ps-content h4 {
+  font-family: "museo_sans_700regular", Helvetica, sans;
+  color: #3e75bb;
+  text-transform: lowercase;
+}
+@media (max-width: 768px) {
+  /* line 60, ../sass/_team.scss */
+  .ps-contentwrapper .ps-content h4 {
+    font-size: 14px;
+    margin: 10px 0 15px 10px;
+  }
+}
+/* line 69, ../sass/_team.scss */
 .ps-contentwrapper .ps-content p {
   font-family: 'droid_serifregular';
   color: #999999;
@@ -4878,40 +4898,40 @@ html[xmlns] .slides {
   line-height: 20px;
 }
 @media (max-width: 768px) {
-  /* line 60, ../sass/_team.scss */
+  /* line 69, ../sass/_team.scss */
   .ps-contentwrapper .ps-content p {
     height: auto;
     padding: 0 10px;
   }
 }
 
-/* line 74, ../sass/_team.scss */
+/* line 83, ../sass/_team.scss */
 .ps-slidewrapper {
-  right: 0px;
+  left: 0px;
   top: 0px;
   height: 100%;
   overflow: hidden;
 }
-/* line 79, ../sass/_team.scss */
+/* line 88, ../sass/_team.scss */
 .ps-slidewrapper .ps-slides {
   top: 0px;
   bottom: 200px;
   width: 100%;
 }
 @media (max-width: 768px) {
-  /* line 79, ../sass/_team.scss */
+  /* line 88, ../sass/_team.scss */
   .ps-slidewrapper .ps-slides {
     top: 46px;
     height: 50%;
   }
 }
 @media (max-width: 480px) {
-  /* line 79, ../sass/_team.scss */
+  /* line 88, ../sass/_team.scss */
   .ps-slidewrapper .ps-slides {
     height: 194px;
   }
 }
-/* line 90, ../sass/_team.scss */
+/* line 99, ../sass/_team.scss */
 .ps-slidewrapper .ps-slides div {
   width: 100%;
   height: 100%;
@@ -4922,12 +4942,12 @@ html[xmlns] .slides {
   background-size: cover;
 }
 @media (max-width: 768px) {
-  /* line 90, ../sass/_team.scss */
+  /* line 99, ../sass/_team.scss */
   .ps-slidewrapper .ps-slides div {
     background-position: center center;
   }
 }
-/* line 103, ../sass/_team.scss */
+/* line 112, ../sass/_team.scss */
 .ps-slidewrapper nav {
   width: 100%;
   height: 200px;
@@ -4937,7 +4957,7 @@ html[xmlns] .slides {
   z-index: 1000;
 }
 @media (max-width: 768px) {
-  /* line 103, ../sass/_team.scss */
+  /* line 112, ../sass/_team.scss */
   .ps-slidewrapper nav {
     height: 25px;
     position: absolute;
@@ -4946,12 +4966,12 @@ html[xmlns] .slides {
   }
 }
 @media (max-width: 480px) {
-  /* line 103, ../sass/_team.scss */
+  /* line 112, ../sass/_team.scss */
   .ps-slidewrapper nav {
     top: 240px;
   }
 }
-/* line 119, ../sass/_team.scss */
+/* line 128, ../sass/_team.scss */
 .ps-slidewrapper nav a {
   width: 50%;
   height: 100%;
@@ -4970,14 +4990,16 @@ html[xmlns] .slides {
   transition: box-shadow 0.4s ease-in-out;
 }
 @media (max-width: 768px) {
-  /* line 119, ../sass/_team.scss */
+  /* line 128, ../sass/_team.scss */
   .ps-slidewrapper nav a {
+    width: 49.8%;
+    float: right;
     box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5);
     background-image: none !important;
     background-color: transparent;
   }
 }
-/* line 140, ../sass/_team.scss */
+/* line 151, ../sass/_team.scss */
 .ps-slidewrapper nav a:after {
   content: '';
   position: absolute;
@@ -5000,27 +5022,27 @@ html[xmlns] .slides {
   transition: box-shadow 0.4s ease-in-out;
 }
 @media (max-width: 768px) {
-  /* line 140, ../sass/_team.scss */
+  /* line 151, ../sass/_team.scss */
   .ps-slidewrapper nav a:after {
     width: 20px;
     height: 20px;
-    border-left: 1px solid #3e75bb;
-    border-top: 1px solid #3e75bb;
+    border-left: 2px solid #3e75bb;
+    border-top: 2px solid #3e75bb;
     margin: -4px 0 0 -12.5px;
   }
 }
-/* line 168, ../sass/_team.scss */
+/* line 179, ../sass/_team.scss */
 .ps-slidewrapper nav a:first-child {
   box-shadow: inset 0 0 0 9999px rgba(62, 117, 187, 0.5);
 }
 @media (max-width: 768px) {
-  /* line 168, ../sass/_team.scss */
+  /* line 179, ../sass/_team.scss */
   .ps-slidewrapper nav a:first-child {
     box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5);
-    border-right: 1px solid #3e75bb;
+    float: left;
   }
 }
-/* line 174, ../sass/_team.scss */
+/* line 185, ../sass/_team.scss */
 .ps-slidewrapper nav a:first-child:after {
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
@@ -5030,27 +5052,328 @@ html[xmlns] .slides {
   margin: -80px 0 0 -50px;
 }
 @media (max-width: 768px) {
-  /* line 174, ../sass/_team.scss */
+  /* line 185, ../sass/_team.scss */
   .ps-slidewrapper nav a:first-child:after {
-    margin: -18px 0 0 -12.5px;
+    margin: -16px 0 0 -12.5px;
   }
 }
 
-/* line 191, ../sass/_team.scss */
+/* line 202, ../sass/_team.scss */
 .no-touch .ps-slidewrapper > nav > a:hover {
   box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5);
 }
 
-/* line 195, ../sass/_team.scss */
+/* line 206, ../sass/_team.scss */
 .no-touch .ps-slidewrapper > nav > a:first-child:hover {
   box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5);
 }
 
-/* line 199, ../sass/_team.scss */
+/* line 210, ../sass/_team.scss */
 .ps-move {
   -webkit-transition: top 400ms ease-out;
   -moz-transition: top 400ms ease-out;
   -o-transition: top 400ms ease-out;
   -ms-transition: top 400ms ease-out;
   transition: top 400ms ease-out;
+}
+
+/* line 1, ../sass/_alumni.scss */
+#alumni {
+  font-family: "museo_sans_700regular", Helvetica, sans;
+  color: white;
+  text-align: center;
+  display: block;
+  background-color: #3e75bb;
+  background-color: rgba(62, 117, 187, 0.5);
+  width: 200px;
+  height: 30px;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+/* line 19, ../sass/_alumni.scss */
+#alumni:hover, #alumni:focus, #alumni:active {
+  background-color: #3e75bb;
+}
+
+/* line 23, ../sass/_alumni.scss */
+#alumni-modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 46px;
+  left: 0;
+  background-color: #3e75bb;
+  background-color: rgba(62, 117, 187, 0.8);
+}
+@media (max-width: 320px) {
+  /* line 23, ../sass/_alumni.scss */
+  #alumni-modal {
+    height: 90%;
+    position: fixed;
+    overflow: scroll;
+  }
+}
+/* line 37, ../sass/_alumni.scss */
+#alumni-modal .icon-close {
+  color: white;
+  font-size: 1.6em;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+/* line 43, ../sass/_alumni.scss */
+#alumni-modal .icon-close:hover, #alumni-modal .icon-close:focus, #alumni-modal .icon-close:active {
+  font-size: 1.8em;
+}
+@media (max-width: 320px) {
+  /* line 37, ../sass/_alumni.scss */
+  #alumni-modal .icon-close {
+    top: 10px;
+    right: 10px;
+  }
+}
+/* line 51, ../sass/_alumni.scss */
+#alumni-modal h2 {
+  font-family: "museo_sans_700regular", Helvetica, sans;
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+  padding: 20px 0 10px;
+  text-transform: lowercase;
+}
+@media (max-width: 630px) {
+  /* line 51, ../sass/_alumni.scss */
+  #alumni-modal h2 {
+    font-size: 1.6em;
+    margin: 10px 0 0 10px;
+  }
+}
+/* line 63, ../sass/_alumni.scss */
+#alumni-modal .alumni-wrap {
+  width: 50%;
+  float: left;
+  padding: 0 20px;
+}
+@media (max-width: 320px) {
+  /* line 63, ../sass/_alumni.scss */
+  #alumni-modal .alumni-wrap {
+    width: 100%;
+  }
+}
+/* line 70, ../sass/_alumni.scss */
+#alumni-modal .alumni-wrap h4, #alumni-modal .alumni-wrap p {
+  font-family: "museo_sans_700regular", Helvetica, sans;
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+}
+/* line 76, ../sass/_alumni.scss */
+#alumni-modal .alumni-wrap h4 {
+  text-transform: lowercase;
+}
+@media (max-width: 630px) {
+  /* line 76, ../sass/_alumni.scss */
+  #alumni-modal .alumni-wrap h4 {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 630px) {
+  /* line 82, ../sass/_alumni.scss */
+  #alumni-modal .alumni-wrap p {
+    font-size: 0.8em;
+  }
+}
+
+/* line 2, ../sass/_news.scss */
+.news #news-img, .news #pubs-img, .publications #news-img, .publications #pubs-img {
+  background-image: url(../img/news.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  margin-top: 46px;
+  position: relative;
+}
+/* line 10, ../sass/_news.scss */
+.news #news-img .title-wrap, .news #pubs-img .title-wrap, .publications #news-img .title-wrap, .publications #pubs-img .title-wrap {
+  background: #3e75bb;
+  background: rgba(62, 117, 187, 0.5);
+  width: 200px;
+  height: auto;
+  padding: 20px;
+  left: 50%;
+  margin-left: -100px;
+  top: 50%;
+  margin-top: -50px;
+  position: absolute;
+  display: table;
+}
+@media (max-width: 480px) {
+  /* line 10, ../sass/_news.scss */
+  .news #news-img .title-wrap, .news #pubs-img .title-wrap, .publications #news-img .title-wrap, .publications #pubs-img .title-wrap {
+    background: transparent;
+  }
+}
+/* line 25, ../sass/_news.scss */
+.news #news-img .title-wrap .title, .news #pubs-img .title-wrap .title, .publications #news-img .title-wrap .title, .publications #pubs-img .title-wrap .title {
+  font-family: "museo_sans_700regular", Helvetica, sans;
+  font-size: 2.6em;
+  font-weight: 900;
+  color: white;
+  text-transform: lowercase;
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 40, ../sass/_news.scss */
+#news, #pubs {
+  width: 80%;
+  margin: 80px 10% 0;
+  padding-bottom: 20px;
+}
+@media (max-width: 480px) {
+  /* line 40, ../sass/_news.scss */
+  #news, #pubs {
+    margin-top: 65px;
+  }
+}
+/* line 47, ../sass/_news.scss */
+#news h2, #pubs h2 {
+  font-family: "museo_sans_700regular", Helvetica, sans;
+  color: #3e75bb;
+  text-align: left;
+  margin: 10px 0 0 100px;
+  text-transform: lowercase;
+}
+@media (max-width: 480px) {
+  /* line 47, ../sass/_news.scss */
+  #news h2, #pubs h2 {
+    font-size: 18px;
+    margin: 10px 0 0 0;
+  }
+}
+/* line 58, ../sass/_news.scss */
+#news article, #pubs article {
+  width: 100%;
+  position: relative;
+  padding-left: 100px;
+}
+@media (max-width: 480px) {
+  /* line 58, ../sass/_news.scss */
+  #news article, #pubs article {
+    padding-left: 0;
+  }
+}
+/* line 65, ../sass/_news.scss */
+#news article h4, #pubs article h4 {
+  font-family: "museo_sans_700regular", Helvetica, sans;
+  color: #3e75bb;
+  text-transform: lowercase;
+}
+@media (max-width: 480px) {
+  /* line 65, ../sass/_news.scss */
+  #news article h4, #pubs article h4 {
+    font-size: 14px;
+    margin: 10px 0 15px 64px;
+    padding-top: 5px;
+  }
+}
+/* line 75, ../sass/_news.scss */
+#news article .date, #pubs article .date {
+  font-family: "museo_sans_700regular", Helvetica, sans;
+  color: #3e75bb;
+  text-transform: lowercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 7px;
+}
+@media (max-width: 480px) {
+  /* line 75, ../sass/_news.scss */
+  #news article .date, #pubs article .date {
+    font-size: 10px;
+  }
+}
+/* line 88, ../sass/_news.scss */
+#news article p a, #pubs article p a {
+  color: #3e75bb;
+}
+/* line 90, ../sass/_news.scss */
+#news article p a:hover, #news article p a:focus, #news article p a:active, #pubs article p a:hover, #pubs article p a:focus, #pubs article p a:active {
+  color: rgba(62, 117, 187, 0.5);
+}
+@media (max-width: 480px) {
+  /* line 87, ../sass/_news.scss */
+  #news article p, #pubs article p {
+    font-size: 1em;
+  }
+}
+/* line 98, ../sass/_news.scss */
+#news article img, #pubs article img {
+  width: 80%;
+  margin-bottom: 10px;
+}
+@media (max-width: 480px) {
+  /* line 98, ../sass/_news.scss */
+  #news article img, #pubs article img {
+    width: 100%;
+  }
+}
+
+/* line 108, ../sass/_news.scss */
+.publications #pubs-img {
+  background-image: url(../img/pubs.jpg);
+}
+/* line 110, ../sass/_news.scss */
+.publications #pubs-img .title-wrap {
+  margin-left: -131px;
+}
+/* line 114, ../sass/_news.scss */
+.publications .abstract {
+  display: none;
+}
+/* line 117, ../sass/_news.scss */
+.publications .read-abstract {
+  color: white;
+  font-family: "museo_sans_700regular", Helvetica, sans;
+  text-transform: lowercase;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.5em;
+  display: block;
+  background: #3e75bb;
+  background: rgba(62, 117, 187, 0.5);
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+/* line 135, ../sass/_news.scss */
+.publications .read-abstract:hover, .publications .read-abstract:active, .publications .read-abstract:focus {
+  background: #3e75bb;
+  cursor: pointer;
+  color: white;
+}
+/* line 141, ../sass/_news.scss */
+.publications .read-abstract.open {
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
 }
