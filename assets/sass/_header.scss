@@ -6,7 +6,7 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		z-index: 2;
+		z-index: 3;
 		box-shadow: 0 0 5px 0px $blue;
 		h1{
 			font-family: $museobold, Helvetica, sans;
@@ -46,6 +46,7 @@
 					float: left;
 					position: relative;
 					a{
+						font-family: $museobold, Helvetica, sans;
 						display: block;
 						width: 100%;
 						color: $blue;

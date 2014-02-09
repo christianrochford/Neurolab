@@ -57,6 +57,11 @@ if($(window).width() > 767){
     });
 }
 
+//initialize flexslider
+$(window).load(function() {
+  $('.flexslider').flexslider();
+});
+
 // in-page navigation
 $('#intro-arrow-down').on('click', function(e){
 	e.preventDefault();

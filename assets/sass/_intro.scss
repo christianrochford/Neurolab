@@ -2,29 +2,37 @@
 	position: relative;
 	#img{
 		width: 100%;
-		height: 70%;
+		height: 100%;
 		margin-top: 46px;
 		background-image: url(../img/brain2.jpg);
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: 50% 50%;
 		@include breakpoint(mobile-landscape){
-			height: 50%;
+			height: 90%;
 		}
 	}
 	#quote{
 		width: 90%;
-		height: 30%;
+		height: 100px;
 		margin: 0 5%;
+		position: absolute;
+		top: 0px;
 		display: table;
 		@include breakpoint(mobile-landscape){
-			height: 50%;
+			height: 20%;
 		}
 		p{
-			font-size: 1.2em;
+			font-family: $museobold, Helvetica, sans;
+			color: $blue;
+			text-transform: lowercase;
+			font-size: 2em;
 			display: table-cell;
 			vertical-align: middle;
 			text-align: center;
+			@include breakpoint(tablet){
+				font-size: 1.6em;
+			}
 			@include breakpoint(mobile-landscape){
 				font-size: 1em;
 			}
