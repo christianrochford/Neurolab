@@ -7,6 +7,11 @@
 		height: 600px;
 		margin-top: 46px;
 		position: relative;
+		.arrow-wrap{
+			#news-arrow-down, #pubs-arrow-down{
+				color: $white;
+			}
+		}
 		.title-wrap{
 			background: $blue;
 			background: $blue-opaque;
@@ -111,29 +116,61 @@
 			margin-left: -131px;
 		}
 	}
+	#pubs{
+		width: 100%;
+		margin: 80px 0 0;
+		article{
+			padding: 0 10%;
+			h4{
+				margin: 40px 0 20px 0;
+			}
+		}
+	}
 	.abstract{
 		display: none;
+	}
+	.more-wrap{
+		display: block;
+		background: $blue;
+		background: $blue-opaque;
+		width: 21px;
+		height: 21px;
+		position: absolute;
+		bottom: 0;
+		right: 100px;
+		-webkit-transition: all 300ms ease-in-out;
+	    -moz-transition: all 300ms ease-in-out;
+	    -o-transition: all 300ms ease-in-out;
+	    transition: all 300ms ease-in-out;
+		@include breakpoint(tablet){
+			right: 40px;
+		}
+		@include breakpoint(mobile-landscape){
+			right: 10%;
+			bottom: -10px;
+		}
+	}
+	.more-wrap.hover{
+		background: $blue;
 	}
 	.read-abstract{
 		color: $white;
 		font-family: $museobold, Helvetica, sans;
 		text-transform: lowercase;
 		position: absolute;
-		bottom: 0;
-		right: 0;
 		font-size: 1.5em;
 		display: block;
-		background: $blue;
-		background: $blue-opaque;
 		width: 21px;
 		height: 21px;
 		text-align: center;
+		position: absolute;
+		top: 0;
+		left: 0;
 		-webkit-transition: all 300ms ease-in-out;
 	    -moz-transition: all 300ms ease-in-out;
 	    -o-transition: all 300ms ease-in-out;
 	    transition: all 300ms ease-in-out;
 		&:hover, &:active, &:focus{
-			background: $blue;
 			cursor: pointer;
 			color: $white;
 		}

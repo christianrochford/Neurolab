@@ -110,14 +110,25 @@ $('#alumni-close').on('click', function(e){
 })
 
 // publications
-$('.read-abstract').on('click', function(){
-	$('.abstract').slideUp(300);
-	$(this).prev().slideToggle(300);
-	$(this).addClass('open');
-})
-$('.read-abstract.open').on('click', function(){
-	$('.abstract').slideUp(300);
-	$(this).removeClass('open');
+$('.more-wrap').hover(
+	function(){
+		$(this).addClass('hover');
+	},
+	function(){
+		$(this).removeClass('hover');
+	})
+$('.more-wrap').on('click', function(){
+	if($(this).hasClass('open')){
+		$(this).prev().slideUp(300);
+		$(this).removeClass('open');
+		$('.read-abstract').removeClass('open');
+	} else {
+		$('.abstract').slideUp(300);
+		$(this).prev().slideDown(300);
+		$(this).addClass('open');
+		$('.read-abstract').removeClass('open');
+		$(this).find('.read-abstract').addClass('open');
+	}
 })
 
 }());
