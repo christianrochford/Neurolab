@@ -2,7 +2,7 @@
 
 // set page height
 
-$('#intro, #about, #about-content, #research, #research-content, #news-img, #pubs-img').css({height:$(window).height()-46 + 'px'});
+$('#intro, #about, #about-content, #research, #research-content, #team-img, #news-img, #pubs-img').css({height:$(window).height()-46 + 'px'});
 if($(window).width()>320){
 	$('#questions').css({height:$(window).height()-46 + 'px'});
 } else {
@@ -57,11 +57,6 @@ if($(window).width() > 767){
     });
 }
 
-//initialize flexslider
-$(window).load(function() {
-  $('.flexslider').flexslider();
-});
-
 // in-page navigation
 $('#intro-arrow-down').on('click', function(e){
 	e.preventDefault();
@@ -83,6 +78,10 @@ $('#research-content-arrow-down').on('click', function(e){
 	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#questions').offset().top -46}, 500);
 })
+$('#team-arrow-down').on('click', function(e){
+	e.preventDefault();
+	$('html, body').animate({scrollTop: $('#team').offset().top -46}, 500);
+})
 $('#news-arrow-down').on('click', function(e){
 	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#news').offset().top -46}, 500);
@@ -92,10 +91,29 @@ $('#pubs-arrow-down').on('click', function(e){
 	$('html, body').animate({scrollTop: $('#pubs').offset().top -46}, 500);
 })
 
-// initialise vertical slider
-$(function(){
-	Slider.init();
-});
+// team members
+$('#carousel').flexslider({
+    animation: "fade",
+    controlNav: true,
+    animationLoop: true,
+    slideshow: false,
+    itemWidth: 240,
+    itemMargin: 0,
+    asNavFor: '#team-slider'
+  });
+   
+  $('#team-slider').flexslider({
+    animation: "fade",
+    controlNav: false,
+    directionNav: false,
+    animationLoop: true,
+    slideshow: false,
+    animationSpeed: 0,
+    sync: "#carousel"
+  });
+
+//initialize flexslider
+$('#research-text.flexslider').flexslider();
 
 // alumni modal
 $('#alumni').on('click', function(e){

@@ -1,226 +1,140 @@
 .team{
-	height: 100%;
-	@include breakpoint(mobile-landscape){
-		height: 640px;
-	}
-}
-.ps-container {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	color: $blue;
-	background: $white;
-	z-index: 0;
-	@include breakpoint(mobile-landscape){
-		height: 640px;
-	}
-	div{
-		position: absolute;
-		width: 50%;
-		@include breakpoint(tablet){
-			width: 100%;
-		}
-	}
-}
-
-.ps-contentwrapper {
-	top: 46px;
-	right: 0;
-	bottom: 0px;
-	overflow: hidden;
-	z-index: 1000;
-	@include breakpoint(tablet){
-		height: 50%;
-		top: 50%;
-	}
-	@include breakpoint(mobile-landscape){
-		height: 420px;
-		top: 240px;
-	}
-	.ps-content {
-		background: $white;
+	#team-img{
+		background-image: url(../img/group_photo.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
 		width: 100%;
-		height: 100%;
-		padding: 50px;
-		@include breakpoint(tablet){
-			padding: 10px;
-		}
-		h2 {
-			font-family: $museobold, Helvetica, sans;
-			color: $blue;
-			text-align: left;
-			margin: 10px 0;
-			text-transform: lowercase;
-			@include breakpoint(tablet){
-				font-size: 18px;
-				margin: 10px 0 0 10px;
+		height: 600px;
+		margin-top: 46px;
+		position: relative;
+		.arrow-wrap{
+			#team-arrow-down{
+				color: $blue;
 			}
 		}
-		h4{
-			font-family: $museobold, Helvetica, sans;
-			color: $blue;
-			text-transform: lowercase;
-			@include breakpoint(tablet){
-				font-size: 14px;
-				margin: 10px 0 15px 10px;
-			}
-		}
-		p {
-			font-family: 'droid_serifregular';
-			color: $grey;
-			font-weight: normal;
-			font-size: 14px;
-			line-height: 20px;
-			@include breakpoint(tablet){
-				height: auto;
-				padding: 0 10px;
-			}
-		}
-	}
-}
-
-.ps-slidewrapper {
-	left: 0px;
-	top: 0px;
-	height: 100%;
-	overflow: hidden;
-		.ps-slides {
-		top: 0px;
-		bottom: 200px;
-		width: 100%;
-		@include breakpoint(tablet){
-			top: 46px;
-			height: 50%;
-		}
-		@include breakpoint(mobile-landscape){
-			height: 194px;
-		}
-		div {
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			background-color: $white;
-			background-position: center top;
-			background-repeat: no-repeat;
-			background-size: cover;
-			@include breakpoint(tablet){
-				background-position: center center;
-			}
-		}
-	}
-	nav {
-		width: 100%;
-		height: 200px;
-		position: absolute;
-		bottom: 0px;
-		right: 0px;
-		z-index: 1000;
-		@include breakpoint(tablet){
-			height: 25px;
-			position: absolute;
+		.title-wrap{
+			background: $blue;
+			background: $blue-opaque;
+			width: 200px;
+			height: auto;
+			padding: 20px;
+			left: 50%;
+			margin-left: -100px;
 			top: 50%;
-			margin-top: -25px;
-		}
-		@include breakpoint(mobile-landscape){
-			top: 240px;
-		}
-		a {
-			width: 50%;
-			height: 100%;
-			position: relative;
-			float: left;
-			box-shadow: inset 0 0 0 9999px $blue-opaque;
-			outline: none;
-			background-color: $white;
-			background-position: center top;
-			background-repeat: no-repeat;
-			background-size: cover;
-			-webkit-transition: box-shadow 0.4s ease-in-out;
-			-moz-transition: box-shadow 0.4s ease-in-out;
-			-ms-transition: box-shadow 0.4s ease-in-out;
-			-o-transition: box-shadow 0.4s ease-in-out;
-			transition: box-shadow 0.4s ease-in-out;
-			@include breakpoint(tablet){
-				width: 49.8%;
-				float: right;
-				box-shadow: inset 0 0 0 9999px $white-opaque;
-				background-image: none !Important;
-				background-color: transparent;
+			margin-top: -50px;
+			position: absolute;
+			display: table;
+			@include breakpoint(mobile-landscape){
+				background: transparent;
 			}
-			&:after {
-				content: '';
-				position: absolute;
-				width: 100px;
-				height: 100px;
-				top: 50%;
-				left: 50%;
-				margin: -20px 0 0 -50px;
-				-webkit-transform: rotate(45deg);
-				-moz-transform: rotate(45deg);
-				-o-transform: rotate(45deg);
-				-ms-transform: rotate(45deg);
-				transform: rotate(45deg);
-				border-left: 1px solid $white;
-				border-top: 1px solid $white;
-				-webkit-transition: box-shadow 0.4s ease-in-out;
-				-moz-transition: box-shadow 0.4s ease-in-out;
-				-ms-transition: box-shadow 0.4s ease-in-out;
-				-o-transition: box-shadow 0.4s ease-in-out;
-				transition: box-shadow 0.4s ease-in-out;
-				@include breakpoint(tablet){
-					width: 20px;
-					height: 20px;
-					border-left: 2px solid $blue;
-					border-top: 2px solid $blue;
-					margin: -4px 0 0 -12.5px;	
-				}
+			.title{
+				font-family: $museobold, Helvetica, sans;
+				font-size: 2.6em;
+				font-weight: 900;
+				color: $white;
+				text-transform: lowercase;
+				width: 100%;
+				height: 100%;
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
 			}
-			&:first-child {
-				box-shadow: inset 0 0 0 9999px $blue-opaque;
-				@include breakpoint(tablet){
-					box-shadow: inset 0 0 0 9999px $white-opaque;
-					float: left;
-				}
-				&:after {
-					-webkit-transform: rotate(-135deg);
-					-moz-transform: rotate(-135deg);
-					-o-transform: rotate(-135deg);
-					-ms-transform: rotate(-135deg);
-					transform: rotate(-135deg);
-					margin: -80px 0 0 -50px;
-					@include breakpoint(tablet){
-						margin: -16px 0 0 -12.5px;	
+		}
+	}
+	#team{
+		#team-slider{
+			height: auto;
+			width: 60%;
+			margin: 0 20%;
+			@include breakpoint(mobile-landscape){
+				width: 80%;
+				margin: 0 10%;
+			}
+			ul.slides{
+				li{
+					h4, h5{
+						font-family: $museobold, sans;
+						color: $blue;
+						text-align: center;
+						margin: 0;
+						text-transform: lowercase;
+						margin-bottom: 10px;
+					}
+					h5{
+						&:after, &:before{
+							content: '-';
+						}
+					}
+					p{
+						font-family: $museoregular, sans;
+						font-size: 1.2em;
+						text-align: center;
+						@include breakpoint(mobile-landscape){
+							font-size: 1em;
+						} 
 					}
 				}
 			}
-
+		}
+		#carousel.flexslider{
+			width: 240px;
+			height: auto;
+			margin: 0 auto;
+			.slides{
+				li{
+					margin: 50px 0 20px;
+					z-index: 0;
+					img{
+						width: 240px;
+						height: 240px;
+						margin: 0;
+						overflow: hidden;
+						filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+					    filter: gray; /* IE6-9 */
+					    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+					    -moz-transition:  0.3s ease-in-out; 
+				    	-ms-transition:  0.3s ease-in-out; 
+				    	-o-transition:  0.3s ease-in-out; 
+				    	transition:  0.3s ease-in-out;
+					    &:hover, &:focus, &:active{
+					    	cursor: pointer;
+							filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    						-webkit-filter: grayscale(0%);
+					    }
+					}
+				}
+			}
+			.flex-direction-nav{
+				@include breakpoint(mobile-landscape){
+					display: none;
+				}
+				a{
+					z-index: 2;
+				}
+				.flex-next{
+					right: -50px;
+				}
+				.flex-prev{
+					left: -50px;
+				}
+			}
+			.flex-control-nav{
+				display: none;
+				@include breakpoint(mobile-landscape){
+					display: block;
+					bottom: 20px;
+					z-index: 2;
+				}
+			}
+			.flex-control-paging li{
+				a{
+					border-radius: 0px;
+					background-color: $blue-opaque;
+				}
+				a.flex-active{
+					background-color: $blue;
+				} 
+			} 
 		}
 	}
 }
-
-.no-touch .ps-slidewrapper > nav > a:hover {
-	box-shadow: inset 0 0 0 9999px $white-opaque;
-}
-
-.no-touch .ps-slidewrapper > nav > a:first-child:hover {
-	box-shadow: inset 0 0 0 9999px $white-opaque;
-}
-
-.ps-move {
-	-webkit-transition: top 400ms ease-out;
-	-moz-transition: top 400ms ease-out;
-	-o-transition: top 400ms ease-out;
-	-ms-transition: top 400ms ease-out;
-	transition: top 400ms ease-out;
-}
-
-
-
-
-
-
-
-
-
-

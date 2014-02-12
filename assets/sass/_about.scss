@@ -58,7 +58,7 @@
 	float: left;
 	position: relative;
 	.twelve{
-		width: 100%; 
+		width: 100% !important; 
 		height: 100%;
 		float: left;
 		padding: 0;
@@ -83,7 +83,8 @@
 		}
 	}
 	p{
-		font-size: 2em;
+		font-family: $museolight;
+		font-size: 1.6em;
 		width: 80%;
 		margin: 0 10%;
 		display: table-cell;
@@ -186,7 +187,8 @@
 		#questions-text{
 			p{
 				color: $white;
-				font-size: 2em;
+				font-family: $museolight;
+				font-size: 1.6em;
 				text-align: center;
 				@include breakpoint(tablet){
 					font-size: 1.5em;
