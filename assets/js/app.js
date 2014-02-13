@@ -94,7 +94,7 @@ $('#pubs-arrow-down').on('click', function(e){
 // team members
 $('#carousel').flexslider({
     animation: "fade",
-    controlNav: true,
+    controlNav: false,
     animationLoop: true,
     slideshow: false,
     itemWidth: 240,
@@ -111,6 +111,14 @@ $('#carousel').flexslider({
     animationSpeed: 0,
     sync: "#carousel"
   });
+
+  $(document).on('click', '.flex-next', function(){
+  	$('#team-slider').flexslider('next');
+  })
+
+  $(document).on('click', '.flex-prev', function(){
+  	$('#team-slider').flexslider('prev');
+  })
 
 //initialize flexslider
 $('#research-text.flexslider').flexslider();

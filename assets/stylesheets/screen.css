@@ -4782,14 +4782,7 @@ html[xmlns] .slides {
 }
 
 /* line 1, ../sass/_alumni.scss */
-#alumni-wrap {
-  width: 100%;
-  height: auto;
-  position: relative;
-  left: 50%;
-}
-/* line 6, ../sass/_alumni.scss */
-#alumni-wrap #alumni {
+#alumni {
   font-family: "museo_sans_700regular", Helvetica, sans;
   color: white;
   text-align: center;
@@ -4797,22 +4790,23 @@ html[xmlns] .slides {
   background-color: #3e75bb;
   background-color: rgba(62, 117, 187, 0.5);
   width: 200px;
+  float: left;
   height: 30px;
   padding: 10px;
-  position: absolute;
-  bottom: 40px;
+  position: relative;
+  left: 50%;
   margin-left: -100px;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-/* line 23, ../sass/_alumni.scss */
-#alumni-wrap #alumni:hover, #alumni-wrap #alumni:focus, #alumni-wrap #alumni:active {
+/* line 19, ../sass/_alumni.scss */
+#alumni:hover, #alumni:focus, #alumni:active {
   background-color: #3e75bb;
 }
 
-/* line 28, ../sass/_alumni.scss */
+/* line 23, ../sass/_alumni.scss */
 #alumni-modal {
   display: none;
   width: 100%;
@@ -4820,18 +4814,19 @@ html[xmlns] .slides {
   position: fixed;
   top: 46px;
   left: 0;
+  z-index: 10;
   background-color: #3e75bb;
   background-color: rgba(62, 117, 187, 0.8);
 }
 @media (max-width: 320px) {
-  /* line 28, ../sass/_alumni.scss */
+  /* line 23, ../sass/_alumni.scss */
   #alumni-modal {
     height: 90%;
     position: fixed;
     overflow: scroll;
   }
 }
-/* line 42, ../sass/_alumni.scss */
+/* line 38, ../sass/_alumni.scss */
 #alumni-modal .icon-close {
   color: white;
   font-size: 1.6em;
@@ -4839,18 +4834,18 @@ html[xmlns] .slides {
   top: 20px;
   right: 20px;
 }
-/* line 48, ../sass/_alumni.scss */
+/* line 44, ../sass/_alumni.scss */
 #alumni-modal .icon-close:hover, #alumni-modal .icon-close:focus, #alumni-modal .icon-close:active {
   font-size: 1.8em;
 }
 @media (max-width: 320px) {
-  /* line 42, ../sass/_alumni.scss */
+  /* line 38, ../sass/_alumni.scss */
   #alumni-modal .icon-close {
     top: 10px;
     right: 10px;
   }
 }
-/* line 56, ../sass/_alumni.scss */
+/* line 52, ../sass/_alumni.scss */
 #alumni-modal h2 {
   font-family: "museo_sans_700regular", Helvetica, sans;
   color: white;
@@ -4860,43 +4855,43 @@ html[xmlns] .slides {
   text-transform: lowercase;
 }
 @media (max-width: 630px) {
-  /* line 56, ../sass/_alumni.scss */
+  /* line 52, ../sass/_alumni.scss */
   #alumni-modal h2 {
     font-size: 1.6em;
     margin: 10px 0 0 10px;
   }
 }
-/* line 68, ../sass/_alumni.scss */
+/* line 64, ../sass/_alumni.scss */
 #alumni-modal .alumni-wrap {
   width: 50%;
   float: left;
   padding: 0 20px;
 }
 @media (max-width: 320px) {
-  /* line 68, ../sass/_alumni.scss */
+  /* line 64, ../sass/_alumni.scss */
   #alumni-modal .alumni-wrap {
     width: 100%;
   }
 }
-/* line 75, ../sass/_alumni.scss */
+/* line 71, ../sass/_alumni.scss */
 #alumni-modal .alumni-wrap h4, #alumni-modal .alumni-wrap p {
   font-family: "museo_sans_700regular", Helvetica, sans;
   color: white;
   text-align: center;
   margin: 10px 0;
 }
-/* line 81, ../sass/_alumni.scss */
+/* line 77, ../sass/_alumni.scss */
 #alumni-modal .alumni-wrap h4 {
   text-transform: lowercase;
 }
 @media (max-width: 630px) {
-  /* line 81, ../sass/_alumni.scss */
+  /* line 77, ../sass/_alumni.scss */
   #alumni-modal .alumni-wrap h4 {
     font-size: 1.2em;
   }
 }
 @media (max-width: 630px) {
-  /* line 87, ../sass/_alumni.scss */
+  /* line 83, ../sass/_alumni.scss */
   #alumni-modal .alumni-wrap p {
     font-size: 0.8em;
   }
@@ -5140,16 +5135,17 @@ html[xmlns] .slides {
   background-image: url(../img/group_photo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
   width: 100%;
   height: 600px;
   margin-top: 46px;
   position: relative;
 }
-/* line 11, ../sass/_team.scss */
+/* line 12, ../sass/_team.scss */
 .team #team-img .arrow-wrap #team-arrow-down {
   color: #3e75bb;
 }
-/* line 15, ../sass/_team.scss */
+/* line 16, ../sass/_team.scss */
 .team #team-img .title-wrap {
   background: #3e75bb;
   background: rgba(62, 117, 187, 0.5);
@@ -5164,12 +5160,12 @@ html[xmlns] .slides {
   display: table;
 }
 @media (max-width: 480px) {
-  /* line 15, ../sass/_team.scss */
+  /* line 16, ../sass/_team.scss */
   .team #team-img .title-wrap {
     background: transparent;
   }
 }
-/* line 30, ../sass/_team.scss */
+/* line 31, ../sass/_team.scss */
 .team #team-img .title-wrap .title {
   font-family: "museo_sans_700regular", Helvetica, sans;
   font-size: 2.6em;
@@ -5183,19 +5179,25 @@ html[xmlns] .slides {
   text-align: center;
 }
 /* line 45, ../sass/_team.scss */
+.team #team {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+/* line 49, ../sass/_team.scss */
 .team #team #team-slider {
   height: auto;
   width: 60%;
   margin: 0 20%;
 }
 @media (max-width: 480px) {
-  /* line 45, ../sass/_team.scss */
+  /* line 49, ../sass/_team.scss */
   .team #team #team-slider {
     width: 80%;
     margin: 0 10%;
   }
 }
-/* line 55, ../sass/_team.scss */
+/* line 59, ../sass/_team.scss */
 .team #team #team-slider ul.slides li h4, .team #team #team-slider ul.slides li h5 {
   font-family: "museo_sans_700regular", sans;
   color: #3e75bb;
@@ -5204,34 +5206,34 @@ html[xmlns] .slides {
   text-transform: lowercase;
   margin-bottom: 10px;
 }
-/* line 64, ../sass/_team.scss */
+/* line 68, ../sass/_team.scss */
 .team #team #team-slider ul.slides li h5:after, .team #team #team-slider ul.slides li h5:before {
   content: '-';
 }
-/* line 68, ../sass/_team.scss */
+/* line 72, ../sass/_team.scss */
 .team #team #team-slider ul.slides li p {
   font-family: "museo_sans_500regular", sans;
   font-size: 1.2em;
   text-align: center;
 }
 @media (max-width: 480px) {
-  /* line 68, ../sass/_team.scss */
+  /* line 72, ../sass/_team.scss */
   .team #team #team-slider ul.slides li p {
     font-size: 1em;
   }
 }
-/* line 79, ../sass/_team.scss */
+/* line 83, ../sass/_team.scss */
 .team #team #carousel.flexslider {
   width: 240px;
   height: auto;
   margin: 0 auto;
 }
-/* line 84, ../sass/_team.scss */
+/* line 88, ../sass/_team.scss */
 .team #team #carousel.flexslider .slides li {
   margin: 50px 0 20px;
   z-index: 0;
 }
-/* line 87, ../sass/_team.scss */
+/* line 91, ../sass/_team.scss */
 .team #team #carousel.flexslider .slides li img {
   width: 240px;
   height: 240px;
@@ -5248,48 +5250,33 @@ html[xmlns] .slides {
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-/* line 99, ../sass/_team.scss */
+/* line 103, ../sass/_team.scss */
 .team #team #carousel.flexslider .slides li img:hover, .team #team #carousel.flexslider .slides li img:focus, .team #team #carousel.flexslider .slides li img:active {
   cursor: pointer;
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(0%);
 }
-@media (max-width: 480px) {
-  /* line 107, ../sass/_team.scss */
-  .team #team #carousel.flexslider .flex-direction-nav {
-    display: none;
-  }
-}
-/* line 111, ../sass/_team.scss */
+/* line 112, ../sass/_team.scss */
 .team #team #carousel.flexslider .flex-direction-nav a {
   z-index: 2;
 }
-/* line 114, ../sass/_team.scss */
+/* line 115, ../sass/_team.scss */
 .team #team #carousel.flexslider .flex-direction-nav .flex-next {
   right: -50px;
 }
-/* line 117, ../sass/_team.scss */
+@media (max-width: 480px) {
+  /* line 115, ../sass/_team.scss */
+  .team #team #carousel.flexslider .flex-direction-nav .flex-next {
+    right: -35px;
+  }
+}
+/* line 121, ../sass/_team.scss */
 .team #team #carousel.flexslider .flex-direction-nav .flex-prev {
   left: -50px;
 }
-/* line 121, ../sass/_team.scss */
-.team #team #carousel.flexslider .flex-control-nav {
-  display: none;
-}
 @media (max-width: 480px) {
   /* line 121, ../sass/_team.scss */
-  .team #team #carousel.flexslider .flex-control-nav {
-    display: block;
-    bottom: 20px;
-    z-index: 2;
+  .team #team #carousel.flexslider .flex-direction-nav .flex-prev {
+    left: -35px;
   }
-}
-/* line 130, ../sass/_team.scss */
-.team #team #carousel.flexslider .flex-control-paging li a {
-  border-radius: 0px;
-  background-color: rgba(62, 117, 187, 0.5);
-}
-/* line 134, ../sass/_team.scss */
-.team #team #carousel.flexslider .flex-control-paging li a.flex-active {
-  background-color: #3e75bb;
 }

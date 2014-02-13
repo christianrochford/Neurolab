@@ -3,6 +3,7 @@
 		background-image: url(../img/group_photo.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-position: top center;
 		width: 100%;
 		height: 600px;
 		margin-top: 46px;
@@ -42,6 +43,9 @@
 		}
 	}
 	#team{
+		width: 100%;
+		height: auto;
+		float: left;
 		#team-slider{
 			height: auto;
 			width: 60%;
@@ -105,36 +109,22 @@
 				}
 			}
 			.flex-direction-nav{
-				@include breakpoint(mobile-landscape){
-					display: none;
-				}
 				a{
 					z-index: 2;
 				}
 				.flex-next{
 					right: -50px;
+					@include breakpoint(mobile-landscape){
+						right: -35px;
+					}
 				}
 				.flex-prev{
 					left: -50px;
+					@include breakpoint(mobile-landscape){
+						left: -35px;
+					}
 				}
 			}
-			.flex-control-nav{
-				display: none;
-				@include breakpoint(mobile-landscape){
-					display: block;
-					bottom: 20px;
-					z-index: 2;
-				}
-			}
-			.flex-control-paging li{
-				a{
-					border-radius: 0px;
-					background-color: $blue-opaque;
-				}
-				a.flex-active{
-					background-color: $blue;
-				} 
-			} 
 		}
 	}
 }
