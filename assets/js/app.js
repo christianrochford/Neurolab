@@ -2,7 +2,7 @@
 
 // set page height
 
-$('#intro, #about, #about-content, #research, #research-content, #team-img, #news-img, #pubs-img').css({height:$(window).height()-46 + 'px'});
+$('#intro, #about, #about-content, #research, #research-content, #team-img, #news-img, #pubs-img , #map').css({height:$(window).height()-46 + 'px'});
 if($(window).width()>320){
 	$('#questions').css({height:$(window).height()-46 + 'px'});
 } else {
@@ -89,6 +89,10 @@ $('#news-arrow-down').on('click', function(e){
 $('#pubs-arrow-down').on('click', function(e){
 	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#pubs').offset().top -46}, 500);
+})
+$('#contact-arrow-down').on('click', function(e){
+	e.preventDefault();
+	$('html, body').animate({scrollTop: $('#contact-details').offset().top -46}, 500);
 })
 
 // team members
