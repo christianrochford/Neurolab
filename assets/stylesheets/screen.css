@@ -3801,7 +3801,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 
 /* line 2, ../sass/_header.scss */
-.home header, .team header, .news header, .publications header, .contact header {
+.home header, .research header, .team header, .news header, .publications header, .contact header {
   width: 100%;
   height: 46px;
   background-color: white;
@@ -3812,7 +3812,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   box-shadow: 0 0 5px 0px #3e75bb;
 }
 /* line 11, ../sass/_header.scss */
-.home header h1, .team header h1, .news header h1, .publications header h1, .contact header h1 {
+.home header h1, .research header h1, .team header h1, .news header h1, .publications header h1, .contact header h1 {
   font-family: "museo_sans_700regular", Helvetica, sans;
   font-size: 2.6em;
   font-weight: 900;
@@ -3827,17 +3827,17 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 @media (max-width: 480px) {
   /* line 11, ../sass/_header.scss */
-  .home header h1, .team header h1, .news header h1, .publications header h1, .contact header h1 {
+  .home header h1, .research header h1, .team header h1, .news header h1, .publications header h1, .contact header h1 {
     font-size: 1.6em;
     padding-top: 10px;
   }
 }
 /* line 27, ../sass/_header.scss */
-.home header h1 a, .team header h1 a, .news header h1 a, .publications header h1 a, .contact header h1 a {
+.home header h1 a, .research header h1 a, .team header h1 a, .news header h1 a, .publications header h1 a, .contact header h1 a {
   color: #3e75bb;
 }
 /* line 31, ../sass/_header.scss */
-.home header nav, .team header nav, .news header nav, .publications header nav, .contact header nav {
+.home header nav, .research header nav, .team header nav, .news header nav, .publications header nav, .contact header nav {
   width: 60%;
   float: right;
   margin-top: 15px;
@@ -3848,22 +3848,22 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 @media (max-width: 768px) {
   /* line 31, ../sass/_header.scss */
-  .home header nav, .team header nav, .news header nav, .publications header nav, .contact header nav {
+  .home header nav, .research header nav, .team header nav, .news header nav, .publications header nav, .contact header nav {
     display: none;
   }
 }
 /* line 42, ../sass/_header.scss */
-.home header nav ul, .team header nav ul, .news header nav ul, .publications header nav ul, .contact header nav ul {
+.home header nav ul, .research header nav ul, .team header nav ul, .news header nav ul, .publications header nav ul, .contact header nav ul {
   width: 100%;
 }
 /* line 44, ../sass/_header.scss */
-.home header nav ul li, .team header nav ul li, .news header nav ul li, .publications header nav ul li, .contact header nav ul li {
+.home header nav ul li, .research header nav ul li, .team header nav ul li, .news header nav ul li, .publications header nav ul li, .contact header nav ul li {
   width: 16.6666%;
   float: left;
   position: relative;
 }
 /* line 48, ../sass/_header.scss */
-.home header nav ul li a, .team header nav ul li a, .news header nav ul li a, .publications header nav ul li a, .contact header nav ul li a {
+.home header nav ul li a, .research header nav ul li a, .team header nav ul li a, .news header nav ul li a, .publications header nav ul li a, .contact header nav ul li a {
   font-family: "museo_sans_700regular", Helvetica, sans;
   display: block;
   width: 100%;
@@ -3871,22 +3871,22 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   text-align: center;
 }
 /* line 54, ../sass/_header.scss */
-.home header nav ul li a:hover, .home header nav ul li a:focus, .home header nav ul li a:active, .team header nav ul li a:hover, .team header nav ul li a:focus, .team header nav ul li a:active, .news header nav ul li a:hover, .news header nav ul li a:focus, .news header nav ul li a:active, .publications header nav ul li a:hover, .publications header nav ul li a:focus, .publications header nav ul li a:active, .contact header nav ul li a:hover, .contact header nav ul li a:focus, .contact header nav ul li a:active {
+.home header nav ul li a:hover, .home header nav ul li a:focus, .home header nav ul li a:active, .research header nav ul li a:hover, .research header nav ul li a:focus, .research header nav ul li a:active, .team header nav ul li a:hover, .team header nav ul li a:focus, .team header nav ul li a:active, .news header nav ul li a:hover, .news header nav ul li a:focus, .news header nav ul li a:active, .publications header nav ul li a:hover, .publications header nav ul li a:focus, .publications header nav ul li a:active, .contact header nav ul li a:hover, .contact header nav ul li a:focus, .contact header nav ul li a:active {
   color: rgba(62, 117, 187, 0.5);
 }
 /* line 58, ../sass/_header.scss */
-.home header nav ul li:after, .team header nav ul li:after, .news header nav ul li:after, .publications header nav ul li:after, .contact header nav ul li:after {
+.home header nav ul li:after, .research header nav ul li:after, .team header nav ul li:after, .news header nav ul li:after, .publications header nav ul li:after, .contact header nav ul li:after {
   content: '/';
   color: #3e75bb;
   position: relative;
   top: -20px;
 }
 /* line 64, ../sass/_header.scss */
-.home header nav ul li:first-child:after, .team header nav ul li:first-child:after, .news header nav ul li:first-child:after, .publications header nav ul li:first-child:after, .contact header nav ul li:first-child:after {
+.home header nav ul li:first-child:after, .research header nav ul li:first-child:after, .team header nav ul li:first-child:after, .news header nav ul li:first-child:after, .publications header nav ul li:first-child:after, .contact header nav ul li:first-child:after {
   content: '';
 }
 /* line 70, ../sass/_header.scss */
-.home header #menu, .team header #menu, .news header #menu, .publications header #menu, .contact header #menu {
+.home header #menu, .research header #menu, .team header #menu, .news header #menu, .publications header #menu, .contact header #menu {
   display: none;
   width: 25px;
   height: 20px;
@@ -3900,12 +3900,12 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 @media (max-width: 768px) {
   /* line 70, ../sass/_header.scss */
-  .home header #menu, .team header #menu, .news header #menu, .publications header #menu, .contact header #menu {
+  .home header #menu, .research header #menu, .team header #menu, .news header #menu, .publications header #menu, .contact header #menu {
     display: block;
   }
 }
 /* line 84, ../sass/_header.scss */
-.home header #menu .menu-bar, .team header #menu .menu-bar, .news header #menu .menu-bar, .publications header #menu .menu-bar, .contact header #menu .menu-bar {
+.home header #menu .menu-bar, .research header #menu .menu-bar, .team header #menu .menu-bar, .news header #menu .menu-bar, .publications header #menu .menu-bar, .contact header #menu .menu-bar {
   display: block;
   background-color: #3e75bb;
   width: 25px;
@@ -3917,23 +3917,23 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   transition: all 300ms ease-in-out;
 }
 /* line 95, ../sass/_header.scss */
-.home header #menu #menu-bar1, .team header #menu #menu-bar1, .news header #menu #menu-bar1, .publications header #menu #menu-bar1, .contact header #menu #menu-bar1 {
+.home header #menu #menu-bar1, .research header #menu #menu-bar1, .team header #menu #menu-bar1, .news header #menu #menu-bar1, .publications header #menu #menu-bar1, .contact header #menu #menu-bar1 {
   top: 0;
 }
 /* line 98, ../sass/_header.scss */
-.home header #menu #menu-bar2, .team header #menu #menu-bar2, .news header #menu #menu-bar2, .publications header #menu #menu-bar2, .contact header #menu #menu-bar2 {
+.home header #menu #menu-bar2, .research header #menu #menu-bar2, .team header #menu #menu-bar2, .news header #menu #menu-bar2, .publications header #menu #menu-bar2, .contact header #menu #menu-bar2 {
   top: 7px;
 }
 /* line 101, ../sass/_header.scss */
-.home header #menu #menu-bar3, .team header #menu #menu-bar3, .news header #menu #menu-bar3, .publications header #menu #menu-bar3, .contact header #menu #menu-bar3 {
+.home header #menu #menu-bar3, .research header #menu #menu-bar3, .team header #menu #menu-bar3, .news header #menu #menu-bar3, .publications header #menu #menu-bar3, .contact header #menu #menu-bar3 {
   top: 14px;
 }
 /* line 106, ../sass/_header.scss */
-.home header #menu.on .menu-bar, .team header #menu.on .menu-bar, .news header #menu.on .menu-bar, .publications header #menu.on .menu-bar, .contact header #menu.on .menu-bar {
+.home header #menu.on .menu-bar, .research header #menu.on .menu-bar, .team header #menu.on .menu-bar, .news header #menu.on .menu-bar, .publications header #menu.on .menu-bar, .contact header #menu.on .menu-bar {
   height: 2px;
 }
 /* line 109, ../sass/_header.scss */
-.home header #menu.on #menu-bar1, .team header #menu.on #menu-bar1, .news header #menu.on #menu-bar1, .publications header #menu.on #menu-bar1, .contact header #menu.on #menu-bar1 {
+.home header #menu.on #menu-bar1, .research header #menu.on #menu-bar1, .team header #menu.on #menu-bar1, .news header #menu.on #menu-bar1, .publications header #menu.on #menu-bar1, .contact header #menu.on #menu-bar1 {
   width: 30px;
   top: 7px;
   left: 0;
@@ -3942,11 +3942,11 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -webkit-transform: rotate(45deg);
 }
 /* line 117, ../sass/_header.scss */
-.home header #menu.on #menu-bar2, .team header #menu.on #menu-bar2, .news header #menu.on #menu-bar2, .publications header #menu.on #menu-bar2, .contact header #menu.on #menu-bar2 {
+.home header #menu.on #menu-bar2, .research header #menu.on #menu-bar2, .team header #menu.on #menu-bar2, .news header #menu.on #menu-bar2, .publications header #menu.on #menu-bar2, .contact header #menu.on #menu-bar2 {
   display: none;
 }
 /* line 120, ../sass/_header.scss */
-.home header #menu.on #menu-bar3, .team header #menu.on #menu-bar3, .news header #menu.on #menu-bar3, .publications header #menu.on #menu-bar3, .contact header #menu.on #menu-bar3 {
+.home header #menu.on #menu-bar3, .research header #menu.on #menu-bar3, .team header #menu.on #menu-bar3, .news header #menu.on #menu-bar3, .publications header #menu.on #menu-bar3, .contact header #menu.on #menu-bar3 {
   width: 30px;
   top: 7px;
   left: 0;
@@ -3955,7 +3955,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -webkit-transform: rotate(-45deg);
 }
 /* line 129, ../sass/_header.scss */
-.home header #menu-close, .team header #menu-close, .news header #menu-close, .publications header #menu-close, .contact header #menu-close {
+.home header #menu-close, .research header #menu-close, .team header #menu-close, .news header #menu-close, .publications header #menu-close, .contact header #menu-close {
   display: none;
   width: 30px;
   height: 30px;
@@ -4116,15 +4116,15 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 #intro .arrow-wrap {
   width: 50%;
   position: absolute;
-  bottom: 10px;
+  bottom: 30px;
   left: 50%;
 }
 /* line 46, ../sass/_intro.scss */
 #intro .arrow-wrap .icon-arrow-down {
   color: #3e75bb;
-  font-size: 1.6em;
+  font-size: 2.2em;
   width: 60px;
-  margin-left: -30px;
+  margin-left: -46px;
   filter: opacity(50);
   opacity: 0.5;
 }
@@ -4480,13 +4480,14 @@ html[xmlns] .slides {
   }
 }
 /* line 1, ../sass/_about.scss */
-#about, #research, #questions {
+#about, #questions {
   position: relative;
   width: 100%;
+  height: 100%;
   float: left;
 }
-/* line 5, ../sass/_about.scss */
-#about #img, #about #img2, #research #img, #research #img2, #questions #img, #questions #img2 {
+/* line 6, ../sass/_about.scss */
+#about #img, #questions #img {
   width: 100%;
   height: 100%;
   float: left;
@@ -4495,24 +4496,8 @@ html[xmlns] .slides {
   background-size: cover;
   background-position: 50% 50%;
 }
-@media (max-width: 768px) {
-  /* line 5, ../sass/_about.scss */
-  #about #img, #about #img2, #research #img, #research #img2, #questions #img, #questions #img2 {
-    display: none;
-  }
-}
-/* line 17, ../sass/_about.scss */
-#about #img2, #research #img2, #questions #img2 {
-  display: none;
-}
-@media (max-width: 768px) {
-  /* line 17, ../sass/_about.scss */
-  #about #img2, #research #img2, #questions #img2 {
-    display: block;
-  }
-}
-/* line 23, ../sass/_about.scss */
-#about .title-wrap, #research .title-wrap, #questions .title-wrap {
+/* line 15, ../sass/_about.scss */
+#about .title-wrap, #questions .title-wrap {
   background: #3e75bb;
   background: rgba(62, 117, 187, 0.5);
   width: 200px;
@@ -4526,13 +4511,13 @@ html[xmlns] .slides {
   display: table;
 }
 @media (max-width: 480px) {
-  /* line 23, ../sass/_about.scss */
-  #about .title-wrap, #research .title-wrap, #questions .title-wrap {
+  /* line 15, ../sass/_about.scss */
+  #about .title-wrap, #questions .title-wrap {
     background: transparent;
   }
 }
-/* line 38, ../sass/_about.scss */
-#about .title-wrap .title, #research .title-wrap .title, #questions .title-wrap .title {
+/* line 30, ../sass/_about.scss */
+#about .title-wrap .title, #questions .title-wrap .title {
   font-family: "museo_sans_700regular", Helvetica, sans;
   font-size: 2.6em;
   font-weight: 900;
@@ -4545,54 +4530,36 @@ html[xmlns] .slides {
   text-align: center;
 }
 
-/* line 52, ../sass/_about.scss */
-#research #img, #research #img2 {
-  background-image: url(../img/neurons2.jpg);
-}
-
-/* line 55, ../sass/_about.scss */
-#about-content, #research-content {
+/* line 44, ../sass/_about.scss */
+#about-content {
   width: 100%;
   height: 100%;
   float: left;
   position: relative;
 }
-/* line 60, ../sass/_about.scss */
-#about-content .twelve, #research-content .twelve {
+/* line 49, ../sass/_about.scss */
+#about-content .twelve {
   width: 100% !important;
   height: 100%;
   float: left;
   padding: 0;
 }
-/* line 66, ../sass/_about.scss */
-#about-content #about-text, #research-content #about-text {
+/* line 55, ../sass/_about.scss */
+#about-content #about-text {
   width: 80%;
   height: 100%;
   margin: 0 10%;
   display: table;
 }
 @media (max-width: 480px) {
-  /* line 66, ../sass/_about.scss */
-  #about-content #about-text, #research-content #about-text {
+  /* line 55, ../sass/_about.scss */
+  #about-content #about-text {
     width: 80%;
     margin: 0 10%;
   }
 }
-/* line 76, ../sass/_about.scss */
-#about-content #research-text, #research-content #research-text {
-  width: 100%;
-  height: 100%;
-  display: table;
-}
-@media (max-width: 480px) {
-  /* line 76, ../sass/_about.scss */
-  #about-content #research-text, #research-content #research-text {
-    width: 100%;
-    margin: 0;
-  }
-}
-/* line 85, ../sass/_about.scss */
-#about-content p, #research-content p {
+/* line 65, ../sass/_about.scss */
+#about-content p {
   font-family: "museo_sans_300regular";
   font-size: 1.6em;
   width: 80%;
@@ -4602,74 +4569,25 @@ html[xmlns] .slides {
   text-align: center;
 }
 @media (max-width: 768px) {
-  /* line 85, ../sass/_about.scss */
-  #about-content p, #research-content p {
+  /* line 65, ../sass/_about.scss */
+  #about-content p {
     font-size: 1.5em;
   }
 }
 @media (max-width: 480px) {
-  /* line 85, ../sass/_about.scss */
-  #about-content p, #research-content p {
+  /* line 65, ../sass/_about.scss */
+  #about-content p {
     font-size: 1em;
   }
 }
-/* line 100, ../sass/_about.scss */
-#about-content .flexslider .slides li, #research-content .flexslider .slides li {
-  width: 100%;
-  height: 100%;
-}
-/* line 103, ../sass/_about.scss */
-#about-content .flexslider .slides li .text-wrap, #research-content .flexslider .slides li .text-wrap {
-  width: 80%;
-  height: 100%;
-  margin: 0 10%;
-  display: table;
-  position: relative;
-}
-/* line 109, ../sass/_about.scss */
-#about-content .flexslider .slides li .text-wrap p, #research-content .flexslider .slides li .text-wrap p {
-  width: 100%;
-  margin: 0;
-}
-/* line 113, ../sass/_about.scss */
-#about-content .flexslider .slides li .text-wrap .list, #research-content .flexslider .slides li .text-wrap .list {
-  display: block;
-  margin: 200px 0 20px;
-}
-@media (max-width: 480px) {
-  /* line 113, ../sass/_about.scss */
-  #about-content .flexslider .slides li .text-wrap .list, #research-content .flexslider .slides li .text-wrap .list {
-    margin: 50px 0 30px;
-  }
-}
-/* line 120, ../sass/_about.scss */
-#about-content .flexslider .slides li .text-wrap ul, #research-content .flexslider .slides li .text-wrap ul {
-  width: 100%;
-  margin: 0;
-}
-/* line 123, ../sass/_about.scss */
-#about-content .flexslider .slides li .text-wrap ul li, #research-content .flexslider .slides li .text-wrap ul li {
-  color: #3e75bb;
-  font-size: 1.3em;
-  width: 100%;
-  text-align: center;
-  margin: 5px 0;
-}
-@media (max-width: 480px) {
-  /* line 123, ../sass/_about.scss */
-  #about-content .flexslider .slides li .text-wrap ul li, #research-content .flexslider .slides li .text-wrap ul li {
-    font-size: 0.8em;
-    margin: 0;
-  }
-}
 
-/* line 138, ../sass/_about.scss */
+/* line 81, ../sass/_about.scss */
 #questions-text {
   width: 100%;
   height: 100%;
   display: table;
 }
-/* line 142, ../sass/_about.scss */
+/* line 85, ../sass/_about.scss */
 #questions-text p {
   display: table-cell;
   width: 50%;
@@ -4681,7 +4599,7 @@ html[xmlns] .slides {
   transition: all 300ms ease-in-out;
 }
 @media (max-width: 630px) {
-  /* line 142, ../sass/_about.scss */
+  /* line 85, ../sass/_about.scss */
   #questions-text p {
     width: 100%;
     height: auto;
@@ -4689,35 +4607,35 @@ html[xmlns] .slides {
     margin: 20px 0;
     display: block;
   }
-  /* line 157, ../sass/_about.scss */
+  /* line 100, ../sass/_about.scss */
   #questions-text p:last-of-type {
     margin-top: 0;
   }
 }
 @media (max-width: 768px) {
-  /* line 142, ../sass/_about.scss */
+  /* line 85, ../sass/_about.scss */
   #questions-text p {
     font-size: 1.5em;
   }
 }
 @media (max-width: 480px) {
-  /* line 142, ../sass/_about.scss */
+  /* line 85, ../sass/_about.scss */
   #questions-text p {
     font-size: 1em;
   }
 }
 
-/* line 170, ../sass/_about.scss */
+/* line 113, ../sass/_about.scss */
 #research .icon-arrow-down {
   color: white;
 }
 
-/* line 175, ../sass/_about.scss */
+/* line 118, ../sass/_about.scss */
 #questions #img, #questions #img2 {
   background-image: url(../img/molecules2.jpg);
   height: 100%;
 }
-/* line 179, ../sass/_about.scss */
+/* line 122, ../sass/_about.scss */
 #questions .twelve {
   height: 100%;
   position: absolute;
@@ -4725,12 +4643,12 @@ html[xmlns] .slides {
   left: 0;
 }
 @media (max-width: 480px) {
-  /* line 179, ../sass/_about.scss */
+  /* line 122, ../sass/_about.scss */
   #questions .twelve {
     padding: 0;
   }
 }
-/* line 188, ../sass/_about.scss */
+/* line 131, ../sass/_about.scss */
 #questions .twelve #questions-text p {
   color: white;
   font-family: "museo_sans_300regular";
@@ -4738,13 +4656,13 @@ html[xmlns] .slides {
   text-align: center;
 }
 @media (max-width: 768px) {
-  /* line 188, ../sass/_about.scss */
+  /* line 131, ../sass/_about.scss */
   #questions .twelve #questions-text p {
     font-size: 1.5em;
   }
 }
 @media (max-width: 480px) {
-  /* line 188, ../sass/_about.scss */
+  /* line 131, ../sass/_about.scss */
   #questions .twelve #questions-text p {
     font-size: 0.85em;
   }
@@ -4754,16 +4672,16 @@ html[xmlns] .slides {
 .arrow-wrap {
   width: 50%;
   position: absolute;
-  bottom: 10px;
+  bottom: 30px;
   left: 50%;
   z-index: 2;
 }
 /* line 7, ../sass/_arrow-down.scss */
 .arrow-wrap .icon-arrow-down {
   color: #3e75bb;
-  font-size: 1.6em;
+  font-size: 2.2em;
   width: 60px;
-  margin-left: -30px;
+  margin-left: -46px;
   filter: opacity(50);
   opacity: 0.5;
 }
@@ -4781,8 +4699,228 @@ html[xmlns] .slides {
   }
 }
 
+/* line 26, ../sass/_arrow-down.scss */
+#about .arrow-wrap .icon-arrow-down {
+  color: white;
+}
+
+/* line 29, ../sass/_arrow-down.scss */
+.contact #map .arrow-wrap .icon-arrow-down {
+  opacity: 1;
+}
+
+/* line 2, ../sass/_research.scss */
+.research #research {
+  width: 100%;
+  height: 100%;
+  float: left;
+  position: relative;
+  top: 46px;
+}
+/* line 8, ../sass/_research.scss */
+.research #research #img {
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(../img/neurons2.jpg);
+}
+/* line 17, ../sass/_research.scss */
+.research #research .title-wrap {
+  background: #3e75bb;
+  background: rgba(62, 117, 187, 0.5);
+  width: 200px;
+  height: auto;
+  padding: 20px;
+  left: 50%;
+  margin-left: -100px;
+  top: 50%;
+  margin-top: -50px;
+  position: absolute;
+  display: table;
+}
+@media (max-width: 480px) {
+  /* line 17, ../sass/_research.scss */
+  .research #research .title-wrap {
+    background: transparent;
+  }
+}
+/* line 32, ../sass/_research.scss */
+.research #research .title-wrap .title {
+  font-family: "museo_sans_700regular", Helvetica, sans;
+  font-size: 2.6em;
+  font-weight: 900;
+  color: white;
+  text-transform: lowercase;
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 46, ../sass/_research.scss */
+.research #research-content {
+  width: 100%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+/* line 51, ../sass/_research.scss */
+.research #research-content .twelve {
+  width: 100% !important;
+  height: 100%;
+  float: left;
+  padding: 0;
+}
+/* line 57, ../sass/_research.scss */
+.research #research-content #research-text {
+  height: 100%;
+  display: table;
+  margin-top: 46px;
+}
+@media (max-width: 480px) {
+  /* line 57, ../sass/_research.scss */
+  .research #research-content #research-text {
+    width: 100%;
+    margin: 0;
+  }
+}
+/* line 66, ../sass/_research.scss */
+.research #research-content p {
+  font-family: "museo_sans_300regular";
+  font-size: 1.6em;
+  width: 80%;
+  margin: 0 10%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  /* line 66, ../sass/_research.scss */
+  .research #research-content p {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 480px) {
+  /* line 66, ../sass/_research.scss */
+  .research #research-content p {
+    font-size: 1em;
+  }
+}
+/* line 82, ../sass/_research.scss */
+.research #research-content .flexslider .slides li {
+  width: 100%;
+  height: 100%;
+}
+/* line 85, ../sass/_research.scss */
+.research #research-content .flexslider .slides li .text-wrap {
+  width: 80%;
+  height: 100%;
+  margin: 0 10%;
+  display: table;
+  position: relative;
+}
+/* line 91, ../sass/_research.scss */
+.research #research-content .flexslider .slides li .text-wrap p {
+  width: 100%;
+  margin: 0;
+}
+/* line 95, ../sass/_research.scss */
+.research #research-content .flexslider .slides li .text-wrap .list {
+  display: block;
+  margin: 200px 0 20px;
+}
+@media (max-width: 480px) {
+  /* line 95, ../sass/_research.scss */
+  .research #research-content .flexslider .slides li .text-wrap .list {
+    margin: 50px 0 30px;
+  }
+}
+/* line 102, ../sass/_research.scss */
+.research #research-content .flexslider .slides li .text-wrap ul {
+  width: 100%;
+  margin: 0;
+}
+/* line 105, ../sass/_research.scss */
+.research #research-content .flexslider .slides li .text-wrap ul li {
+  color: #3e75bb;
+  font-size: 1.3em;
+  width: 100%;
+  text-align: center;
+  margin: 5px 0;
+}
+@media (max-width: 480px) {
+  /* line 105, ../sass/_research.scss */
+  .research #research-content .flexslider .slides li .text-wrap ul li {
+    font-size: 0.8em;
+    margin: 0;
+  }
+}
+/* line 121, ../sass/_research.scss */
+.research #collab {
+  width: 60%;
+  height: 100%;
+  margin: 20px 20%;
+  float: left;
+  position: relative;
+}
+@media (max-width: 480px) {
+  /* line 121, ../sass/_research.scss */
+  .research #collab {
+    width: 80%;
+    margin: 20px 10% 0;
+  }
+}
+/* line 131, ../sass/_research.scss */
+.research #collab h4 {
+  font-family: "museo_sans_700regular", sans;
+  color: #3e75bb;
+  margin: 0;
+  text-transform: lowercase;
+  margin-bottom: 10px;
+}
+/* line 139, ../sass/_research.scss */
+.research #collab ul li a {
+  font-family: "museo_sans_500regular", sans;
+  font-size: 1.2em;
+}
+@media (max-width: 480px) {
+  /* line 139, ../sass/_research.scss */
+  .research #collab ul li a {
+    font-size: 1em;
+  }
+}
+/* line 148, ../sass/_research.scss */
+.research #funding-button-wrap {
+  width: 100%;
+  position: relative;
+  float: left;
+}
+/* line 152, ../sass/_research.scss */
+.research #funding-button-wrap #funding-button {
+  background: #3e75bb;
+  color: white;
+  font-family: "museo_sans_700regular", sans;
+  text-transform: lowercase;
+  position: absolute;
+  left: 50%;
+}
+/* line 162, ../sass/_research.scss */
+.research #funding-modal {
+  display: none;
+  background: rgba(62, 117, 187, 0.8);
+  color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 46px;
+  left: 0;
+}
+
 /* line 1, ../sass/_alumni.scss */
-#alumni {
+#alumni, #funding {
   font-family: "museo_sans_700regular", Helvetica, sans;
   color: white;
   text-align: center;
@@ -4802,12 +4940,13 @@ html[xmlns] .slides {
   transition: all 300ms ease-in-out;
 }
 /* line 19, ../sass/_alumni.scss */
-#alumni:hover, #alumni:focus, #alumni:active {
+#alumni:hover, #alumni:focus, #alumni:active, #funding:hover, #funding:focus, #funding:active {
+  cursor: pointer;
   background-color: #3e75bb;
 }
 
-/* line 23, ../sass/_alumni.scss */
-#alumni-modal {
+/* line 24, ../sass/_alumni.scss */
+#alumni-modal, #funding-modal {
   display: none;
   width: 100%;
   height: 100%;
@@ -4819,34 +4958,34 @@ html[xmlns] .slides {
   background-color: rgba(62, 117, 187, 0.8);
 }
 @media (max-width: 320px) {
-  /* line 23, ../sass/_alumni.scss */
-  #alumni-modal {
+  /* line 24, ../sass/_alumni.scss */
+  #alumni-modal, #funding-modal {
     height: 90%;
     position: fixed;
     overflow: scroll;
   }
 }
-/* line 38, ../sass/_alumni.scss */
-#alumni-modal .icon-close {
+/* line 39, ../sass/_alumni.scss */
+#alumni-modal .icon-close, #funding-modal .icon-close {
   color: white;
   font-size: 1.6em;
   position: absolute;
   top: 20px;
   right: 20px;
 }
-/* line 44, ../sass/_alumni.scss */
-#alumni-modal .icon-close:hover, #alumni-modal .icon-close:focus, #alumni-modal .icon-close:active {
+/* line 45, ../sass/_alumni.scss */
+#alumni-modal .icon-close:hover, #alumni-modal .icon-close:focus, #alumni-modal .icon-close:active, #funding-modal .icon-close:hover, #funding-modal .icon-close:focus, #funding-modal .icon-close:active {
   font-size: 1.8em;
 }
 @media (max-width: 320px) {
-  /* line 38, ../sass/_alumni.scss */
-  #alumni-modal .icon-close {
+  /* line 39, ../sass/_alumni.scss */
+  #alumni-modal .icon-close, #funding-modal .icon-close {
     top: 10px;
     right: 10px;
   }
 }
-/* line 52, ../sass/_alumni.scss */
-#alumni-modal h2 {
+/* line 53, ../sass/_alumni.scss */
+#alumni-modal h2, #funding-modal h2 {
   font-family: "museo_sans_700regular", Helvetica, sans;
   color: white;
   text-align: center;
@@ -4855,44 +4994,82 @@ html[xmlns] .slides {
   text-transform: lowercase;
 }
 @media (max-width: 630px) {
-  /* line 52, ../sass/_alumni.scss */
-  #alumni-modal h2 {
+  /* line 53, ../sass/_alumni.scss */
+  #alumni-modal h2, #funding-modal h2 {
     font-size: 1.6em;
     margin: 10px 0 0 10px;
   }
 }
-/* line 64, ../sass/_alumni.scss */
-#alumni-modal .alumni-wrap {
+/* line 65, ../sass/_alumni.scss */
+#alumni-modal h4, #alumni-modal p, #funding-modal h4, #funding-modal p {
+  width: 60%;
+  font-family: "museo_sans_700regular", Helvetica, sans;
+  color: white;
+  text-align: center;
+  margin: 10px 20%;
+}
+@media (max-width: 480px) {
+  /* line 65, ../sass/_alumni.scss */
+  #alumni-modal h4, #alumni-modal p, #funding-modal h4, #funding-modal p {
+    width: 80%;
+    margin: 10px 10%;
+  }
+}
+/* line 76, ../sass/_alumni.scss */
+#alumni-modal h4, #funding-modal h4 {
+  margin-top: 50px;
+  text-transform: lowercase;
+}
+@media (max-width: 630px) {
+  /* line 76, ../sass/_alumni.scss */
+  #alumni-modal h4, #funding-modal h4 {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 480px) {
+  /* line 76, ../sass/_alumni.scss */
+  #alumni-modal h4, #funding-modal h4 {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 630px) {
+  /* line 86, ../sass/_alumni.scss */
+  #alumni-modal p, #funding-modal p {
+    font-size: 0.8em;
+  }
+}
+/* line 91, ../sass/_alumni.scss */
+#alumni-modal .alumni-wrap, #funding-modal .alumni-wrap {
   width: 50%;
   float: left;
   padding: 0 20px;
 }
 @media (max-width: 320px) {
-  /* line 64, ../sass/_alumni.scss */
-  #alumni-modal .alumni-wrap {
+  /* line 91, ../sass/_alumni.scss */
+  #alumni-modal .alumni-wrap, #funding-modal .alumni-wrap {
     width: 100%;
   }
 }
-/* line 71, ../sass/_alumni.scss */
-#alumni-modal .alumni-wrap h4, #alumni-modal .alumni-wrap p {
+/* line 98, ../sass/_alumni.scss */
+#alumni-modal .alumni-wrap h4, #alumni-modal .alumni-wrap p, #funding-modal .alumni-wrap h4, #funding-modal .alumni-wrap p {
   font-family: "museo_sans_700regular", Helvetica, sans;
   color: white;
   text-align: center;
   margin: 10px 0;
 }
-/* line 77, ../sass/_alumni.scss */
-#alumni-modal .alumni-wrap h4 {
+/* line 104, ../sass/_alumni.scss */
+#alumni-modal .alumni-wrap h4, #funding-modal .alumni-wrap h4 {
   text-transform: lowercase;
 }
 @media (max-width: 630px) {
-  /* line 77, ../sass/_alumni.scss */
-  #alumni-modal .alumni-wrap h4 {
+  /* line 104, ../sass/_alumni.scss */
+  #alumni-modal .alumni-wrap h4, #funding-modal .alumni-wrap h4 {
     font-size: 1.2em;
   }
 }
 @media (max-width: 630px) {
-  /* line 83, ../sass/_alumni.scss */
-  #alumni-modal .alumni-wrap p {
+  /* line 110, ../sass/_alumni.scss */
+  #alumni-modal .alumni-wrap p, #funding-modal .alumni-wrap p {
     font-size: 0.8em;
   }
 }
@@ -5296,21 +5473,25 @@ html[xmlns] .slides {
   top: 0;
   left: 0;
 }
+/* line 13, ../sass/_contact.scss */
+.contact #map #map-canvas img {
+  max-width: none;
+}
 
-/* line 16, ../sass/_contact.scss */
+/* line 19, ../sass/_contact.scss */
 #contact-details, #public-transport {
   width: 30%;
   margin: 50px 10% 20px;
   float: left;
 }
 @media (max-width: 480px) {
-  /* line 16, ../sass/_contact.scss */
+  /* line 19, ../sass/_contact.scss */
   #contact-details, #public-transport {
     width: 80%;
     margin: 20px 10% 0;
   }
 }
-/* line 24, ../sass/_contact.scss */
+/* line 27, ../sass/_contact.scss */
 #contact-details h4, #public-transport h4 {
   font-family: "museo_sans_700regular", sans;
   color: #3e75bb;
@@ -5318,13 +5499,13 @@ html[xmlns] .slides {
   text-transform: lowercase;
   margin-bottom: 10px;
 }
-/* line 31, ../sass/_contact.scss */
+/* line 34, ../sass/_contact.scss */
 #contact-details p, #public-transport p {
   font-family: "museo_sans_500regular", sans;
   font-size: 1.2em;
 }
 @media (max-width: 480px) {
-  /* line 31, ../sass/_contact.scss */
+  /* line 34, ../sass/_contact.scss */
   #contact-details p, #public-transport p {
     font-size: 1em;
   }

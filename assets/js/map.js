@@ -116,7 +116,7 @@ var styles = [
         var mapOptions = {
           center: new google.maps.LatLng(51.521335,-0.121604),
           zoom: 13,
-          disableDefaultUI: true,
+          disableDefaultUI: false,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           styles: styles,
           scrollwheel: false,

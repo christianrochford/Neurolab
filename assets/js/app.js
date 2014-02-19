@@ -2,7 +2,7 @@
 
 // set page height
 
-$('#intro, #about, #about-content, #research, #research-content, #team-img, #news-img, #pubs-img , #map').css({height:$(window).height()-46 + 'px'});
+$('#intro, #about, #about-content, #research, #research-content, #collab, #team-img, #news-img, #pubs-img , #map').css({height:$(window).height()-46 + 'px'});
 if($(window).width()>320){
 	$('#questions').css({height:$(window).height()-46 + 'px'});
 } else {
@@ -12,11 +12,6 @@ if($(window).width()>320){
 $('#to-about').on('click', function(e){
 	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#about').offset().top -46}, 500);
-})
-
-$('#to-research').on('click', function(e){
-	e.preventDefault();
-	$('html, body').animate({scrollTop: $('#research').offset().top -46}, 500);
 })
 
 // tablet menu 
@@ -42,14 +37,6 @@ $('#mobile-to-about').on('click', function(e){
 	$('#mobile-nav').fadeOut(300);
 })
 
-$('#mobile-to-research').on('click', function(e){
-	e.preventDefault();
-	$('html, body').animate({scrollTop: $('#research').offset().top -46}, 500);
-	$('#menu').removeClass('on');
-	$('#menu-close').hide();
-	$('#mobile-nav').fadeOut(300);
-})
-
 // initialize skrollr
 if($(window).width() > 767){
 	skrollr.init({
@@ -68,14 +55,6 @@ $('#about-arrow-down').on('click', function(e){
 })
 $('#about-content-arrow-down').on('click', function(e){
 	e.preventDefault();
-	$('html, body').animate({scrollTop: $('#research').offset().top -46}, 500);
-})
-$('#research-arrow-down').on('click', function(e){
-	e.preventDefault();
-	$('html, body').animate({scrollTop: $('#research-content').offset().top -46}, 500);
-})
-$('#research-content-arrow-down').on('click', function(e){
-	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#questions').offset().top -46}, 500);
 })
 $('#team-arrow-down').on('click', function(e){
@@ -93,6 +72,14 @@ $('#pubs-arrow-down').on('click', function(e){
 $('#contact-arrow-down').on('click', function(e){
 	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#contact-details').offset().top -46}, 500);
+})
+$('#research-arrow-down').on('click', function(e){
+	e.preventDefault();
+	$('html, body').animate({scrollTop: $('#research-content').offset().top -46}, 500);
+})
+$('#research-content-arrow-down').on('click', function(e){
+	e.preventDefault();
+	$('html, body').animate({scrollTop: $('#collab').offset().top -46}, 500);
 })
 
 // team members
@@ -127,7 +114,7 @@ $('#carousel').flexslider({
 //initialize flexslider
 $('#research-text.flexslider').flexslider();
 
-// alumni modal
+// modals
 $('#alumni').on('click', function(e){
 	e.preventDefault();
 	$('#alumni-modal').fadeIn(300);
@@ -137,6 +124,17 @@ $('#alumni-close').on('click', function(e){
 	e.preventDefault();
 	$('#alumni-modal').fadeOut(300);
 	$('#alumni').show();
+})
+
+$('#funding').on('click', function(e){
+	e.preventDefault();
+	$('#funding-modal').fadeIn(300);
+	$(this).hide();
+})
+$('#funding-close').on('click', function(e){
+	e.preventDefault();
+	$('#funding-modal').fadeOut(300);
+	$('#funding').show();
 })
 
 // publications
