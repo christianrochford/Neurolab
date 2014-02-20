@@ -2,7 +2,7 @@
 
 // set page height
 
-$('#intro, #about, #about-content, #research, #research-content, #collab, #team-img, #news-img, #pubs-img , #map').css({height:$(window).height()-46 + 'px'});
+$('#intro, #about, #about-content, #research, #research-content, #team-img, #news-img, #pubs-img , #map').css({height:$(window).height()-46 + 'px'});
 if($(window).width()>320){
 	$('#questions').css({height:$(window).height()-46 + 'px'});
 } else {
@@ -84,11 +84,12 @@ $('#research-content-arrow-down').on('click', function(e){
 
 // team members
 $('#carousel').flexslider({
-    animation: "fade",
-    controlNav: false,
-    animationLoop: true,
+    animation: "slide",
+    controlNav: true,
+    directionNav: true,
+    animationLoop: false,
     slideshow: false,
-    itemWidth: 240,
+    itemWidth: 300,
     itemMargin: 0,
     asNavFor: '#team-slider'
   });
@@ -102,14 +103,6 @@ $('#carousel').flexslider({
     animationSpeed: 0,
     sync: "#carousel"
   });
-
-  $(document).on('click', '.flex-next', function(){
-  	$('#team-slider').flexslider('next');
-  })
-
-  $(document).on('click', '.flex-prev', function(){
-  	$('#team-slider').flexslider('prev');
-  })
 
 //initialize flexslider
 $('#research-text.flexslider').flexslider();

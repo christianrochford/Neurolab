@@ -21,6 +21,11 @@
 		background-color: $blue;
 	}
 }
+.button-wrap{
+	width: 100%;
+	position: relative;
+	float: left;
+}
 #alumni-modal, #funding-modal{
 	display: none;
 	width: 100%;
@@ -98,6 +103,7 @@
 		h4, p{
 			font-family: $museobold, Helvetica, sans;
 			color: $white;
+			width: 100%;
 			text-align: center;
 			margin: 10px 0;
 		}

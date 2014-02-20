@@ -4715,7 +4715,7 @@ html[xmlns] .slides {
   height: 100%;
   float: left;
   position: relative;
-  top: 46px;
+  margin-top: 46px;
 }
 /* line 8, ../sass/_research.scss */
 .research #research #img {
@@ -4830,7 +4830,7 @@ html[xmlns] .slides {
 /* line 95, ../sass/_research.scss */
 .research #research-content .flexslider .slides li .text-wrap .list {
   display: block;
-  margin: 200px 0 20px;
+  margin: 100px 0 20px;
 }
 @media (max-width: 480px) {
   /* line 95, ../sass/_research.scss */
@@ -4893,13 +4893,13 @@ html[xmlns] .slides {
   }
 }
 /* line 148, ../sass/_research.scss */
-.research #funding-button-wrap {
+.research .button-wrap {
   width: 100%;
   position: relative;
   float: left;
 }
 /* line 152, ../sass/_research.scss */
-.research #funding-button-wrap #funding-button {
+.research .button-wrap #funding-button {
   background: #3e75bb;
   color: white;
   font-family: "museo_sans_700regular", sans;
@@ -4917,6 +4917,12 @@ html[xmlns] .slides {
   position: fixed;
   top: 46px;
   left: 0;
+}
+
+/* line 174, ../sass/_research.scss */
+.spacer {
+  width: 100%;
+  height: 50px;
 }
 
 /* line 1, ../sass/_alumni.scss */
@@ -4946,6 +4952,13 @@ html[xmlns] .slides {
 }
 
 /* line 24, ../sass/_alumni.scss */
+.button-wrap {
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+/* line 29, ../sass/_alumni.scss */
 #alumni-modal, #funding-modal {
   display: none;
   width: 100%;
@@ -4958,14 +4971,14 @@ html[xmlns] .slides {
   background-color: rgba(62, 117, 187, 0.8);
 }
 @media (max-width: 320px) {
-  /* line 24, ../sass/_alumni.scss */
+  /* line 29, ../sass/_alumni.scss */
   #alumni-modal, #funding-modal {
     height: 90%;
     position: fixed;
     overflow: scroll;
   }
 }
-/* line 39, ../sass/_alumni.scss */
+/* line 44, ../sass/_alumni.scss */
 #alumni-modal .icon-close, #funding-modal .icon-close {
   color: white;
   font-size: 1.6em;
@@ -4973,18 +4986,18 @@ html[xmlns] .slides {
   top: 20px;
   right: 20px;
 }
-/* line 45, ../sass/_alumni.scss */
+/* line 50, ../sass/_alumni.scss */
 #alumni-modal .icon-close:hover, #alumni-modal .icon-close:focus, #alumni-modal .icon-close:active, #funding-modal .icon-close:hover, #funding-modal .icon-close:focus, #funding-modal .icon-close:active {
   font-size: 1.8em;
 }
 @media (max-width: 320px) {
-  /* line 39, ../sass/_alumni.scss */
+  /* line 44, ../sass/_alumni.scss */
   #alumni-modal .icon-close, #funding-modal .icon-close {
     top: 10px;
     right: 10px;
   }
 }
-/* line 53, ../sass/_alumni.scss */
+/* line 58, ../sass/_alumni.scss */
 #alumni-modal h2, #funding-modal h2 {
   font-family: "museo_sans_700regular", Helvetica, sans;
   color: white;
@@ -4994,13 +5007,13 @@ html[xmlns] .slides {
   text-transform: lowercase;
 }
 @media (max-width: 630px) {
-  /* line 53, ../sass/_alumni.scss */
+  /* line 58, ../sass/_alumni.scss */
   #alumni-modal h2, #funding-modal h2 {
     font-size: 1.6em;
     margin: 10px 0 0 10px;
   }
 }
-/* line 65, ../sass/_alumni.scss */
+/* line 70, ../sass/_alumni.scss */
 #alumni-modal h4, #alumni-modal p, #funding-modal h4, #funding-modal p {
   width: 60%;
   font-family: "museo_sans_700regular", Helvetica, sans;
@@ -5009,66 +5022,67 @@ html[xmlns] .slides {
   margin: 10px 20%;
 }
 @media (max-width: 480px) {
-  /* line 65, ../sass/_alumni.scss */
+  /* line 70, ../sass/_alumni.scss */
   #alumni-modal h4, #alumni-modal p, #funding-modal h4, #funding-modal p {
     width: 80%;
     margin: 10px 10%;
   }
 }
-/* line 76, ../sass/_alumni.scss */
+/* line 81, ../sass/_alumni.scss */
 #alumni-modal h4, #funding-modal h4 {
   margin-top: 50px;
   text-transform: lowercase;
 }
 @media (max-width: 630px) {
-  /* line 76, ../sass/_alumni.scss */
+  /* line 81, ../sass/_alumni.scss */
   #alumni-modal h4, #funding-modal h4 {
     font-size: 1.2em;
   }
 }
 @media (max-width: 480px) {
-  /* line 76, ../sass/_alumni.scss */
+  /* line 81, ../sass/_alumni.scss */
   #alumni-modal h4, #funding-modal h4 {
     margin-top: 20px;
   }
 }
 @media (max-width: 630px) {
-  /* line 86, ../sass/_alumni.scss */
+  /* line 91, ../sass/_alumni.scss */
   #alumni-modal p, #funding-modal p {
     font-size: 0.8em;
   }
 }
-/* line 91, ../sass/_alumni.scss */
+/* line 96, ../sass/_alumni.scss */
 #alumni-modal .alumni-wrap, #funding-modal .alumni-wrap {
   width: 50%;
   float: left;
   padding: 0 20px;
 }
 @media (max-width: 320px) {
-  /* line 91, ../sass/_alumni.scss */
+  /* line 96, ../sass/_alumni.scss */
   #alumni-modal .alumni-wrap, #funding-modal .alumni-wrap {
     width: 100%;
   }
 }
-/* line 98, ../sass/_alumni.scss */
+/* line 103, ../sass/_alumni.scss */
 #alumni-modal .alumni-wrap h4, #alumni-modal .alumni-wrap p, #funding-modal .alumni-wrap h4, #funding-modal .alumni-wrap p {
   font-family: "museo_sans_700regular", Helvetica, sans;
   color: white;
+  width: 100%;
   text-align: center;
   margin: 10px 0;
 }
-/* line 104, ../sass/_alumni.scss */
+/* line 110, ../sass/_alumni.scss */
 #alumni-modal .alumni-wrap h4, #funding-modal .alumni-wrap h4 {
   text-transform: lowercase;
 }
 @media (max-width: 630px) {
-  /* line 104, ../sass/_alumni.scss */
+  /* line 110, ../sass/_alumni.scss */
   #alumni-modal .alumni-wrap h4, #funding-modal .alumni-wrap h4 {
     font-size: 1.2em;
   }
 }
 @media (max-width: 630px) {
-  /* line 110, ../sass/_alumni.scss */
+  /* line 116, ../sass/_alumni.scss */
   #alumni-modal .alumni-wrap p, #funding-modal .alumni-wrap p {
     font-size: 0.8em;
   }
@@ -5401,20 +5415,37 @@ html[xmlns] .slides {
 }
 /* line 83, ../sass/_team.scss */
 .team #team #carousel.flexslider {
-  width: 240px;
+  width: 900px;
+  min-width: 200px;
   height: auto;
   margin: 0 auto;
 }
-/* line 88, ../sass/_team.scss */
+@media (max-width: 900px) {
+  /* line 83, ../sass/_team.scss */
+  .team #team #carousel.flexslider {
+    width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  /* line 83, ../sass/_team.scss */
+  .team #team #carousel.flexslider {
+    width: 300px;
+  }
+}
+/* line 95, ../sass/_team.scss */
 .team #team #carousel.flexslider .slides li {
+  width: 240px;
   margin: 50px 0 20px;
   z-index: 0;
 }
-/* line 91, ../sass/_team.scss */
+/* line 99, ../sass/_team.scss */
 .team #team #carousel.flexslider .slides li img {
   width: 240px;
   height: 240px;
-  margin: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
   overflow: hidden;
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
   /* Firefox 10+, Firefox on Android */
@@ -5427,32 +5458,57 @@ html[xmlns] .slides {
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
-/* line 103, ../sass/_team.scss */
+/* line 114, ../sass/_team.scss */
 .team #team #carousel.flexslider .slides li img:hover, .team #team #carousel.flexslider .slides li img:focus, .team #team #carousel.flexslider .slides li img:active {
   cursor: pointer;
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(0%);
 }
-/* line 112, ../sass/_team.scss */
+/* line 122, ../sass/_team.scss */
+.team #team #carousel.flexslider .flex-control-nav, .team #team #carousel.flexslider .flex-control-paging {
+  display: none;
+}
+@media (max-width: 480px) {
+  /* line 122, ../sass/_team.scss */
+  .team #team #carousel.flexslider .flex-control-nav, .team #team #carousel.flexslider .flex-control-paging {
+    display: block;
+    bottom: -10px;
+  }
+  /* line 127, ../sass/_team.scss */
+  .team #team #carousel.flexslider .flex-control-nav li a, .team #team #carousel.flexslider .flex-control-paging li a {
+    background: rgba(62, 117, 187, 0.5);
+  }
+  /* line 130, ../sass/_team.scss */
+  .team #team #carousel.flexslider .flex-control-nav li a.flex-active, .team #team #carousel.flexslider .flex-control-paging li a.flex-active {
+    background: #3e75bb;
+  }
+}
+@media (max-width: 480px) {
+  /* line 135, ../sass/_team.scss */
+  .team #team #carousel.flexslider .flex-direction-nav {
+    display: none;
+  }
+}
+/* line 139, ../sass/_team.scss */
 .team #team #carousel.flexslider .flex-direction-nav a {
   z-index: 2;
 }
-/* line 115, ../sass/_team.scss */
+/* line 142, ../sass/_team.scss */
 .team #team #carousel.flexslider .flex-direction-nav .flex-next {
   right: -50px;
 }
 @media (max-width: 480px) {
-  /* line 115, ../sass/_team.scss */
+  /* line 142, ../sass/_team.scss */
   .team #team #carousel.flexslider .flex-direction-nav .flex-next {
     right: -35px;
   }
 }
-/* line 121, ../sass/_team.scss */
+/* line 148, ../sass/_team.scss */
 .team #team #carousel.flexslider .flex-direction-nav .flex-prev {
   left: -50px;
 }
 @media (max-width: 480px) {
-  /* line 121, ../sass/_team.scss */
+  /* line 148, ../sass/_team.scss */
   .team #team #carousel.flexslider .flex-direction-nav .flex-prev {
     left: -35px;
   }
