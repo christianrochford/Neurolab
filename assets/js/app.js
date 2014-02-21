@@ -2,7 +2,7 @@
 
 // set page height
 
-$('#intro, #about, #about-content, #research, #research-content, #team-img, #news-img, #pubs-img , #map').css({height:$(window).height()-46 + 'px'});
+$('#intro, #about, #about-content, #research, #research-content, #team-img, #team, #news-img, #pubs-img , #map').css({height:$(window).height()-46 + 'px'});
 if($(window).width()>320){
 	$('#questions').css({height:$(window).height()-46 + 'px'});
 } else {
@@ -89,6 +89,7 @@ $('#carousel').flexslider({
     directionNav: true,
     animationLoop: false,
     slideshow: false,
+    touch: true,
     itemWidth: 300,
     itemMargin: 0,
     asNavFor: '#team-slider'
@@ -100,12 +101,33 @@ $('#carousel').flexslider({
     directionNav: false,
     animationLoop: true,
     slideshow: false,
+    touch: true,
     animationSpeed: 0,
     sync: "#carousel"
   });
 
+ $('#carousel').on('click','img',function(){
+ 	$('#carousel img').removeClass('on');
+ 	$(this).addClass('on');
+ 	$('#team-slider').slideDown(300);
+ })
+ $('#carousel').on('click','h4',function(){
+ 	$('#carousel img').removeClass('on');
+ 	$(this).prev().addClass('on');
+ 	$('#team-slider').slideDown(300);
+ })
+ $('#team-slider').on('click','.icon-angle-up',function(e){
+ 	e.preventDefault();
+ 	$('#carousel img').removeClass('on');
+ 	$('#team-slider').slideUp(300);
+ })
+
 //initialize flexslider
-$('#research-text.flexslider').flexslider();
+$('#research-text.flexslider').flexslider({
+	controlNav: true,
+    directionNav: true,
+	touch: true
+});
 
 // modals
 $('#alumni').on('click', function(e){

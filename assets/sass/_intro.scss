@@ -52,6 +52,7 @@
 			opacity: 0.5;
 			@include breakpoint(mobile-landscape){
 				font-size: 1.2em;
+				margin-left: -25px;
 			}
 			&:hover, &:focus, &:active{
 				cursor: pointer;

@@ -116,6 +116,24 @@
 					}
 				}
 			}
+			.flex-control-nav, .flex-control-paging{
+				display: none;
+				@include breakpoint(mobile-landscape){
+					display: block;
+					bottom: 50px;
+					li a{
+						background: $blue-opaque;
+					}
+					li a.flex-active{
+						background: $blue;
+					}
+				}
+			}
+			.flex-direction-nav{
+				@include breakpoint(mobile-landscape){
+					display: none;
+				}
+			}
 		}
 	}
 	#collab{
@@ -134,6 +152,9 @@
 			margin: 0;
 			text-transform: lowercase;
 			margin-bottom: 10px;
+			@include breakpoint(mobile){
+				font-size: 16px;
+			}
 		}
 		ul{
 			li a{

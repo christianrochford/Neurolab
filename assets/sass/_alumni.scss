@@ -1,16 +1,20 @@
 #alumni, #funding{
 	font-family: $museobold, Helvetica, sans;
 	color: $white;
+	font-size: 2.6em;
+	font-weight: 900;
 	text-align: center;
+	text-transform: lowercase;
 	display: block;
 	background-color: $blue;
 	background-color: $blue-opaque;
 	width: 200px;
 	float: left;
-	height: 30px;
-	padding: 10px;
+	height: auto;
+	padding: 20px;
 	position: relative;
 	left: 50%;
+	bottom: 100px;
 	margin-left: -100px;
 	-webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
@@ -19,6 +23,22 @@
 	&:hover, &:focus, &:active{
 		cursor: pointer;
 		background-color: $blue;
+	}
+	@include breakpoint(mobile-landscape){
+		font-size: 1.5em;
+		bottom: 10px;
+		padding: 10px;
+	}
+}
+#alumni{
+	@include breakpoint(mobile-landscape){
+		display: none;
+	}
+}
+#funding{
+	bottom: 30px;
+	@include breakpoint(mobile-landscape){
+		bottom: 10px;
 	}
 }
 .button-wrap{
@@ -41,7 +61,7 @@
 		position: fixed;
 		overflow: scroll;
 	}
-	.icon-close{
+	.icon-close-modal{
 		color: $white;
 		font-size: 1.6em;
 		position: absolute;
