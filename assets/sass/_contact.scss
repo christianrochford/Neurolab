@@ -5,6 +5,12 @@
 		position: relative;
 		margin-top: 46px;
 		overflow: hidden;
+		@include breakpoint(mobile-landscape){
+			height: 300px;
+		}
+		@include breakpoint(mobile){
+			height: 400px;
+		}
 		#map-canvas{
 			width: 120%;
 			height: 120%;

@@ -17,12 +17,12 @@
       opacity: 1;
     }
     @include breakpoint(mobile-landscape){
-        font-size: 1.2em;
-        margin-left: -25px;
+        font-size: 1.6em;
+        margin-left: -34px;
     }
   }
 }
 
-#about .arrow-wrap .icon-arrow-down{
+#about .arrow-wrap .icon-arrow-down, #research .arrow-wrap .icon-arrow-down{
   color: $white;
 }

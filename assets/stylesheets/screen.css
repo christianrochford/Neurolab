@@ -4023,7 +4023,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   background-color: #3e75bb;
   background-color: rgba(62, 117, 187, 0.8);
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   margin-top: 0;
   top: 46px;
   left: 0;
@@ -4058,7 +4058,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 @media (max-width: 480px) {
   /* line 21, ../sass/_mobile-nav.scss */
   #mobile-nav ul li {
-    line-height: 3em;
+    line-height: 4em;
   }
 }
 /* line 32, ../sass/_mobile-nav.scss */
@@ -4089,7 +4089,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 @media (max-width: 480px) {
   /* line 44, ../sass/_mobile-nav.scss */
   #mobile-nav ul li:after {
-    top: -44px;
+    top: -52px;
   }
 }
 /* line 57, ../sass/_mobile-nav.scss */
@@ -4740,13 +4740,13 @@ html[xmlns] .slides {
 @media (max-width: 480px) {
   /* line 7, ../sass/_arrow-down.scss */
   .arrow-wrap .icon-arrow-down {
-    font-size: 1.2em;
-    margin-left: -25px;
+    font-size: 1.6em;
+    margin-left: -34px;
   }
 }
 
 /* line 26, ../sass/_arrow-down.scss */
-#about .arrow-wrap .icon-arrow-down {
+#about .arrow-wrap .icon-arrow-down, #research .arrow-wrap .icon-arrow-down {
   color: white;
 }
 
@@ -5608,7 +5608,19 @@ html[xmlns] .slides {
   margin-top: 46px;
   overflow: hidden;
 }
-/* line 8, ../sass/_contact.scss */
+@media (max-width: 480px) {
+  /* line 2, ../sass/_contact.scss */
+  .contact #map {
+    height: 300px;
+  }
+}
+@media (max-width: 320px) {
+  /* line 2, ../sass/_contact.scss */
+  .contact #map {
+    height: 400px;
+  }
+}
+/* line 14, ../sass/_contact.scss */
 .contact #map #map-canvas {
   width: 120%;
   height: 120%;
@@ -5616,11 +5628,11 @@ html[xmlns] .slides {
   top: -10%;
   left: -10%;
 }
-/* line 14, ../sass/_contact.scss */
+/* line 20, ../sass/_contact.scss */
 .contact #map #map-canvas img {
   max-width: none;
 }
-/* line 18, ../sass/_contact.scss */
+/* line 24, ../sass/_contact.scss */
 .contact #map #zoomout, .contact #map #zoomin {
   width: 30px;
   height: 30px;
@@ -5632,45 +5644,45 @@ html[xmlns] .slides {
   bottom: 10px;
   z-index: 1;
 }
-/* line 28, ../sass/_contact.scss */
+/* line 34, ../sass/_contact.scss */
 .contact #map #zoomout:hover, .contact #map #zoomout:focus, .contact #map #zoomout:active, .contact #map #zoomin:hover, .contact #map #zoomin:focus, .contact #map #zoomin:active {
   cursor: pointer;
 }
-/* line 32, ../sass/_contact.scss */
+/* line 38, ../sass/_contact.scss */
 .contact #map #zoomout {
   right: 10px;
 }
-/* line 35, ../sass/_contact.scss */
+/* line 41, ../sass/_contact.scss */
 .contact #map #zoomin {
   line-height: 1.2em;
   right: 50px;
 }
 
-/* line 41, ../sass/_contact.scss */
+/* line 47, ../sass/_contact.scss */
 #contact-details, #public-transport {
   width: 30%;
   margin: 50px 10% 20px;
   float: left;
 }
 @media (max-width: 480px) {
-  /* line 41, ../sass/_contact.scss */
+  /* line 47, ../sass/_contact.scss */
   #contact-details, #public-transport {
     width: 80%;
     margin: 20px 10% 0;
   }
 }
-/* line 49, ../sass/_contact.scss */
+/* line 55, ../sass/_contact.scss */
 #contact-details span, #public-transport span {
   font-size: 2em;
   color: #3e75bb;
   display: block;
   margin: 20px 0 10px;
 }
-/* line 55, ../sass/_contact.scss */
+/* line 61, ../sass/_contact.scss */
 #contact-details .icon-mail, #public-transport .icon-mail {
   font-size: 1.5em;
 }
-/* line 58, ../sass/_contact.scss */
+/* line 64, ../sass/_contact.scss */
 #contact-details h4, #public-transport h4 {
   font-family: "museo_sans_700regular", sans;
   color: #3e75bb;
@@ -5678,13 +5690,13 @@ html[xmlns] .slides {
   text-transform: lowercase;
   margin-bottom: 10px;
 }
-/* line 65, ../sass/_contact.scss */
+/* line 71, ../sass/_contact.scss */
 #contact-details p, #public-transport p {
   font-family: "museo_sans_500regular", sans;
   font-size: 1.2em;
 }
 @media (max-width: 480px) {
-  /* line 65, ../sass/_contact.scss */
+  /* line 71, ../sass/_contact.scss */
   #contact-details p, #public-transport p {
     font-size: 1em;
   }
