@@ -1,5 +1,5 @@
 .news, .publications{
-	#news-img, #pubs-img{
+	#pubs-img{
 		background-image: url(../img/news.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -90,6 +90,7 @@
 			}
 		}
 		p{
+			font-family: $museolight;
 			a{
 				color: $blue;
 				 &:hover, &:focus, &:active{
@@ -153,7 +154,7 @@
 	.more-wrap.hover{
 		background: $blue;
 	}
-	.read-abstract{
+	.read-abstract, .icon-angle-up{
 		color: $white;
 		font-family: $museobold, Helvetica, sans;
 		text-transform: lowercase;
@@ -175,11 +176,10 @@
 			color: $white;
 		}
 	}
-	.read-abstract.open{
-		-webkit-transform: rotate(225deg);
-		-moz-transform: rotate(225deg);
-		-o-transform: rotate(225deg);
-		-ms-transform: rotate(225deg);
-		transform: rotate(225deg);
+	.icon-angle-up{
+		display: none;
+		font-family: 'bestmannlab';
+		font-weight: bold;
+		top: -1px;
 	}
 }

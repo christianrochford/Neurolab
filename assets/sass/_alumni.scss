@@ -1,52 +1,56 @@
-#alumni, #funding{
-	font-family: $museobold, Helvetica, sans;
-	color: $white;
-	font-size: 2.6em;
-	font-weight: 900;
-	text-align: center;
-	text-transform: lowercase;
-	display: block;
-	background-color: $blue;
+#button-wrap{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	right: -50px;
 	background-color: $blue-opaque;
-	width: 200px;
-	float: left;
-	height: auto;
-	padding: 20px;
-	position: relative;
-	left: 50%;
-	bottom: 100px;
-	margin-left: -100px;
 	-webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 	&:hover, &:focus, &:active{
 		cursor: pointer;
-		background-color: $blue;
+		background-color: $blue-opaque-dark;
 	}
-	@include breakpoint(mobile-landscape){
-		font-size: 1.5em;
-		bottom: 10px;
-		padding: 10px;
+	#extra{
+		color: $white;
+		font-size: 3em;
+		line-height: 1em;
+		position: absolute;
+		top: 6px;
+		left: 14px;
+		-webkit-transition: all 300ms ease-in-out;
+	    -moz-transition: all 300ms ease-in-out;
+	    -o-transition: all 300ms ease-in-out;
+	    transition: all 300ms ease-in-out;
+	}
+	#title{
+		margin-left: 150px;
+		color: $white;
+		font-family: $museobold, Helvetica, sans;
+		font-size: 1.6em;
+		padding: 16px 36px;
+		text-transform: lowercase;
+		-webkit-transition: all 300ms ease-in-out;
+	    -moz-transition: all 300ms ease-in-out;
+	    -o-transition: all 300ms ease-in-out;
+	    transition: all 300ms ease-in-out;
 	}
 }
-#alumni{
-	@include breakpoint(mobile-landscape){
-		display: none;
+#button-wrap.visible{
+	right: 0;
+}
+#button-wrap.open{
+	width: 150px;
+	#extra{
+		font-size: 0;
+	}
+	#title{
+		margin-left: 0;
 	}
 }
-#funding{
-	bottom: 30px;
-	@include breakpoint(mobile-landscape){
-		bottom: 10px;
-	}
-}
-.button-wrap{
-	width: 100%;
-	position: relative;
-	float: left;
-}
-#alumni-modal, #funding-modal{
+#extra-modal{
 	display: none;
 	width: 100%;
 	height: 100%;

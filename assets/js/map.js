@@ -112,41 +112,76 @@ var styles = [
   }
 ];
 
-      function initialize() {
-        var mapOptions = {
-          center: new google.maps.LatLng(51.521335,-0.121604),
-          zoom: 13,
-          disableDefaultUI: false,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          styles: styles,
-          scrollwheel: false,
-          draggable: false,
-        };
-        
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-            mapOptions);
+var map;
+var london = new google.maps.LatLng(51.521335,-0.121604);
 
-        var infowindow = new google.maps.InfoWindow();
+function ZoomInControl(controlDiv, map) {
 
-        //Marker 
-        var marker1 = new google.maps.Marker({
-          position: new google.maps.LatLng(51.521335,-0.121604),
-          icon:'assets/img/map.png',
-        });
+  var zoomIn = document.getElementById('zoomin');
+  google.maps.event.addDomListener(zoomIn, 'click', function() {
+    var currentZoomLevel = map.getZoom();
+    if(currentZoomLevel != 0){
+      map.setZoom(currentZoomLevel + 1);
+    }  
+  });
 
-        marker1.setMap(map);
+}
 
-        google.maps.event.addListener(marker1, 'click', function() {
-          if (infowindow) {
-            infowindow.close();
-          }
-          infowindow.setOptions({
-            content:'<a href="#contact-details" class="pin">Bestmannlab</a>'
-          })
-          infowindow.open(map,marker1);
-        });
+function ZoomOutControl(controlDiv, map) {
 
-      }
+  var zoomOut = document.getElementById('zoomout');
+  google.maps.event.addDomListener(zoomOut, 'click', function() {
+    var currentZoomLevel = map.getZoom();
+    if(currentZoomLevel != 0){
+      map.setZoom(currentZoomLevel - 1);
+    }  
+  });
 
-      google.maps.event.addDomListener(window, 'load', initialize);
+}
+
+function initialize() {
+  var mapOptions = {
+    center: london,
+    zoom: 13,
+    zoomControl: false,
+    disableDefaultUI: true,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    styles: styles,
+    scrollwheel: false,
+    draggable: false,
+  };
+  
+  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+  var zoomInControlDiv = document.createElement('div');
+  var zoomInControl = new ZoomInControl(zoomInControlDiv, map);
+  zoomInControlDiv.index = 1;
+
+  var zoomOutControlDiv = document.createElement('div');
+  var zoomOutControl = new ZoomOutControl(zoomOutControlDiv, map);
+  zoomOutControlDiv.index = 1;
+
+  var infowindow = new google.maps.InfoWindow();
+
+  //Marker 
+  var marker1 = new google.maps.Marker({
+    position: new google.maps.LatLng(51.521335,-0.121604),
+    icon:'assets/img/map.png',
+  });
+
+  marker1.setMap(map);
+
+  google.maps.event.addListener(marker1, 'click', function() {
+    if (infowindow) {
+      infowindow.close();
+    }
+    infowindow.setOptions({
+      content:'<a href="#contact-details" class="pin">Bestmannlab</a>'
+    })
+    infowindow.open(map,marker1);
+  });
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
 
