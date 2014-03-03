@@ -2,7 +2,7 @@
 
 // set page height
 
-$('#intro, #research, #team-img, #pubs-img').css({height:$(window).height()-46 + 'px'});
+$('#intro, #research, #team-img, #pubs-img').css({height:$(window).height()-47 + 'px'});
 
 // tablet menu 
 $('#menu').on('click', function(e){
@@ -56,7 +56,6 @@ $('#research-arrow-down').on('click', function(e){
 	$('html, body').animate({scrollTop: $('#research-content').offset().top -46}, 500);
 })
 
-// team members
 $('#carousel').flexslider({
     animation: "slide",
     controlNav: true,
@@ -80,21 +79,36 @@ $('#carousel').flexslider({
     sync: "#carousel"
   });
 
+  $(window).load(function(){
+  	$('#tweets').flexslider({
+	  	animation: "fade",
+	    controlNav: false,
+	    directionNav: false,
+	    animationLoop: true,
+	    slideshow: true,
+	    touch: false,
+	    animationSpeed: 500
+	  });
+  	$('#news').flexslider({
+	  	animation: "fade",
+	    controlNav: false,
+	    directionNav: false,
+	    animationLoop: true,
+	    slideshow: true,
+	    touch: false,
+	    animationSpeed: 500
+	  });
+  })
+
  $('#carousel').on('click','img',function(){
  	$('#carousel img').removeClass('on');
  	$(this).addClass('on');
- 	$('#team-slider').slideDown(300);
  })
  $('#carousel').on('click','h4',function(){
  	$('#carousel img').removeClass('on');
  	$(this).prev().addClass('on');
- 	$('#team-slider').slideDown(300);
  })
- $('#team-slider').on('click','.icon-angle-up',function(e){
- 	e.preventDefault();
- 	$('#carousel img').removeClass('on');
- 	$('#team-slider').slideUp(300);
- })
+ $('#carousel ul li:first-child img').addClass('on');
 
 // modals
 $('#button-wrap').waypoint(function(direction){

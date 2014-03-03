@@ -4109,88 +4109,194 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 /* line 1, ../sass/_intro.scss */
 #intro {
   position: relative;
+  margin-top: 47px;
 }
-/* line 3, ../sass/_intro.scss */
-#intro #img {
+/* line 4, ../sass/_intro.scss */
+#intro #tweets.flexslider {
+  width: 50%;
+  height: 50%;
+  float: left;
+  margin: 0;
+  overflow: hidden;
+}
+/* line 10, ../sass/_intro.scss */
+#intro #tweets.flexslider #tweet-wrapper.slides {
   width: 100%;
   height: 100%;
-  margin-top: 46px;
-  background-image: url(../img/brain2.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50% 50%;
+  position: relative;
 }
-@media (max-width: 480px) {
-  /* line 3, ../sass/_intro.scss */
-  #intro #img {
-    height: 90%;
-  }
-}
-/* line 15, ../sass/_intro.scss */
-#intro #quote {
-  width: 90%;
-  height: 100px;
-  margin: 0 5%;
+/* line 14, ../sass/_intro.scss */
+#intro #tweets.flexslider #tweet-wrapper.slides li.tweet {
+  width: 80%;
+  height: 100%;
+  padding: 20px 10%;
+  background-color: #3e75bb;
   position: absolute;
-  top: 0px;
+}
+/* line 20, ../sass/_intro.scss */
+#intro #tweets.flexslider #tweet-wrapper.slides li.tweet .text-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
   display: table;
 }
-@media (max-width: 480px) {
-  /* line 15, ../sass/_intro.scss */
-  #intro #quote {
-    height: 20%;
-  }
-}
-/* line 25, ../sass/_intro.scss */
-#intro #quote p {
+/* line 27, ../sass/_intro.scss */
+#intro #tweets.flexslider #tweet-wrapper.slides li.tweet .text-wrapper p {
   font-family: "museo_sans_500regular", Helvetica, sans;
-  color: #3e75bb;
-  text-transform: lowercase;
-  font-size: 1.6em;
+  color: white;
   display: table-cell;
   vertical-align: middle;
-  text-align: center;
 }
-@media (max-width: 768px) {
-  /* line 25, ../sass/_intro.scss */
-  #intro #quote p {
-    font-size: 1.6em;
-  }
+/* line 32, ../sass/_intro.scss */
+#intro #tweets.flexslider #tweet-wrapper.slides li.tweet .text-wrapper p a {
+  color: white;
 }
-@media (max-width: 480px) {
-  /* line 25, ../sass/_intro.scss */
-  #intro #quote p {
-    font-size: 1em;
-  }
+/* line 34, ../sass/_intro.scss */
+#intro #tweets.flexslider #tweet-wrapper.slides li.tweet .text-wrapper p a span {
+  font-size: 0.8em;
+  width: auto;
+  max-width: 80%;
+  overflow: hidden;
 }
-/* line 41, ../sass/_intro.scss */
-#intro .arrow-wrap {
-  width: 50%;
+/* line 43, ../sass/_intro.scss */
+#intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link {
+  display: block;
+  color: white;
   position: absolute;
-  bottom: 30px;
-  left: 50%;
+  left: -100%;
+  bottom: 10px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
-/* line 46, ../sass/_intro.scss */
-#intro .arrow-wrap .icon-arrow-down {
-  color: #3e75bb;
-  font-size: 2.2em;
-  width: 60px;
-  margin-left: -46px;
-  filter: opacity(50);
-  opacity: 0.5;
+/* line 53, ../sass/_intro.scss */
+#intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link .icon-twitter {
+  font-size: 1.5em;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
-@media (max-width: 480px) {
-  /* line 46, ../sass/_intro.scss */
-  #intro .arrow-wrap .icon-arrow-down {
-    font-size: 1.2em;
-    margin-left: -25px;
-  }
-}
-/* line 57, ../sass/_intro.scss */
-#intro .arrow-wrap .icon-arrow-down:hover, #intro .arrow-wrap .icon-arrow-down:focus, #intro .arrow-wrap .icon-arrow-down:active {
+/* line 59, ../sass/_intro.scss */
+#intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link .icon-twitter:hover, #intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link .icon-twitter:focus, #intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link .icon-twitter:active {
   cursor: pointer;
+}
+/* line 65, ../sass/_intro.scss */
+#intro #tweets.flexslider #tweet-wrapper.slides li.tweet:hover #twitter-link, #intro #tweets.flexslider #tweet-wrapper.slides li.tweet:focus #twitter-link, #intro #tweets.flexslider #tweet-wrapper.slides li.tweet:active #twitter-link {
+  left: 0;
+}
+/* line 72, ../sass/_intro.scss */
+#intro #news.flexslider {
+  width: 50%;
+  height: 50%;
+  float: left;
+  background-color: #3e75bb;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+/* line 80, ../sass/_intro.scss */
+#intro #news.flexslider ul li {
+  width: 100%;
+  height: 100%;
+}
+/* line 83, ../sass/_intro.scss */
+#intro #news.flexslider ul li .text-wrap {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+/* line 87, ../sass/_intro.scss */
+#intro #news.flexslider ul li .text-wrap p {
+  font-family: "museo_sans_500regular", Helvetica, sans;
+  color: white;
+  text-transform: lowercase;
+  font-size: 1em;
+  width: 80%;
+  padding: 0 10%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 97, ../sass/_intro.scss */
+#intro #news.flexslider ul li .text-wrap p a {
+  color: white;
+}
+/* line 103, ../sass/_intro.scss */
+#intro #news.flexslider #news-link {
+  display: block;
+  color: white;
+  position: absolute;
+  left: -100%;
+  bottom: 20px;
+  z-index: 2;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+/* line 116, ../sass/_intro.scss */
+#intro #news.flexslider:hover #news-link, #intro #news.flexslider:focus #news-link, #intro #news.flexslider:active #news-link {
+  left: 10%;
+}
+/* line 121, ../sass/_intro.scss */
+#intro #img1, #intro #img2 {
+  width: 50%;
+  height: 50%;
+  float: left;
+  position: relative;
+  background-image: url(../img/brain2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  overflow: hidden;
+}
+/* line 131, ../sass/_intro.scss */
+#intro #img1 #quote, #intro #img2 #quote {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(62, 117, 187, 0.5);
+  filter: opacity(0);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  float: left;
+  display: table;
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+/* line 148, ../sass/_intro.scss */
+#intro #img1 #quote p, #intro #img2 #quote p {
+  font-family: "museo_sans_500regular", Helvetica, sans;
+  color: white;
+  text-transform: lowercase;
+  font-size: 1em;
+  width: 80%;
+  padding: 0 10%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 158, ../sass/_intro.scss */
+#intro #img1 #quote p a, #intro #img2 #quote p a {
+  color: white;
+}
+/* line 164, ../sass/_intro.scss */
+#intro #img1:hover #quote, #intro #img1:focus #quote, #intro #img1:active #quote, #intro #img2:hover #quote, #intro #img2:focus #quote, #intro #img2:active #quote {
   filter: opacity(100);
   opacity: 1;
+}
+/* line 170, ../sass/_intro.scss */
+#intro #img2 {
+  background-image: url(../img/neurons.jpg);
 }
 
 /*
@@ -4756,7 +4862,7 @@ html[xmlns] .slides {
   height: 100%;
   float: left;
   position: relative;
-  margin-top: 46px;
+  margin-top: 47px;
 }
 /* line 8, ../sass/_research.scss */
 .research #research #img {
@@ -5116,7 +5222,7 @@ html[xmlns] .slides {
   background-size: cover;
   width: 100%;
   height: 600px;
-  margin-top: 46px;
+  margin-top: 47px;
   position: relative;
 }
 /* line 11, ../sass/_news.scss */
@@ -5353,7 +5459,7 @@ html[xmlns] .slides {
   background-position: top center;
   width: 100%;
   height: 600px;
-  margin-top: 46px;
+  margin-top: 47px;
   position: relative;
 }
 /* line 12, ../sass/_team.scss */
@@ -5402,7 +5508,6 @@ html[xmlns] .slides {
 }
 /* line 50, ../sass/_team.scss */
 .team #team #team-slider {
-  display: none;
   height: auto;
   width: 60%;
   margin: 0 20%;
@@ -5415,7 +5520,7 @@ html[xmlns] .slides {
     margin: 0 10%;
   }
 }
-/* line 62, ../sass/_team.scss */
+/* line 61, ../sass/_team.scss */
 .team #team #team-slider ul.slides li h4, .team #team #team-slider ul.slides li h5 {
   font-family: "museo_sans_700regular", sans;
   color: #999999;
@@ -5424,7 +5529,7 @@ html[xmlns] .slides {
   text-transform: lowercase;
   margin-bottom: 10px;
 }
-/* line 70, ../sass/_team.scss */
+/* line 69, ../sass/_team.scss */
 .team #team #team-slider ul.slides li p {
   background: white;
   font-family: "museo_sans_500regular", sans;
@@ -5432,12 +5537,12 @@ html[xmlns] .slides {
   text-align: center;
 }
 @media (max-width: 480px) {
-  /* line 70, ../sass/_team.scss */
+  /* line 69, ../sass/_team.scss */
   .team #team #team-slider ul.slides li p {
     font-size: 1em;
   }
 }
-/* line 79, ../sass/_team.scss */
+/* line 78, ../sass/_team.scss */
 .team #team #team-slider ul.slides li .arrow-wrap {
   line-height: 0;
   position: relative;
@@ -5446,11 +5551,11 @@ html[xmlns] .slides {
   width: 100%;
   margin-left: 0;
 }
-/* line 86, ../sass/_team.scss */
+/* line 85, ../sass/_team.scss */
 .team #team #team-slider ul.slides li .arrow-wrap a {
   text-transform: lowercase;
 }
-/* line 91, ../sass/_team.scss */
+/* line 90, ../sass/_team.scss */
 .team #team #team-slider ul.slides .flex-active-slide .icon-angle-up {
   color: rgba(62, 117, 187, 0.5);
   font-size: 3em;
@@ -5461,12 +5566,12 @@ html[xmlns] .slides {
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-/* line 100, ../sass/_team.scss */
+/* line 99, ../sass/_team.scss */
 .team #team #team-slider ul.slides .flex-active-slide .icon-angle-up:hover, .team #team #team-slider ul.slides .flex-active-slide .icon-angle-up:focus, .team #team #team-slider ul.slides .flex-active-slide .icon-angle-up:active {
   cursor: pointer;
   color: #3e75bb;
 }
-/* line 107, ../sass/_team.scss */
+/* line 106, ../sass/_team.scss */
 .team #team #carousel.flexslider {
   width: 900px;
   min-width: 200px;
@@ -5474,24 +5579,24 @@ html[xmlns] .slides {
   margin: 0 auto;
 }
 @media (max-width: 900px) {
-  /* line 107, ../sass/_team.scss */
+  /* line 106, ../sass/_team.scss */
   .team #team #carousel.flexslider {
     width: 600px;
   }
 }
 @media (max-width: 600px) {
-  /* line 107, ../sass/_team.scss */
+  /* line 106, ../sass/_team.scss */
   .team #team #carousel.flexslider {
     width: 300px;
   }
 }
-/* line 119, ../sass/_team.scss */
+/* line 118, ../sass/_team.scss */
 .team #team #carousel.flexslider .slides li {
   width: 240px;
   margin: 50px 0 20px;
   z-index: 0;
 }
-/* line 123, ../sass/_team.scss */
+/* line 122, ../sass/_team.scss */
 .team #team #carousel.flexslider .slides li img {
   width: 240px;
   height: 240px;
@@ -5511,18 +5616,18 @@ html[xmlns] .slides {
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
-/* line 138, ../sass/_team.scss */
+/* line 137, ../sass/_team.scss */
 .team #team #carousel.flexslider .slides li img:hover, .team #team #carousel.flexslider .slides li img:focus, .team #team #carousel.flexslider .slides li img:active {
   cursor: pointer;
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(0%);
 }
-/* line 144, ../sass/_team.scss */
+/* line 143, ../sass/_team.scss */
 .team #team #carousel.flexslider .slides li img.on {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(0%);
 }
-/* line 148, ../sass/_team.scss */
+/* line 147, ../sass/_team.scss */
 .team #team #carousel.flexslider .slides li h4, .team #team #carousel.flexslider .slides li h5 {
   font-family: "museo_sans_700regular", sans;
   color: #3e75bb;
@@ -5531,70 +5636,70 @@ html[xmlns] .slides {
   text-transform: lowercase;
   margin-bottom: 10px;
 }
-/* line 156, ../sass/_team.scss */
+/* line 155, ../sass/_team.scss */
 .team #team #carousel.flexslider .slides li h4 {
   margin-top: 20px;
 }
-/* line 158, ../sass/_team.scss */
+/* line 157, ../sass/_team.scss */
 .team #team #carousel.flexslider .slides li h4:hover, .team #team #carousel.flexslider .slides li h4:focus, .team #team #carousel.flexslider .slides li h4:active {
   cursor: pointer;
 }
 @media (max-width: 480px) {
-  /* line 156, ../sass/_team.scss */
+  /* line 155, ../sass/_team.scss */
   .team #team #carousel.flexslider .slides li h4 {
     margin-top: 50px;
   }
 }
-/* line 166, ../sass/_team.scss */
+/* line 165, ../sass/_team.scss */
 .team #team #carousel.flexslider .slides li h5:after, .team #team #carousel.flexslider .slides li h5:before {
   content: '-';
 }
-/* line 172, ../sass/_team.scss */
+/* line 171, ../sass/_team.scss */
 .team #team #carousel.flexslider .flex-control-nav, .team #team #carousel.flexslider .flex-control-paging {
   display: none;
 }
 @media (max-width: 480px) {
-  /* line 172, ../sass/_team.scss */
+  /* line 171, ../sass/_team.scss */
   .team #team #carousel.flexslider .flex-control-nav, .team #team #carousel.flexslider .flex-control-paging {
     display: block;
     bottom: 90px;
   }
-  /* line 177, ../sass/_team.scss */
+  /* line 176, ../sass/_team.scss */
   .team #team #carousel.flexslider .flex-control-nav li a, .team #team #carousel.flexslider .flex-control-paging li a {
     background: rgba(62, 117, 187, 0.5);
   }
-  /* line 180, ../sass/_team.scss */
+  /* line 179, ../sass/_team.scss */
   .team #team #carousel.flexslider .flex-control-nav li a.flex-active, .team #team #carousel.flexslider .flex-control-paging li a.flex-active {
     background: #3e75bb;
   }
 }
 @media (max-width: 480px) {
-  /* line 185, ../sass/_team.scss */
+  /* line 184, ../sass/_team.scss */
   .team #team #carousel.flexslider .flex-direction-nav {
     display: none;
   }
 }
-/* line 189, ../sass/_team.scss */
+/* line 188, ../sass/_team.scss */
 .team #team #carousel.flexslider .flex-direction-nav a {
   top: 42%;
   z-index: 2;
 }
-/* line 193, ../sass/_team.scss */
+/* line 192, ../sass/_team.scss */
 .team #team #carousel.flexslider .flex-direction-nav .flex-next {
   right: -50px;
 }
 @media (max-width: 480px) {
-  /* line 193, ../sass/_team.scss */
+  /* line 192, ../sass/_team.scss */
   .team #team #carousel.flexslider .flex-direction-nav .flex-next {
     right: -35px;
   }
 }
-/* line 199, ../sass/_team.scss */
+/* line 198, ../sass/_team.scss */
 .team #team #carousel.flexslider .flex-direction-nav .flex-prev {
   left: -50px;
 }
 @media (max-width: 480px) {
-  /* line 199, ../sass/_team.scss */
+  /* line 198, ../sass/_team.scss */
   .team #team #carousel.flexslider .flex-direction-nav .flex-prev {
     left: -35px;
   }
@@ -5605,7 +5710,7 @@ html[xmlns] .slides {
   width: 100%;
   height: 400px;
   position: relative;
-  margin-top: 46px;
+  margin-top: 47px;
   overflow: hidden;
 }
 @media (max-width: 480px) {
