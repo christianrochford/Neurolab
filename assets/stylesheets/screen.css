@@ -4111,21 +4111,36 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   position: relative;
   margin-top: 47px;
 }
-/* line 4, ../sass/_intro.scss */
+@media (max-width: 480px) {
+  /* line 1, ../sass/_intro.scss */
+  #intro {
+    height: 400px !important;
+  }
+}
+/* line 7, ../sass/_intro.scss */
 #intro #tweets.flexslider {
-  width: 50%;
-  height: 50%;
-  float: left;
+  width: 33.333%;
+  height: 33.333%;
   margin: 0;
+  float: left;
   overflow: hidden;
 }
-/* line 10, ../sass/_intro.scss */
+@media (max-width: 480px) {
+  /* line 7, ../sass/_intro.scss */
+  #intro #tweets.flexslider {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+  }
+}
+/* line 19, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides {
   width: 100%;
   height: 100%;
   position: relative;
 }
-/* line 14, ../sass/_intro.scss */
+/* line 23, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet {
   width: 80%;
   height: 100%;
@@ -4133,7 +4148,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   background-color: #3e75bb;
   position: absolute;
 }
-/* line 20, ../sass/_intro.scss */
+/* line 29, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet .text-wrapper {
   width: 100%;
   height: 100%;
@@ -4142,37 +4157,54 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   left: 0;
   display: table;
 }
-/* line 27, ../sass/_intro.scss */
+/* line 36, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet .text-wrapper p {
   font-family: "museo_sans_500regular", Helvetica, sans;
   color: white;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 32, ../sass/_intro.scss */
+@media (max-width: 768px) {
+  /* line 36, ../sass/_intro.scss */
+  #intro #tweets.flexslider #tweet-wrapper.slides li.tweet .text-wrapper p {
+    font-size: 0.8em;
+  }
+}
+/* line 44, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet .text-wrapper p a {
   color: white;
 }
-/* line 34, ../sass/_intro.scss */
+/* line 46, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet .text-wrapper p a span {
+  display: none;
+}
+/* line 48, ../sass/_intro.scss */
+#intro #tweets.flexslider #tweet-wrapper.slides li.tweet .text-wrapper p a span:nth-child(2) {
+  display: block;
   font-size: 0.8em;
   width: auto;
   max-width: 80%;
   overflow: hidden;
 }
-/* line 43, ../sass/_intro.scss */
+/* line 59, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link {
   display: block;
   color: white;
   position: absolute;
   left: -100%;
-  bottom: 10px;
+  bottom: -10px;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-/* line 53, ../sass/_intro.scss */
+@media (max-width: 480px) {
+  /* line 59, ../sass/_intro.scss */
+  #intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link {
+    left: 60%;
+  }
+}
+/* line 72, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link .icon-twitter {
   font-size: 1.5em;
   -webkit-transition: all 300ms ease-in-out;
@@ -4180,36 +4212,50 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-/* line 59, ../sass/_intro.scss */
+/* line 78, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link .icon-twitter:hover, #intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link .icon-twitter:focus, #intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link .icon-twitter:active {
   cursor: pointer;
 }
-/* line 65, ../sass/_intro.scss */
+/* line 84, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet:hover #twitter-link, #intro #tweets.flexslider #tweet-wrapper.slides li.tweet:focus #twitter-link, #intro #tweets.flexslider #tweet-wrapper.slides li.tweet:active #twitter-link {
   left: 0;
 }
-/* line 72, ../sass/_intro.scss */
+@media (max-width: 480px) {
+  /* line 84, ../sass/_intro.scss */
+  #intro #tweets.flexslider #tweet-wrapper.slides li.tweet:hover #twitter-link, #intro #tweets.flexslider #tweet-wrapper.slides li.tweet:focus #twitter-link, #intro #tweets.flexslider #tweet-wrapper.slides li.tweet:active #twitter-link {
+    left: 60%;
+  }
+}
+/* line 94, ../sass/_intro.scss */
 #intro #news.flexslider {
-  width: 50%;
-  height: 50%;
-  float: left;
+  width: 33.333%;
+  height: 33.333%;
   background-color: #3e75bb;
   margin: 0;
-  position: relative;
+  float: left;
   overflow: hidden;
 }
-/* line 80, ../sass/_intro.scss */
+@media (max-width: 480px) {
+  /* line 94, ../sass/_intro.scss */
+  #intro #news.flexslider {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 300px;
+  }
+}
+/* line 107, ../sass/_intro.scss */
 #intro #news.flexslider ul li {
   width: 100%;
   height: 100%;
 }
-/* line 83, ../sass/_intro.scss */
+/* line 110, ../sass/_intro.scss */
 #intro #news.flexslider ul li .text-wrap {
   width: 100%;
   height: 100%;
   display: table;
 }
-/* line 87, ../sass/_intro.scss */
+/* line 114, ../sass/_intro.scss */
 #intro #news.flexslider ul li .text-wrap p {
   font-family: "museo_sans_500regular", Helvetica, sans;
   color: white;
@@ -4221,11 +4267,17 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   display: table-cell;
   vertical-align: middle;
 }
-/* line 97, ../sass/_intro.scss */
+@media (max-width: 768px) {
+  /* line 114, ../sass/_intro.scss */
+  #intro #news.flexslider ul li .text-wrap p {
+    font-size: 0.8em;
+  }
+}
+/* line 127, ../sass/_intro.scss */
 #intro #news.flexslider ul li .text-wrap p a {
   color: white;
 }
-/* line 103, ../sass/_intro.scss */
+/* line 133, ../sass/_intro.scss */
 #intro #news.flexslider #news-link {
   display: block;
   color: white;
@@ -4238,24 +4290,43 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-/* line 116, ../sass/_intro.scss */
+@media (max-width: 480px) {
+  /* line 133, ../sass/_intro.scss */
+  #intro #news.flexslider #news-link {
+    left: 70%;
+  }
+}
+/* line 149, ../sass/_intro.scss */
 #intro #news.flexslider:hover #news-link, #intro #news.flexslider:focus #news-link, #intro #news.flexslider:active #news-link {
   left: 10%;
 }
-/* line 121, ../sass/_intro.scss */
-#intro #img1, #intro #img2 {
-  width: 50%;
-  height: 50%;
+@media (max-width: 480px) {
+  /* line 149, ../sass/_intro.scss */
+  #intro #news.flexslider:hover #news-link, #intro #news.flexslider:focus #news-link, #intro #news.flexslider:active #news-link {
+    left: 70%;
+  }
+}
+/* line 157, ../sass/_intro.scss */
+#intro #img1, #intro #img2, #intro #img3, #intro #img4, #intro #img5, #intro #img6, #intro #img7 {
+  width: 33.333%;
+  height: 33.333%;
   float: left;
   position: relative;
-  background-image: url(../img/brain2.jpg);
+  background-image: url(../img/intro_brain.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   overflow: hidden;
 }
-/* line 131, ../sass/_intro.scss */
-#intro #img1 #quote, #intro #img2 #quote {
+@media (max-width: 480px) {
+  /* line 157, ../sass/_intro.scss */
+  #intro #img1, #intro #img2, #intro #img3, #intro #img4, #intro #img5, #intro #img6, #intro #img7 {
+    width: 100%;
+    height: 100px;
+  }
+}
+/* line 171, ../sass/_intro.scss */
+#intro #img1 #quote, #intro #img2 #quote, #intro #img3 #quote, #intro #img4 #quote, #intro #img5 #quote, #intro #img6 #quote, #intro #img7 #quote {
   width: 100%;
   height: 100%;
   background-color: rgba(62, 117, 187, 0.5);
@@ -4273,8 +4344,15 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-/* line 148, ../sass/_intro.scss */
-#intro #img1 #quote p, #intro #img2 #quote p {
+@media (max-width: 480px) {
+  /* line 171, ../sass/_intro.scss */
+  #intro #img1 #quote, #intro #img2 #quote, #intro #img3 #quote, #intro #img4 #quote, #intro #img5 #quote, #intro #img6 #quote, #intro #img7 #quote {
+    filter: opacity(100);
+    opacity: 1;
+  }
+}
+/* line 192, ../sass/_intro.scss */
+#intro #img1 #quote p, #intro #img1 #quote h2, #intro #img2 #quote p, #intro #img2 #quote h2, #intro #img3 #quote p, #intro #img3 #quote h2, #intro #img4 #quote p, #intro #img4 #quote h2, #intro #img5 #quote p, #intro #img5 #quote h2, #intro #img6 #quote p, #intro #img6 #quote h2, #intro #img7 #quote p, #intro #img7 #quote h2 {
   font-family: "museo_sans_500regular", Helvetica, sans;
   color: white;
   text-transform: lowercase;
@@ -4285,18 +4363,55 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   display: table-cell;
   vertical-align: middle;
 }
-/* line 158, ../sass/_intro.scss */
-#intro #img1 #quote p a, #intro #img2 #quote p a {
+/* line 202, ../sass/_intro.scss */
+#intro #img1 #quote p a, #intro #img1 #quote h2 a, #intro #img2 #quote p a, #intro #img2 #quote h2 a, #intro #img3 #quote p a, #intro #img3 #quote h2 a, #intro #img4 #quote p a, #intro #img4 #quote h2 a, #intro #img5 #quote p a, #intro #img5 #quote h2 a, #intro #img6 #quote p a, #intro #img6 #quote h2 a, #intro #img7 #quote p a, #intro #img7 #quote h2 a {
   color: white;
 }
-/* line 164, ../sass/_intro.scss */
-#intro #img1:hover #quote, #intro #img1:focus #quote, #intro #img1:active #quote, #intro #img2:hover #quote, #intro #img2:focus #quote, #intro #img2:active #quote {
+/* line 206, ../sass/_intro.scss */
+#intro #img1 #quote h2, #intro #img2 #quote h2, #intro #img3 #quote h2, #intro #img4 #quote h2, #intro #img5 #quote h2, #intro #img6 #quote h2, #intro #img7 #quote h2 {
+  font-size: 2em;
+}
+/* line 211, ../sass/_intro.scss */
+#intro #img1:hover #quote, #intro #img1:focus #quote, #intro #img1:active #quote, #intro #img2:hover #quote, #intro #img2:focus #quote, #intro #img2:active #quote, #intro #img3:hover #quote, #intro #img3:focus #quote, #intro #img3:active #quote, #intro #img4:hover #quote, #intro #img4:focus #quote, #intro #img4:active #quote, #intro #img5:hover #quote, #intro #img5:focus #quote, #intro #img5:active #quote, #intro #img6:hover #quote, #intro #img6:focus #quote, #intro #img6:active #quote, #intro #img7:hover #quote, #intro #img7:focus #quote, #intro #img7:active #quote {
   filter: opacity(100);
   opacity: 1;
 }
-/* line 170, ../sass/_intro.scss */
+/* line 217, ../sass/_intro.scss */
 #intro #img2 {
-  background-image: url(../img/neurons.jpg);
+  background-image: url(../img/intro_neurons.jpg);
+}
+/* line 220, ../sass/_intro.scss */
+#intro #img3 {
+  background-image: url(../img/intro_mri.jpg);
+}
+@media (max-width: 480px) {
+  /* line 220, ../sass/_intro.scss */
+  #intro #img3 {
+    position: absolute;
+    top: 200px;
+  }
+}
+/* line 227, ../sass/_intro.scss */
+#intro #img4 {
+  background-image: url(../img/intro_team.jpg);
+}
+/* line 230, ../sass/_intro.scss */
+#intro #img5 {
+  background-image: url(../img/intro_news.jpg);
+}
+/* line 233, ../sass/_intro.scss */
+#intro #img6 {
+  background-image: url(../img/intro_books.jpg);
+}
+/* line 236, ../sass/_intro.scss */
+#intro #img7 {
+  background-image: url(../img/intro_map.jpg);
+}
+@media (max-width: 480px) {
+  /* line 239, ../sass/_intro.scss */
+  #intro #img2, #intro #img4, #intro #img5, #intro #img6, #intro #img7 {
+    display: none;
+  }
 }
 
 /*
@@ -4650,7 +4765,13 @@ html[xmlns] .slides {
     height: 400px;
   }
 }
-/* line 9, ../sass/_about.scss */
+@media (max-width: 480px) {
+  /* line 1, ../sass/_about.scss */
+  #about, #questions {
+    height: 300px;
+  }
+}
+/* line 12, ../sass/_about.scss */
 #about #img, #questions #img {
   width: 100%;
   height: 100%;
@@ -4660,7 +4781,7 @@ html[xmlns] .slides {
   background-size: cover;
   background-position: 50% 50%;
 }
-/* line 18, ../sass/_about.scss */
+/* line 21, ../sass/_about.scss */
 #about #about-content, #questions #about-content {
   width: 100%;
   height: 600px;
@@ -4670,19 +4791,25 @@ html[xmlns] .slides {
   z-index: 1;
 }
 @media (max-width: 768px) {
-  /* line 18, ../sass/_about.scss */
+  /* line 21, ../sass/_about.scss */
   #about #about-content, #questions #about-content {
     height: 400px;
   }
 }
-/* line 28, ../sass/_about.scss */
+@media (max-width: 480px) {
+  /* line 21, ../sass/_about.scss */
+  #about #about-content, #questions #about-content {
+    height: 300px;
+  }
+}
+/* line 34, ../sass/_about.scss */
 #about #about-content .twelve, #questions #about-content .twelve {
   width: 100% !important;
   height: 100%;
   float: left;
   padding: 0;
 }
-/* line 34, ../sass/_about.scss */
+/* line 40, ../sass/_about.scss */
 #about #about-content #about-text, #questions #about-content #about-text {
   width: 80%;
   height: 100%;
@@ -4690,17 +4817,17 @@ html[xmlns] .slides {
   display: table;
 }
 @media (max-width: 480px) {
-  /* line 34, ../sass/_about.scss */
+  /* line 40, ../sass/_about.scss */
   #about #about-content #about-text, #questions #about-content #about-text {
     width: 80%;
     margin: 0 10%;
   }
 }
-/* line 44, ../sass/_about.scss */
+/* line 50, ../sass/_about.scss */
 #about #about-content p, #questions #about-content p {
   font-family: "museo_sans_300regular";
   font-size: 1.6em;
-  color: white;
+  color: #999999;
   width: 80%;
   margin: 0 10%;
   display: table-cell;
@@ -4708,31 +4835,31 @@ html[xmlns] .slides {
   text-align: center;
 }
 @media (max-width: 768px) {
-  /* line 44, ../sass/_about.scss */
+  /* line 50, ../sass/_about.scss */
   #about #about-content p, #questions #about-content p {
     font-size: 1.5em;
   }
 }
 @media (max-width: 480px) {
-  /* line 44, ../sass/_about.scss */
+  /* line 50, ../sass/_about.scss */
   #about #about-content p, #questions #about-content p {
     font-size: 1em;
   }
 }
 
-/* line 63, ../sass/_about.scss */
+/* line 69, ../sass/_about.scss */
 #questions-text {
   width: 100%;
   height: 600px;
   display: table;
 }
 @media (max-width: 768px) {
-  /* line 63, ../sass/_about.scss */
+  /* line 69, ../sass/_about.scss */
   #questions-text {
     height: 400px;
   }
 }
-/* line 70, ../sass/_about.scss */
+/* line 76, ../sass/_about.scss */
 #questions-text p {
   display: table-cell;
   width: 50%;
@@ -4744,7 +4871,7 @@ html[xmlns] .slides {
   transition: all 300ms ease-in-out;
 }
 @media (max-width: 630px) {
-  /* line 70, ../sass/_about.scss */
+  /* line 76, ../sass/_about.scss */
   #questions-text p {
     width: 100%;
     height: auto;
@@ -4752,70 +4879,83 @@ html[xmlns] .slides {
     margin: 20px 0;
     display: block;
   }
-  /* line 85, ../sass/_about.scss */
+  /* line 91, ../sass/_about.scss */
   #questions-text p:last-of-type {
     margin-top: 0;
   }
 }
 @media (max-width: 768px) {
-  /* line 70, ../sass/_about.scss */
+  /* line 76, ../sass/_about.scss */
   #questions-text p {
     font-size: 1.5em;
   }
 }
 @media (max-width: 480px) {
-  /* line 70, ../sass/_about.scss */
+  /* line 76, ../sass/_about.scss */
   #questions-text p {
     font-size: 1em;
   }
 }
 
-/* line 98, ../sass/_about.scss */
+@media (max-width: 768px) {
+  /* line 103, ../sass/_about.scss */
+  #questions {
+    height: 700px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 103, ../sass/_about.scss */
+  #questions {
+    height: 400px;
+  }
+}
+/* line 110, ../sass/_about.scss */
 #questions .twelve {
-  height: 600px;
+  height: 700px;
   position: absolute;
   top: 0;
   left: 0;
 }
 @media (max-width: 768px) {
-  /* line 98, ../sass/_about.scss */
+  /* line 110, ../sass/_about.scss */
   #questions .twelve {
-    height: 400px;
+    height: 600px;
     margin-top: 50px;
   }
 }
 @media (max-width: 480px) {
-  /* line 98, ../sass/_about.scss */
+  /* line 110, ../sass/_about.scss */
   #questions .twelve {
+    height: 400px;
     padding: 0;
     margin-top: 0px;
   }
 }
-/* line 112, ../sass/_about.scss */
+/* line 125, ../sass/_about.scss */
 #questions .twelve #questions-text p {
-  color: #999999;
+  color: white;
   font-family: "museo_sans_300regular";
   font-size: 1.6em;
   text-align: center;
 }
 @media (max-width: 768px) {
-  /* line 112, ../sass/_about.scss */
+  /* line 125, ../sass/_about.scss */
   #questions .twelve #questions-text p {
     font-size: 1.5em;
   }
 }
 @media (max-width: 480px) {
-  /* line 112, ../sass/_about.scss */
+  /* line 125, ../sass/_about.scss */
   #questions .twelve #questions-text p {
     font-size: 0.85em;
     margin: 50px 0 0;
   }
 }
-/* line 124, ../sass/_about.scss */
+/* line 137, ../sass/_about.scss */
 #questions .twelve #questions-text p a {
-  color: rgba(62, 117, 187, 0.5);
+  color: white;
 }
-/* line 126, ../sass/_about.scss */
+/* line 139, ../sass/_about.scss */
 #questions .twelve #questions-text p a:hover, #questions .twelve #questions-text p a:focus, #questions .twelve #questions-text p a:active {
   color: #3e75bb;
 }

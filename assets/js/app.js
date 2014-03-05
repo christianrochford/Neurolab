@@ -20,7 +20,7 @@ $('header').on('click', '#menu-close', function(e){
 })
 
 // initialize skrollr
-if($(window).width() > 767){
+if($(window).width() > 868){
 	skrollr.init({
             forceHeight: false
     });
