@@ -60,6 +60,9 @@
 						color: $blue;
 						position: relative;
 						top: -20px;
+						@include breakpoint(desktop){
+							content: '';
+						}
 					}
 					&:first-child:after{
 						content: '';

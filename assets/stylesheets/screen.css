@@ -3932,11 +3932,17 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   position: relative;
   top: -20px;
 }
-/* line 64, ../sass/_header.scss */
+@media (max-width: 960px) {
+  /* line 58, ../sass/_header.scss */
+  .home header nav ul li:after, .research header nav ul li:after, .team header nav ul li:after, .news header nav ul li:after, .publications header nav ul li:after, .contact header nav ul li:after {
+    content: '';
+  }
+}
+/* line 67, ../sass/_header.scss */
 .home header nav ul li:first-child:after, .research header nav ul li:first-child:after, .team header nav ul li:first-child:after, .news header nav ul li:first-child:after, .publications header nav ul li:first-child:after, .contact header nav ul li:first-child:after {
   content: '';
 }
-/* line 70, ../sass/_header.scss */
+/* line 73, ../sass/_header.scss */
 .home header #menu, .research header #menu, .team header #menu, .news header #menu, .publications header #menu, .contact header #menu {
   display: none;
   width: 25px;
@@ -3950,12 +3956,12 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   transition: right 300ms ease-in-out;
 }
 @media (max-width: 768px) {
-  /* line 70, ../sass/_header.scss */
+  /* line 73, ../sass/_header.scss */
   .home header #menu, .research header #menu, .team header #menu, .news header #menu, .publications header #menu, .contact header #menu {
     display: block;
   }
 }
-/* line 84, ../sass/_header.scss */
+/* line 87, ../sass/_header.scss */
 .home header #menu .menu-bar, .research header #menu .menu-bar, .team header #menu .menu-bar, .news header #menu .menu-bar, .publications header #menu .menu-bar, .contact header #menu .menu-bar {
   display: block;
   background-color: #3e75bb;
@@ -3967,23 +3973,23 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-/* line 95, ../sass/_header.scss */
+/* line 98, ../sass/_header.scss */
 .home header #menu #menu-bar1, .research header #menu #menu-bar1, .team header #menu #menu-bar1, .news header #menu #menu-bar1, .publications header #menu #menu-bar1, .contact header #menu #menu-bar1 {
   top: 0;
 }
-/* line 98, ../sass/_header.scss */
+/* line 101, ../sass/_header.scss */
 .home header #menu #menu-bar2, .research header #menu #menu-bar2, .team header #menu #menu-bar2, .news header #menu #menu-bar2, .publications header #menu #menu-bar2, .contact header #menu #menu-bar2 {
   top: 7px;
 }
-/* line 101, ../sass/_header.scss */
+/* line 104, ../sass/_header.scss */
 .home header #menu #menu-bar3, .research header #menu #menu-bar3, .team header #menu #menu-bar3, .news header #menu #menu-bar3, .publications header #menu #menu-bar3, .contact header #menu #menu-bar3 {
   top: 14px;
 }
-/* line 106, ../sass/_header.scss */
+/* line 109, ../sass/_header.scss */
 .home header #menu.on .menu-bar, .research header #menu.on .menu-bar, .team header #menu.on .menu-bar, .news header #menu.on .menu-bar, .publications header #menu.on .menu-bar, .contact header #menu.on .menu-bar {
   height: 2px;
 }
-/* line 109, ../sass/_header.scss */
+/* line 112, ../sass/_header.scss */
 .home header #menu.on #menu-bar1, .research header #menu.on #menu-bar1, .team header #menu.on #menu-bar1, .news header #menu.on #menu-bar1, .publications header #menu.on #menu-bar1, .contact header #menu.on #menu-bar1 {
   width: 30px;
   top: 7px;
@@ -3992,11 +3998,11 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-/* line 117, ../sass/_header.scss */
+/* line 120, ../sass/_header.scss */
 .home header #menu.on #menu-bar2, .research header #menu.on #menu-bar2, .team header #menu.on #menu-bar2, .news header #menu.on #menu-bar2, .publications header #menu.on #menu-bar2, .contact header #menu.on #menu-bar2 {
   display: none;
 }
-/* line 120, ../sass/_header.scss */
+/* line 123, ../sass/_header.scss */
 .home header #menu.on #menu-bar3, .research header #menu.on #menu-bar3, .team header #menu.on #menu-bar3, .news header #menu.on #menu-bar3, .publications header #menu.on #menu-bar3, .contact header #menu.on #menu-bar3 {
   width: 30px;
   top: 7px;
@@ -4005,7 +4011,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
-/* line 129, ../sass/_header.scss */
+/* line 132, ../sass/_header.scss */
 .home header #menu-close, .research header #menu-close, .team header #menu-close, .news header #menu-close, .publications header #menu-close, .contact header #menu-close {
   display: none;
   width: 30px;
@@ -4117,38 +4123,56 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
     height: 400px !important;
   }
 }
-/* line 7, ../sass/_intro.scss */
+@media (max-width: 320px) {
+  /* line 1, ../sass/_intro.scss */
+  #intro {
+    height: 600px !important;
+  }
+}
+/* line 10, ../sass/_intro.scss */
 #intro #tweets.flexslider {
-  width: 33.333%;
-  height: 33.333%;
+  width: 66.666%;
+  height: 66.666%;
+  background-image: url(../img/brain2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
   margin: 0;
   float: left;
   overflow: hidden;
 }
 @media (max-width: 480px) {
-  /* line 7, ../sass/_intro.scss */
+  /* line 10, ../sass/_intro.scss */
   #intro #tweets.flexslider {
+    float: none;
     width: 100%;
     height: 100px;
     position: absolute;
-    top: 100px;
+    top: 0;
   }
 }
-/* line 19, ../sass/_intro.scss */
+@media (max-width: 320px) {
+  /* line 10, ../sass/_intro.scss */
+  #intro #tweets.flexslider {
+    height: 150px;
+    top: 0;
+  }
+}
+/* line 31, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides {
   width: 100%;
   height: 100%;
   position: relative;
 }
-/* line 23, ../sass/_intro.scss */
+/* line 35, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet {
   width: 80%;
   height: 100%;
   padding: 20px 10%;
-  background-color: #3e75bb;
+  background-color: transparent;
   position: absolute;
 }
-/* line 29, ../sass/_intro.scss */
+/* line 41, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet .text-wrapper {
   width: 100%;
   height: 100%;
@@ -4157,7 +4181,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   left: 0;
   display: table;
 }
-/* line 36, ../sass/_intro.scss */
+/* line 48, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet .text-wrapper p {
   font-family: "museo_sans_500regular", Helvetica, sans;
   color: white;
@@ -4165,20 +4189,20 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   vertical-align: middle;
 }
 @media (max-width: 768px) {
-  /* line 36, ../sass/_intro.scss */
+  /* line 48, ../sass/_intro.scss */
   #intro #tweets.flexslider #tweet-wrapper.slides li.tweet .text-wrapper p {
     font-size: 0.8em;
   }
 }
-/* line 44, ../sass/_intro.scss */
+/* line 56, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet .text-wrapper p a {
   color: white;
 }
-/* line 46, ../sass/_intro.scss */
+/* line 58, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet .text-wrapper p a span {
   display: none;
 }
-/* line 48, ../sass/_intro.scss */
+/* line 60, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet .text-wrapper p a span:nth-child(2) {
   display: block;
   font-size: 0.8em;
@@ -4186,7 +4210,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   max-width: 80%;
   overflow: hidden;
 }
-/* line 59, ../sass/_intro.scss */
+/* line 71, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link {
   display: block;
   color: white;
@@ -4199,12 +4223,12 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   transition: all 300ms ease-in-out;
 }
 @media (max-width: 480px) {
-  /* line 59, ../sass/_intro.scss */
+  /* line 71, ../sass/_intro.scss */
   #intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link {
     left: 60%;
   }
 }
-/* line 72, ../sass/_intro.scss */
+/* line 84, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link .icon-twitter {
   font-size: 1.5em;
   -webkit-transition: all 300ms ease-in-out;
@@ -4212,50 +4236,61 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-/* line 78, ../sass/_intro.scss */
+/* line 90, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link .icon-twitter:hover, #intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link .icon-twitter:focus, #intro #tweets.flexslider #tweet-wrapper.slides li.tweet #twitter-link .icon-twitter:active {
   cursor: pointer;
 }
-/* line 84, ../sass/_intro.scss */
+/* line 96, ../sass/_intro.scss */
 #intro #tweets.flexslider #tweet-wrapper.slides li.tweet:hover #twitter-link, #intro #tweets.flexslider #tweet-wrapper.slides li.tweet:focus #twitter-link, #intro #tweets.flexslider #tweet-wrapper.slides li.tweet:active #twitter-link {
   left: 0;
 }
 @media (max-width: 480px) {
-  /* line 84, ../sass/_intro.scss */
+  /* line 96, ../sass/_intro.scss */
   #intro #tweets.flexslider #tweet-wrapper.slides li.tweet:hover #twitter-link, #intro #tweets.flexslider #tweet-wrapper.slides li.tweet:focus #twitter-link, #intro #tweets.flexslider #tweet-wrapper.slides li.tweet:active #twitter-link {
     left: 60%;
   }
 }
-/* line 94, ../sass/_intro.scss */
+/* line 106, ../sass/_intro.scss */
 #intro #news.flexslider {
-  width: 33.333%;
-  height: 33.333%;
-  background-color: #3e75bb;
+  width: 100%;
+  height: 66.666%;
+  background-image: url(../img/intro_neurons.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
   margin: 0;
   float: left;
   overflow: hidden;
 }
 @media (max-width: 480px) {
-  /* line 94, ../sass/_intro.scss */
+  /* line 106, ../sass/_intro.scss */
   #intro #news.flexslider {
+    float: none;
     width: 100%;
     height: 100px;
     position: absolute;
-    top: 300px;
+    top: 200px;
   }
 }
-/* line 107, ../sass/_intro.scss */
+@media (max-width: 320px) {
+  /* line 106, ../sass/_intro.scss */
+  #intro #news.flexslider {
+    height: 150px;
+    top: 450px;
+  }
+}
+/* line 127, ../sass/_intro.scss */
 #intro #news.flexslider ul li {
   width: 100%;
   height: 100%;
 }
-/* line 110, ../sass/_intro.scss */
+/* line 130, ../sass/_intro.scss */
 #intro #news.flexslider ul li .text-wrap {
   width: 100%;
   height: 100%;
   display: table;
 }
-/* line 114, ../sass/_intro.scss */
+/* line 134, ../sass/_intro.scss */
 #intro #news.flexslider ul li .text-wrap p {
   font-family: "museo_sans_500regular", Helvetica, sans;
   color: white;
@@ -4268,16 +4303,16 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   vertical-align: middle;
 }
 @media (max-width: 768px) {
-  /* line 114, ../sass/_intro.scss */
+  /* line 134, ../sass/_intro.scss */
   #intro #news.flexslider ul li .text-wrap p {
     font-size: 0.8em;
   }
 }
-/* line 127, ../sass/_intro.scss */
+/* line 147, ../sass/_intro.scss */
 #intro #news.flexslider ul li .text-wrap p a {
   color: white;
 }
-/* line 133, ../sass/_intro.scss */
+/* line 153, ../sass/_intro.scss */
 #intro #news.flexslider #news-link {
   display: block;
   color: white;
@@ -4291,45 +4326,62 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   transition: all 300ms ease-in-out;
 }
 @media (max-width: 480px) {
-  /* line 133, ../sass/_intro.scss */
+  /* line 153, ../sass/_intro.scss */
   #intro #news.flexslider #news-link {
     left: 70%;
   }
 }
-/* line 149, ../sass/_intro.scss */
+/* line 169, ../sass/_intro.scss */
 #intro #news.flexslider:hover #news-link, #intro #news.flexslider:focus #news-link, #intro #news.flexslider:active #news-link {
   left: 10%;
 }
 @media (max-width: 480px) {
-  /* line 149, ../sass/_intro.scss */
+  /* line 169, ../sass/_intro.scss */
   #intro #news.flexslider:hover #news-link, #intro #news.flexslider:focus #news-link, #intro #news.flexslider:active #news-link {
     left: 70%;
   }
 }
-/* line 157, ../sass/_intro.scss */
-#intro #img1, #intro #img2, #intro #img3, #intro #img4, #intro #img5, #intro #img6, #intro #img7 {
+/* line 177, ../sass/_intro.scss */
+#intro #introbox-large, #intro #introbox-small {
+  width: 66.666%;
+  height: 100%;
+  float: left;
+}
+@media (max-width: 480px) {
+  /* line 177, ../sass/_intro.scss */
+  #intro #introbox-large, #intro #introbox-small {
+    height: 74.666%;
+  }
+}
+/* line 184, ../sass/_intro.scss */
+#intro #introbox-large #img1, #intro #introbox-large #img2, #intro #introbox-large #img3, #intro #introbox-large #img4, #intro #introbox-small #img1, #intro #introbox-small #img2, #intro #introbox-small #img3, #intro #introbox-small #img4 {
   width: 33.333%;
   height: 33.333%;
   float: left;
   position: relative;
-  background-image: url(../img/intro_brain.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   overflow: hidden;
 }
 @media (max-width: 480px) {
-  /* line 157, ../sass/_intro.scss */
-  #intro #img1, #intro #img2, #intro #img3, #intro #img4, #intro #img5, #intro #img6, #intro #img7 {
+  /* line 184, ../sass/_intro.scss */
+  #intro #introbox-large #img1, #intro #introbox-large #img2, #intro #introbox-large #img3, #intro #introbox-large #img4, #intro #introbox-small #img1, #intro #introbox-small #img2, #intro #introbox-small #img3, #intro #introbox-small #img4 {
+    float: none;
     width: 100%;
     height: 100px;
   }
 }
-/* line 171, ../sass/_intro.scss */
-#intro #img1 #quote, #intro #img2 #quote, #intro #img3 #quote, #intro #img4 #quote, #intro #img5 #quote, #intro #img6 #quote, #intro #img7 #quote {
+@media (max-width: 320px) {
+  /* line 184, ../sass/_intro.scss */
+  #intro #introbox-large #img1, #intro #introbox-large #img2, #intro #introbox-large #img3, #intro #introbox-large #img4, #intro #introbox-small #img1, #intro #introbox-small #img2, #intro #introbox-small #img3, #intro #introbox-small #img4 {
+    height: 150px;
+  }
+}
+/* line 201, ../sass/_intro.scss */
+#intro #introbox-large #img1 #quote, #intro #introbox-large #img2 #quote, #intro #introbox-large #img3 #quote, #intro #introbox-large #img4 #quote, #intro #introbox-small #img1 #quote, #intro #introbox-small #img2 #quote, #intro #introbox-small #img3 #quote, #intro #introbox-small #img4 #quote {
   width: 100%;
   height: 100%;
-  background-color: rgba(62, 117, 187, 0.5);
   filter: opacity(0);
   opacity: 0;
   position: absolute;
@@ -4345,14 +4397,14 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   transition: all 300ms ease-in-out;
 }
 @media (max-width: 480px) {
-  /* line 171, ../sass/_intro.scss */
-  #intro #img1 #quote, #intro #img2 #quote, #intro #img3 #quote, #intro #img4 #quote, #intro #img5 #quote, #intro #img6 #quote, #intro #img7 #quote {
+  /* line 201, ../sass/_intro.scss */
+  #intro #introbox-large #img1 #quote, #intro #introbox-large #img2 #quote, #intro #introbox-large #img3 #quote, #intro #introbox-large #img4 #quote, #intro #introbox-small #img1 #quote, #intro #introbox-small #img2 #quote, #intro #introbox-small #img3 #quote, #intro #introbox-small #img4 #quote {
     filter: opacity(100);
     opacity: 1;
   }
 }
-/* line 192, ../sass/_intro.scss */
-#intro #img1 #quote p, #intro #img1 #quote h2, #intro #img2 #quote p, #intro #img2 #quote h2, #intro #img3 #quote p, #intro #img3 #quote h2, #intro #img4 #quote p, #intro #img4 #quote h2, #intro #img5 #quote p, #intro #img5 #quote h2, #intro #img6 #quote p, #intro #img6 #quote h2, #intro #img7 #quote p, #intro #img7 #quote h2 {
+/* line 221, ../sass/_intro.scss */
+#intro #introbox-large #img1 #quote p, #intro #introbox-large #img1 #quote h2, #intro #introbox-large #img2 #quote p, #intro #introbox-large #img2 #quote h2, #intro #introbox-large #img3 #quote p, #intro #introbox-large #img3 #quote h2, #intro #introbox-large #img4 #quote p, #intro #introbox-large #img4 #quote h2, #intro #introbox-small #img1 #quote p, #intro #introbox-small #img1 #quote h2, #intro #introbox-small #img2 #quote p, #intro #introbox-small #img2 #quote h2, #intro #introbox-small #img3 #quote p, #intro #introbox-small #img3 #quote h2, #intro #introbox-small #img4 #quote p, #intro #introbox-small #img4 #quote h2 {
   font-family: "museo_sans_500regular", Helvetica, sans;
   color: white;
   text-transform: lowercase;
@@ -4363,54 +4415,75 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   display: table-cell;
   vertical-align: middle;
 }
-/* line 202, ../sass/_intro.scss */
-#intro #img1 #quote p a, #intro #img1 #quote h2 a, #intro #img2 #quote p a, #intro #img2 #quote h2 a, #intro #img3 #quote p a, #intro #img3 #quote h2 a, #intro #img4 #quote p a, #intro #img4 #quote h2 a, #intro #img5 #quote p a, #intro #img5 #quote h2 a, #intro #img6 #quote p a, #intro #img6 #quote h2 a, #intro #img7 #quote p a, #intro #img7 #quote h2 a {
+/* line 231, ../sass/_intro.scss */
+#intro #introbox-large #img1 #quote p a, #intro #introbox-large #img1 #quote h2 a, #intro #introbox-large #img2 #quote p a, #intro #introbox-large #img2 #quote h2 a, #intro #introbox-large #img3 #quote p a, #intro #introbox-large #img3 #quote h2 a, #intro #introbox-large #img4 #quote p a, #intro #introbox-large #img4 #quote h2 a, #intro #introbox-small #img1 #quote p a, #intro #introbox-small #img1 #quote h2 a, #intro #introbox-small #img2 #quote p a, #intro #introbox-small #img2 #quote h2 a, #intro #introbox-small #img3 #quote p a, #intro #introbox-small #img3 #quote h2 a, #intro #introbox-small #img4 #quote p a, #intro #introbox-small #img4 #quote h2 a {
   color: white;
 }
-/* line 206, ../sass/_intro.scss */
-#intro #img1 #quote h2, #intro #img2 #quote h2, #intro #img3 #quote h2, #intro #img4 #quote h2, #intro #img5 #quote h2, #intro #img6 #quote h2, #intro #img7 #quote h2 {
-  font-size: 2em;
+/* line 235, ../sass/_intro.scss */
+#intro #introbox-large #img1 #quote h2, #intro #introbox-large #img2 #quote h2, #intro #introbox-large #img3 #quote h2, #intro #introbox-large #img4 #quote h2, #intro #introbox-small #img1 #quote h2, #intro #introbox-small #img2 #quote h2, #intro #introbox-small #img3 #quote h2, #intro #introbox-small #img4 #quote h2 {
+  font-size: 1em;
 }
-/* line 211, ../sass/_intro.scss */
-#intro #img1:hover #quote, #intro #img1:focus #quote, #intro #img1:active #quote, #intro #img2:hover #quote, #intro #img2:focus #quote, #intro #img2:active #quote, #intro #img3:hover #quote, #intro #img3:focus #quote, #intro #img3:active #quote, #intro #img4:hover #quote, #intro #img4:focus #quote, #intro #img4:active #quote, #intro #img5:hover #quote, #intro #img5:focus #quote, #intro #img5:active #quote, #intro #img6:hover #quote, #intro #img6:focus #quote, #intro #img6:active #quote, #intro #img7:hover #quote, #intro #img7:focus #quote, #intro #img7:active #quote {
+/* line 240, ../sass/_intro.scss */
+#intro #introbox-large #img1:hover #quote, #intro #introbox-large #img1:focus #quote, #intro #introbox-large #img1:active #quote, #intro #introbox-large #img2:hover #quote, #intro #introbox-large #img2:focus #quote, #intro #introbox-large #img2:active #quote, #intro #introbox-large #img3:hover #quote, #intro #introbox-large #img3:focus #quote, #intro #introbox-large #img3:active #quote, #intro #introbox-large #img4:hover #quote, #intro #introbox-large #img4:focus #quote, #intro #introbox-large #img4:active #quote, #intro #introbox-small #img1:hover #quote, #intro #introbox-small #img1:focus #quote, #intro #introbox-small #img1:active #quote, #intro #introbox-small #img2:hover #quote, #intro #introbox-small #img2:focus #quote, #intro #introbox-small #img2:active #quote, #intro #introbox-small #img3:hover #quote, #intro #introbox-small #img3:focus #quote, #intro #introbox-small #img3:active #quote, #intro #introbox-small #img4:hover #quote, #intro #introbox-small #img4:focus #quote, #intro #introbox-small #img4:active #quote {
   filter: opacity(100);
   opacity: 1;
 }
-/* line 217, ../sass/_intro.scss */
-#intro #img2 {
-  background-image: url(../img/intro_neurons.jpg);
-}
-/* line 220, ../sass/_intro.scss */
-#intro #img3 {
-  background-image: url(../img/intro_mri.jpg);
-}
-@media (max-width: 480px) {
-  /* line 220, ../sass/_intro.scss */
-  #intro #img3 {
-    position: absolute;
-    top: 200px;
-  }
-}
-/* line 227, ../sass/_intro.scss */
-#intro #img4 {
-  background-image: url(../img/intro_team.jpg);
-}
-/* line 230, ../sass/_intro.scss */
-#intro #img5 {
-  background-image: url(../img/intro_news.jpg);
-}
-/* line 233, ../sass/_intro.scss */
-#intro #img6 {
+/* line 246, ../sass/_intro.scss */
+#intro #introbox-large #img2, #intro #introbox-small #img2 {
   background-image: url(../img/intro_books.jpg);
 }
-/* line 236, ../sass/_intro.scss */
-#intro #img7 {
+/* line 249, ../sass/_intro.scss */
+#intro #introbox-large #img3, #intro #introbox-small #img3 {
+  width: 100%;
+  background-image: url(../img/intro_news.jpg);
+}
+@media (max-width: 480px) {
+  /* line 249, ../sass/_intro.scss */
+  #intro #introbox-large #img3, #intro #introbox-small #img3 {
+    position: absolute;
+    height: 100px;
+    top: 100px;
+  }
+}
+@media (max-width: 320px) {
+  /* line 249, ../sass/_intro.scss */
+  #intro #introbox-large #img3, #intro #introbox-small #img3 {
+    height: 150px;
+    top: 300px;
+  }
+}
+/* line 262, ../sass/_intro.scss */
+#intro #introbox-large #img4, #intro #introbox-small #img4 {
   background-image: url(../img/intro_map.jpg);
 }
 @media (max-width: 480px) {
-  /* line 239, ../sass/_intro.scss */
-  #intro #img2, #intro #img4, #intro #img5, #intro #img6, #intro #img7 {
+  /* line 265, ../sass/_intro.scss */
+  #intro #introbox-large #img2, #intro #introbox-large #img4, #intro #introbox-small #img2, #intro #introbox-small #img4 {
     display: none;
+  }
+}
+/* line 271, ../sass/_intro.scss */
+#intro #introbox-small {
+  width: 33.333%;
+  float: left;
+}
+@media (max-width: 480px) {
+  /* line 271, ../sass/_intro.scss */
+  #intro #introbox-small {
+    width: 100%;
+    height: 25%;
+  }
+}
+/* line 278, ../sass/_intro.scss */
+#intro #introbox-small #img1 {
+  background-image: url(../img/intro_mri.jpg);
+  width: 100%;
+  height: 33.333%;
+}
+@media (max-width: 480px) {
+  /* line 278, ../sass/_intro.scss */
+  #intro #introbox-small #img1 {
+    height: 100%;
   }
 }
 
