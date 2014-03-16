@@ -17,11 +17,11 @@
 		.text-wrap{
 			width: 80%;
 			height: 100%;
-			margin: 0 10%;
+			margin: 0;
 			display: table;
 			position: absolute;
 			top: 0;
-			left: 0;
+			left: 10%;
 			z-index: 1;
 			p{
 				font-family: $museolight;
@@ -52,6 +52,7 @@
 		height: auto;
 		float: left;
 		position: relative;
+		margin-bottom: 40px;
 		.twelve{
 			width: 100% !important; 
 			height: 100%;
@@ -63,7 +64,8 @@
 			display: table;
 			margin: 0;
 			@include breakpoint(tablet){
-				width: 100%;
+				width: 80%;
+				margin: 0 10%;
 			}
 			.text-wrap{
 				width: 40%;
@@ -73,8 +75,8 @@
 				position: relative;
 				float: left;
 				@include breakpoint(tablet){
-					width: 80%;
-					margin: 30px 10% 0;
+					width: 100%;
+					margin: 30px 0 0;
 				}
 				h4{
 					font-family: $museobold, sans;

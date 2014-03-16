@@ -1,15 +1,13 @@
 #intro{
 	position: relative;
 	margin-top: 47px;
+	background-color: $blue-opaque;
 	@include breakpoint(mobile-landscape){
 		height: 400px !Important;
 	}
-	@include breakpoint(mobile){
-		height: 600px !Important;
-	}
 	#tweets.flexslider{
 		width: 66.666%;
-		height: 66.666%;
+		height: 66.6%;
 		background-image: url(../img/brain2.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -17,15 +15,14 @@
 		margin: 0;
 		float: left;
 		overflow: hidden;
+		@include breakpoint(tablet){
+			width: 100%;
+		}
 		@include breakpoint(mobile-landscape){
 			float: none;
 			width: 100%;
-			height: 100px;
+			height: 200px;
 			position: absolute;
-			top: 0;
-		}
-		@include breakpoint(mobile){
-			height: 150px;
 			top: 0;
 		}
 		#tweet-wrapper.slides{
@@ -48,10 +45,12 @@
 					p{
 						font-family: $museoregular, Helvetica, sans;
 						color: $white;
+						font-weight: 900;
 						display: table-cell;
 						vertical-align: middle;
 						@include breakpoint(tablet){
 							font-size: 0.8em;
+							font-weight: 300;
 						}
 						a{
 							color: $white;
@@ -71,6 +70,7 @@
 				#twitter-link{
 					display: block;
 					color: $white;
+					font-weight: 900;
 					position: absolute;
 					left: -100%;
 					bottom: -10px;
@@ -79,7 +79,7 @@
 				    -o-transition: all 300ms ease-in-out;
 				    transition: all 300ms ease-in-out;
 				    @include breakpoint(mobile-landscape){
-						left: 60%;
+						left: 0;
 					}
 					.icon-twitter{
 						font-size: 1.5em;
@@ -96,7 +96,7 @@
 					#twitter-link{
 						left: 0;
 						@include breakpoint(mobile-landscape){
-							left: 60%;
+							left: 0;
 						}
 					}
 				}
@@ -106,7 +106,7 @@
 	#news.flexslider{
 		width: 100%;
 		height: 66.666%;
-		background-image: url(../img/intro_neurons.jpg);
+		background-image: url(../img/intro_news.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: 50% 50%;
@@ -116,13 +116,9 @@
 		@include breakpoint(mobile-landscape){
 			float: none;
 			width: 100%;
-			height: 100px;
+			height: 200px;
 			position: absolute;
 			top: 200px;
-		}
-		@include breakpoint(mobile){
-			height: 150px;
-			top: 450px;
 		}
 		ul li{
 			width: 100%;
@@ -135,6 +131,7 @@
 					font-family: $museoregular, Helvetica, sans;
 					color: $white;
 					text-transform: lowercase;
+					font-weight: 900;
 					font-size: 1em;
 					width: 80%;
 					padding: 0 10%;
@@ -143,6 +140,7 @@
 					vertical-align: middle;
 					@include breakpoint(tablet){
 						font-size: 0.8em;
+						font-weight: 300;
 					}
 					a{
 						color: $white;
@@ -153,6 +151,7 @@
 		#news-link{
 			display: block;
 			color: $white;
+			font-weight: 900;
 			position: absolute;
 			left: -100%;
 			bottom: 20px;
@@ -161,15 +160,17 @@
 		    -moz-transition: all 300ms ease-in-out;
 		    -o-transition: all 300ms ease-in-out;
 		    transition: all 300ms ease-in-out;
-		    @include breakpoint(mobile-landscape){
-				left: 70%;
+			@include breakpoint(mobile-landscape){
+				width: 100px;
+				left: 12%;
 			}
 		}
 		&:hover, &:focus, &:active{
 			#news-link{
 				left: 10%;
 				@include breakpoint(mobile-landscape){
-					left: 70%;
+					width: 100px;
+					left: 12%;
 				}
 			}
 		}
@@ -178,6 +179,9 @@
 		width: 66.666%;
 		height: 100%;
 		float: left;
+		@include breakpoint(tablet){
+			width: 50%;	
+		}
 		@include breakpoint(mobile-landscape){
 			height: 74.666%;
 		}
@@ -223,11 +227,15 @@
 					color: $white;
 					text-transform: lowercase;
 					font-size: 1em;
+					font-weight: 900;
 					width: 80%;
 					padding: 0 10%;
 					text-align: center;
 					display: table-cell;
 					vertical-align: middle;
+					@include breakpoint(tablet){
+						font-weight: 300;
+					}
 					a{
 						color: $white;
 					}
@@ -248,22 +256,17 @@
 		}
 		#img3{
 			width: 100%;
-			background-image: url(../img/intro_news.jpg);
+			height: 33.4%;
+			background-image: url(../img/intro_neurons.jpg);
 			@include breakpoint(mobile-landscape){
-				position: absolute;
-				height: 100px;
-				top: 100px;
-			}
-			@include breakpoint(mobile){
-				height: 150px;
-				top: 300px;
+				display: none;
 			}
 		}
-		#img4{
+		#img1{
 			background-image: url(../img/intro_map.jpg);
 		}
-		#img2, #img4{
-			@include breakpoint(mobile-landscape){
+		#img1, #img2{
+			@include breakpoint(tablet){
 				display: none;
 			}
 		}
@@ -271,16 +274,19 @@
 	#introbox-small{
 		width: 33.333%;
 		float: left;
+		@include breakpoint(tablet){
+			width: 50%;	
+		}
 		@include breakpoint(mobile-landscape){
 			width: 100%;
 			height: 25%;
 		}
-		#img1{
+		#img4{
 			background-image: url(../img/intro_mri.jpg);
 			width: 100%;
 			height: 33.333%;
 			@include breakpoint(mobile-landscape){
-				height: 100%;
+				display: none;
 			}
 		}
 	}	
