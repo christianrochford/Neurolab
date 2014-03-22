@@ -1,0 +1,61 @@
+{embed="base/_head"}
+<body class="team">
+{embed="base/_header"}
+	{exp:channel:entries channel="team" disable=”categories" disable=”category_fields" disable=”custom_fields" disable=”member_data" disable=”pagination"}
+	{exp:channel_images:images entry_id="{entry_id}" limit="1" field="team_intro_image"}
+	<div id="team-img" data-0="background-position:0px 0px;" data-100000="background-position:0px -30000px;" style="background-image: url(
+		{image:url:small}
+		);">
+		<div class="title-wrap">
+			<div class="title">Team</div>
+		</div>
+		<div class="arrow-wrap">
+			<a href="#team" id="team-arrow-down" class="icon-arrow-down" aria-hidden="true"></a>
+		</div>
+	</div>
+	{/exp:channel_images:images}
+	{/exp:channel:entries}
+	<div id="team">
+		<div id="carousel" class="flexslider">
+		  <ul class="slides">
+		  {exp:channel:entries channel="team" disable=”categories" disable=”category_fields" disable=”custom_fields" disable=”member_data" disable=”pagination"}
+		  {team_members_details}
+		    <li>
+			  <img src="{image}" alt="{name}" />
+		      <h4 class="flex-caption">{name}</h4>
+		      <h5 class="flex-caption">{position}</h5>
+		    </li>
+		    {/team_members_details}
+		    {/exp:channel:entries}
+		  </ul>
+		</div>
+		<div id="team-slider" class="flexslider">
+		  <ul class="slides">
+		  {exp:channel:entries channel="team" disable=”categories" disable=”category_fields" disable=”custom_fields" disable=”member_data" disable=”pagination"}
+		  {team_members_details}
+		    <li>
+		      {description}
+		      {if website}<p><a href="{website}">Personal Website</a>{/if} {if website && CV}/{/if} {if CV}<a href="{name}/{CV}">CV</a></p>{/if}
+		    </li>
+		  {/team_members_details}
+		  {/exp:channel:entries}
+		  </ul>
+		</div>
+	</div>
+	<div id="button-wrap">
+		<p id="extra">+</p>
+		<div id="title">Alumni</div>
+	</div>
+	<div id="extra-modal">
+		<a href="#" class="icon-close-modal" id="alumni-close"></a>
+		<h2>alumni of bestmannlab</h2>
+		{exp:channel:entries channel="team" disable=”categories" disable=”category_fields" disable=”custom_fields" disable=”member_data" disable=”pagination"}
+		{alumni}
+		<div class="alumni-wrap">
+			<h4>{name}</h4>
+			<p>{description}</p>
+		</div>
+		{/alumni}
+		{/exp:channel:entries}
+	</div>
+{embed="base/_footer"}

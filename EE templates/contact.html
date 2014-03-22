@@ -1,0 +1,61 @@
+{embed="base/_head"}
+<body class="contact">
+{embed="base/_header"}
+	<div id="map">
+		<div id="map-canvas"></div>
+		<div id="zoomin">+</div>
+    	<div id="zoomout">-</div>
+	</div>
+{exp:channel:entries channel="contact" disable=”categories" disable=”category_fields" disable=”custom_fields" disable=”member_data" disable=”pagination"}
+	<div id="contact-details">
+		<h4>Sven Bestmann</h4>
+		<div id="title">
+			{svens_titles_position}
+		</div>
+		<div id="address">
+			{address}		
+		</div>
+		<div id="phone">
+			<span class="icon-phone" aria-hidden="true"></span>
+			<p>Phone (direct): <a href="tel:{phone_direct}">{phone_direct}</a></p>
+			{phone_switchboard}
+			<p>Phone (Switchboard): <a href="tel:{phone}">{phone}</a> Extension: {extension}</p>
+			{/phone_switchboard}
+			<p>Fax: {fax}</p>
+			<span class="icon-mail" aria-hidden="true"></span>
+			<p>Feel free to <a href="mailto:{email_address}?Subject=Website%20Enquiry" target="_blank">email me</a> with any questions.</p>
+		</div>
+	</div>
+	<div id="public-transport">
+		<h4>Getting here</h4>
+		{public_transport}
+		<span class="icon-bus" aria-hidden="true"></span>
+		{bus}
+		<span class="icon-automobile" aria-hidden="true"></span>
+		{car}
+		<span class="icon-metro" aria-hidden="true"></span>
+		{train}
+		<span class="icon-airplane" aria-hidden="true"></span>
+		{airports}
+	</div>
+{/exp:channel:entries}
+	<footer>
+		<div id="ucl-logo">
+			<img src="assets/img/ucl.png" alt="ucl">
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="#">home</a></li>
+				<li><a href="research.html">research</a></li>
+				<li><a href="team.html">team</a></li>
+				<li><a href="news.html">news</a></li>
+				<li><a href="publications.html">publications</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</div>
+	</footer>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd8FvgnfLYG71e7hBF0RlD-iaUQGfV4y4&sensor=true"></script>
+	<script src="assets/dist/bestmannlab-build.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+{embed="base/_head"}
+<body class="home" id="skrollr-body">
+{embed="base/_header"}
+		<div id="intro">
+			<div id="introbox-large">
+				{exp:channel:entries channel="home" entry_id="1" limit="1" dynamic="yes" order_by="date" disable="categories" disable="category_fields" disable="custom_fields" disable="member_data" disable="pagination"}
+				<div id="tweets" class="flexslider" style="background-image: url(
+				{exp:channel_images:images entry_id="{entry_id}" limit="1" field="tweets_background_image"}
+				{image:url:small}
+				{/exp:channel_images:images}
+				)"></div>
+				{/exp:channel:entries}
+				{exp:channel:entries channel="home" entry_id="1" order_by="date" limit="2" disable="categories" disable="category_fields" disable="custom_fields" disable="member_data" disable="pagination"}
+				{exp:channel_images:images entry_id="{entry_id}" limit="2" field="image_links"}
+				<div class="image-link" style="background-image: url(
+				{image:url:small}
+				)">
+					<div class="overbox"></div>
+					<div id="quote">
+						<h2><a href="{image:field:1}">{image:description}</a></h2>
+					</div>
+				</div>
+				{/exp:channel_images:images}
+				{/exp:channel:entries}
+				{exp:channel:entries channel="home" entry_id="1" order_by="date" limit="1" disable="categories" disable="category_fields" disable="custom_fields" disable="member_data" disable="pagination"}
+				{exp:channel_images:images entry_id="{entry_id}" limit="1" field="image_quote_2"}
+				<div id="img3" style="background-image: url(
+				{image:url:small}
+				)">
+					<div class="overbox"></div>
+					<div id="quote">
+						<p>{image:description}</p>
+					</div>
+				</div>
+				{/exp:channel_images:images}
+				{/exp:channel:entries}
+			</div>
+			<div id="introbox-small">
+				{exp:channel:entries channel="home" entry_id="1" order_by="date" limit="1" disable="categories" disable="category_fields" disable="custom_fields" disable="member_data" disable="pagination"}
+				{exp:channel_images:images entry_id="{entry_id}" limit="1" field="image_quote_1"}
+				<div id="img4" style="background-image: url(
+				{image:url:small}
+				)">
+					<div class="overbox"></div>
+					<div id="quote">
+						<p>{image:description}</p>
+					</div>
+				</div>
+				{/exp:channel_images:images}
+				{/exp:channel:entries}
+				{exp:channel:entries channel="home" entry_id="1" order_by="date" limit="2" disable="categories" disable="category_fields" disable="custom_fields" disable="member_data" disable="pagination"}
+				<div id="news" class="flexslider" style="background-image: url(
+				{exp:channel_images:images entry_id="{entry_id}" limit="1" field="news_background_image"}
+				{image:url:small}"
+				{/exp:channel_images:images}
+				)">
+				{/exp:channel:entries}
+					<div class="overbox"></div>
+					<ul class="slides">
+					{exp:channel:entries channel="news" order_by="date" disable="categories" disable="category_fields" disable="custom_fields" disable="member_data" disable="pagination"}
+						<li>
+							<div class="text-wrap">
+								<p>{title}</p>
+							</div>
+						</li>
+					{/exp:channel:entries}
+					</ul>
+					<a id="news-link" href="news">Read more...</a>
+				</div>
+			</div>
+		</div>
+		{exp:channel:entries channel="home" entry_id="1" order_by="date" limit="1" disable="categories" disable="category_fields" disable="custom_fields" disable="member_data" disable="pagination"}
+		<div id="about">
+			<div id="about-content">
+				<div class="twelve columns">
+					<div id="about-text">
+						{intro_main_text}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="questions">
+			<div class="overbox"></div>
+			<div id="img" data-0="background-position:0px 0px;" data-100000="background-position:0px -30000px;"></div>
+			<div class="twelve columns">
+				<div id="questions-text">
+					{paragraph_1}
+					{paragraph_2}
+				</div>
+			</div>
+		</div>
+		{/exp:channel:entries}
+{embed="base/_footer"}

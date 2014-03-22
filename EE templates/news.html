@@ -1,0 +1,18 @@
+{embed="base/_head"}
+<body class="news">
+{embed="base/_header"}
+	<section id="news">
+	{exp:channel:entries channel="news" order_by="date" disable="categories" disable="category_fields" disable="custom_fields" disable="member_data" disable="pagination"}
+			<article>
+				<h4>{title}</h4>
+				<h5 class="date">{entry_date format="%m/%d/%Y"}</h5> 
+				<p>{news_text}</p>
+				{if news_image}
+				{exp:channel_images:images entry_id="{entry_id}" limit="1" field="news_image"}
+				<img src="{image:url:small}" alt="{title}">
+				{/exp:channel_images:images}
+				{/if}
+			</article>
+	{/exp:channel:entries}
+	</section>
+{embed="base/_footer"}

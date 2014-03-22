@@ -1,0 +1,26 @@
+{embed="base/_head"}
+<body class="publications">
+{embed="base/_header"}
+	<div id="pubs-img" data-0="background-position:0px 0px;" data-100000="background-position:0px -30000px;">
+		<div class="title-wrap">
+			<div class="title">publications</div>
+		</div>
+		<div class="arrow-wrap">
+			<a href="#pubs" id="pubs-arrow-down" class="icon-arrow-down" aria-hidden="true"></a>
+		</div>
+	</div>
+	<section id="pubs">
+			{exp:channel:entries channel="publications" order_by="date" disable=”categories" disable=”category_fields" disable=”custom_fields" disable=”member_data" disable=”pagination"}
+			<article>
+				<h4>{article_title}</h4>
+				<p class="authors">{authors}</p>
+				<p class="journal">{journal_details}</p>
+				<p class="abstract">{abstract}<br><a href="{journal_link}" target="_blank">Read More</a></p>
+				<div class="more-wrap">
+					<span class="read-abstract">+</span>
+					<span class="icon-angle-up" aria-hidden="true"></span>
+				</div>
+			</article>
+			{/exp:channel:entries}
+	</section>
+{embed="base/_footer"}

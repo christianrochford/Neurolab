@@ -1,0 +1,78 @@
+{embed="base/_head"}
+<body class="research" id="skrollr-body">
+{embed="base/_header"}
+{exp:channel:entries channel="research" disable=”categories" disable=”category_fields" disable=”custom_fields" disable=”member_data" disable=”pagination"}
+		<div id="research">
+			{exp:channel_images:images entry_id="{entry_id}" limit="1" field="research_intro_image"}
+			<div id="img" data-0="background-position:0px 0px;" data-130000="background-position:0px -20000px;" style="background-image: url(
+			{image:url:small}
+			);"></div>
+			{/exp:channel_images:images}
+			<div class="text-wrap">
+				{research_intro}
+			</div>
+			<div class="overbox"></div>
+			<div class="arrow-wrap">
+				<a href="#research-content" id="research-arrow-down" class="icon-arrow-down" aria-hidden="true"></a>
+			</div>
+		</div>
+		<div id="research-content">
+			<div class="twelve columns">
+				<div id="research-text">
+					<div class="text-wrap">
+						<h4>Our research is organised along several complementary themes:</h4>
+						<ul>
+						{research_themes}
+							<li><a href="{link}">{themes}</a></li>
+						{/research_themes}
+						</ul>
+					</div>
+					<div class="text-wrap">
+					<h4>We approach each theme with a variety of techniques:</h4>
+						<ul>
+							{research_techniques}
+							<li><a href="{link}">{techniques}</a></li>
+							{/research_techniques}
+						</ul>
+						</ul>
+					</div>
+					<div class="text-wrap">
+						<h4>Our collaborators at UCL:</h4>
+						<ul>
+							{local_collaborators}
+							<li><a href="{link}" target="_blank">{collaborator}</a></li>
+							{/local_collaborators}
+						</ul>
+						</ul>
+					</div>
+					<div class="text-wrap">
+			 			<h4>Global Collaborators:</h4>
+			 			<ul>
+			 				{global_collaborators}
+							<li><a href="{link}" target="_blank">{collaborator}</a></li>
+							{/global_collaborators}
+						</ul>
+			 			</ul>
+					</div>
+				</div>	
+			</div>
+		</div>
+		
+		<div id="button-wrap">
+			<p id="extra">+</p>
+			<div id="title">Funding</div>
+		</div>
+		
+	<div id="extra-modal">
+		<a href="#" class="icon-close-modal"></a>
+			<h4>Funded Projects</h4>
+			{funded_projects}
+			<p>{projects}</p>
+			{/funded_projects}
+			<h4>Sources of funding</h4>
+			{funding_sources}
+			<p>{sources}</p>
+			{/funding_sources}
+	</div>
+{/exp:channel:entries}
+{embed="base/_footer"}

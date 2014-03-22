@@ -87,6 +87,7 @@
 			margin-top: 7px;
 			@include breakpoint(mobile-landscape){
 				font-size: 10px;
+				top: 4px;
 			}
 		}
 		p{
