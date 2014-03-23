@@ -1,0 +1,28 @@
+<footer>
+		<div id="ucl-logo">
+			<img src="assets/img/ucl.png" alt="ucl">
+		</div>
+		{exp:channel:entries channel="contact" disable=”categories" disable=”category_fields" disable=”custom_fields" disable=”member_data" disable=”pagination"}
+		<div id="address">
+			{address}		
+		</div>
+		<div id="contact-details">
+			<div id="phone">
+				<span class="icon-phone" aria-hidden="true"></span>
+				<p><a href="tel:{phone_direct}">{phone_direct}</a></p>
+			</div>
+			<div id="email">
+				<span class="icon-mail" aria-hidden="true"></span>
+				<p><a href="mailto:{email_address}?Subject=Website%20Enquiry" target="_blank">{email_address}</a></p>
+			</div>
+			<div id="twitter">
+				<span class="icon-twitter" aria-hidden="true"></span>
+				<p><a id="twitter-link" href="https://twitter.com/BestmannLab" target="_blank">@BestmannLab</a></p>
+			</div>
+		</div>
+		{/exp:channel:entries}
+	</footer>
+	<script src="assets/dist/bestmannlab-build.min.js"></script>
+
+</body>
+</html>

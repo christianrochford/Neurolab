@@ -10,7 +10,7 @@
 		position: relative;
 		.arrow-wrap{
 			#team-arrow-down{
-				color: $blue;
+				color: $white;
 			}
 		}
 		.title-wrap{
@@ -24,6 +24,7 @@
 			top: 50%;
 			margin-top: -50px;
 			position: absolute;
+			z-index: 1;
 			display: table;
 			@include breakpoint(mobile-landscape){
 				background: transparent;
@@ -50,14 +51,15 @@
 		#team-slider{
 			height: auto;
 			width: 60%;
-			margin: 0 20%;
+			margin: 0 20% 40px;
 			background: $white;
 			@include breakpoint(mobile-landscape){
 				width: 80%;
-				margin: 0 10%;
+				margin: 0 10% 40px;
 			}
 			ul.slides{
 				li{
+					text-align: center;
 					h4, h5{
 						font-family: $museobold, sans;
 						color: $grey;

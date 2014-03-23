@@ -104,10 +104,10 @@
 		height: 700px;
 	}
 	@include breakpoint(mobile-landscape){
-		height: 400px;
+		height: 350px;
 	}
 	@include breakpoint(mobile){
-		height: 470px;
+		height: 450px;
 	}
 	.twelve{
 		height: 600px;

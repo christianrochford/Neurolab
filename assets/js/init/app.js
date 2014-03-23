@@ -22,7 +22,7 @@ $('header').on('click', '#menu-close', function(e){
 // initialize skrollr
 if($(window).width() > 868){
 	skrollr.init({
-            forceHeight: false
+        forceHeight: false
     });
 }
 
@@ -31,29 +31,17 @@ $('#intro-arrow-down').on('click', function(e){
 	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#about').offset().top -46}, 500);
 })
-$('#about-arrow-down').on('click', function(e){
+$('#research-arrow-down').on('click', function(e){
 	e.preventDefault();
-	$('html, body').animate({scrollTop: $('#about-content').offset().top -46}, 500);
+	$('html, body').animate({scrollTop: $('#research-content').offset().top -46}, 500);
 })
 $('#team-arrow-down').on('click', function(e){
 	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#team').offset().top -46}, 500);
 })
-$('#news-arrow-down').on('click', function(e){
-	e.preventDefault();
-	$('html, body').animate({scrollTop: $('#news').offset().top -46}, 500);
-})
 $('#pubs-arrow-down').on('click', function(e){
 	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#pubs').offset().top -46}, 500);
-})
-$('#contact-arrow-down').on('click', function(e){
-	e.preventDefault();
-	$('html, body').animate({scrollTop: $('#contact-details').offset().top -46}, 500);
-})
-$('#research-arrow-down').on('click', function(e){
-	e.preventDefault();
-	$('html, body').animate({scrollTop: $('#research-content').offset().top -46}, 500);
 })
 
 $('#carousel').flexslider({

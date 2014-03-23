@@ -8,6 +8,15 @@ footer{
 		height: 80px;
 		float: left;
 		position: relative;
+		@include breakpoint(max-width, 1200px){
+			margin: 21px 0;
+		}
+		@include breakpoint(mobile-landscape){
+			margin: 0;
+		}
+		@include breakpoint(mobile){
+			width: 34%;
+		}
 		img{
 			width: 50px;
 			position: absolute;
@@ -16,45 +25,75 @@ footer{
 			margin-left: -25px;
 		}
 	}
-	#menu{
-		width: 80%;
+	#address{
+		width: 40%;
+		height: 50px;
 		float: left;
-		margin-top: 36px;
-		@include breakpoint(tablet){
-			margin-top: 20px;
+		margin: 15px 0;
+		@include breakpoint(max-width, 1200px){
+			margin: 36px 0;
 		}
-		ul{
-			width: 100%;
-			li{
-				width: 16.6666%;
-				float: left;
-				position: relative;
-				@include breakpoint(tablet){
-					width: 33.3333%;
-				}
-				a{
-					font-family: $museobold, Helvetica, sans;
-					display: block;
-					width: 100%;
-					color: $blue;
-					text-align: center;
-					&:hover, &:focus, &:active{
-						color: $blue-opaque;
-					}
-				}
-				&:after{
-					content: '/';
-					color: $blue;
-					position: relative;
-					top: -20px;
-					@include breakpoint(desktop){
-						content: '';
-					}
-				}
-				&:first-child:after{
-					content: '';
-				}
+		@include breakpoint(tablet){
+			margin: 26px 0;
+		}
+		@include breakpoint(mobile-landscape){
+			width: 80%;
+			margin: 16px 0;
+		}
+		@include breakpoint(mobile){
+			width: 56%;
+			height: 100px;
+			margin-right: 10%;
+		}
+		p{
+			font-family: $museoregular;
+			font-size: 10px;
+			line-height: 1.8em;
+			margin: 0;
+		}
+	}
+	#contact-details{
+		width: 40%;
+		height: 26px;
+		float: left;
+		margin: 27px 0;
+		@include breakpoint(max-width, 1200px){
+			width: 30%;
+			height: auto;
+			margin: 13px 0 7px 10%;
+		}
+		@include breakpoint(mobile-landscape){
+			width: 80%;
+			margin: 0 0 7px;
+		}
+		#phone, #email, #twitter{
+			width: 33.333%;
+			float: left;
+			@include breakpoint(max-width, 1200px){
+				width: 100%;
 			}
+		}
+		.icon-phone, .icon-mail, .icon-twitter{
+			color: $blue;
+			width: 28px;
+			float: left;
+			margin: 0;
+			@include breakpoint(mobile-landscape){
+				width: 24px;
+				margin: 6px 28px 6px 44px;
+			}
+		}
+		.icon-mail{
+			font-size: 1.2em;
+			padding-top: 5px;
+		}
+		p{
+			font-family: $museoregular;
+			font-size: 10px;
+			line-height: 1.8em;
+			display: block;
+			float: left;
+			margin: 8px 10px;
 		}
 	}
 }

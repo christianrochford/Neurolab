@@ -283,5 +283,13 @@
 				display: none;
 			}
 		}
+	}
+	.arrow-wrap{
+		.icon-arrow-down{
+			color: $white;
+		}
+		@include breakpoint(mobile){
+			display: none;
+		}
 	}	
 }
