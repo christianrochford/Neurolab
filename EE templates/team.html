@@ -36,7 +36,10 @@
 		  {team_members_details}
 		    <li>
 		      {description}
-		      {if website}<p><a href="{website}">Personal Website</a>{/if} {if website && CV}/{/if} {if CV}<a href="{name}/{CV}">CV</a></p>{/if}
+		      {if website}<p><a href="{website}" target="_blank">Personal Website</a></p>{/if}
+		      {if twitter}<p><a href="https://twitter.com/{twitter}" target="_blank">@{twitter}</a></p>{/if}
+		      {if email-address}<p><a href="mailto:{email-address}?Subject=Website%20Enquiry" target="_blank">email</a></p>{/if}
+		      {if CV}<p><a href="{CV}" target="_blank">CV</a></p>{/if}
 		    </li>
 		  {/team_members_details}
 		  {/exp:channel:entries}
@@ -45,7 +48,22 @@
 	</div>
 	<div id="button-wrap">
 		<p id="extra">+</p>
-		<div id="title">Alumni</div>
+		<div id="jobs">- Open Positions</div>
+		<div id="title">- Alumni</div>
+	</div>
+	<div id="positions-modal">
+		<a href="#" class="icon-close-modal" id="alumni-close"></a>
+		<h2>Current Openings:</h2>
+		{exp:channel:entries channel="jobs" limit="1" disable=”categories" disable=”category_fields" disable=”custom_fields" disable=”member_data" disable=”pagination"}
+		{if open_positions ==''}
+		<p>There are curently no positions available. Please have another look at a later date.</p>
+		{if:else}
+		{open_positions}
+		{/if}
+		{/exp:channel:entries}
+		{exp:channel:entries channel="contact" disable=”categories" disable=”category_fields" disable=”custom_fields" disable=”member_data" disable=”pagination"}
+		<p>For further information please contact me at <a href="mailto:{email_address}?Subject=Website%20Enquiry" target="_blank">{email_address}</a></p>
+		{/exp:channel:entries}
 	</div>
 	<div id="extra-modal">
 		<a href="#" class="icon-close-modal" id="alumni-close"></a>

@@ -57,10 +57,10 @@
 				{/exp:channel:entries}
 					<div class="overbox"></div>
 					<ul class="slides">
-					{exp:channel:entries channel="news" order_by="date" disable="categories" disable="category_fields" disable="custom_fields" disable="member_data" disable="pagination"}
+					{exp:channel:entries channel="news" limit="5" order_by="date" disable="categories" disable="category_fields" disable="custom_fields" disable="member_data" disable="pagination"}
 						<li>
 							<div class="text-wrap">
-								<p>{title}</p>
+								<p>{title}<br>{exp:excerpt limit="10" indicator="..."}{news_text}{/exp:excerpt}</p>
 							</div>
 						</li>
 					{/exp:channel:entries}

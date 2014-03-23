@@ -110,14 +110,21 @@ $('#extra').on('click',function(e){
 $('#wrapper').on('click', function(){
 	$('#button-wrap').removeClass('open');
 })
-$('#title').on('click', function(e){
-	e.preventDefault();
+$('#title').on('click', function(){
 	$('#extra-modal').fadeIn(300);
+	$('#button-wrap').removeClass('open');
+})
+$('#jobs').on('click', function(){
+	$('#positions-modal').fadeIn(300);
 	$('#button-wrap').removeClass('open');
 })
 $('.icon-close-modal').on('click', function(e){
 	e.preventDefault();
 	$('#extra-modal').fadeOut(300);
+	$('#positions-modal').fadeOut(300);
+})
+$('*').not('.button-wrap').not('#extra').click(function(){
+	$('#button-wrap').removeClass('open');
 })
 
 // publications

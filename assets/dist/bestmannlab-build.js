@@ -1344,7 +1344,7 @@ $('header').on('click', '#menu-close', function(e){
 // initialize skrollr
 if($(window).width() > 868){
 	skrollr.init({
-            forceHeight: false
+        forceHeight: false
     });
 }
 
@@ -1353,29 +1353,17 @@ $('#intro-arrow-down').on('click', function(e){
 	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#about').offset().top -46}, 500);
 })
-$('#about-arrow-down').on('click', function(e){
+$('#research-arrow-down').on('click', function(e){
 	e.preventDefault();
-	$('html, body').animate({scrollTop: $('#about-content').offset().top -46}, 500);
+	$('html, body').animate({scrollTop: $('#research-content').offset().top -46}, 500);
 })
 $('#team-arrow-down').on('click', function(e){
 	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#team').offset().top -46}, 500);
 })
-$('#news-arrow-down').on('click', function(e){
-	e.preventDefault();
-	$('html, body').animate({scrollTop: $('#news').offset().top -46}, 500);
-})
 $('#pubs-arrow-down').on('click', function(e){
 	e.preventDefault();
 	$('html, body').animate({scrollTop: $('#pubs').offset().top -46}, 500);
-})
-$('#contact-arrow-down').on('click', function(e){
-	e.preventDefault();
-	$('html, body').animate({scrollTop: $('#contact-details').offset().top -46}, 500);
-})
-$('#research-arrow-down').on('click', function(e){
-	e.preventDefault();
-	$('html, body').animate({scrollTop: $('#research-content').offset().top -46}, 500);
 })
 
 $('#carousel').flexslider({
@@ -1444,14 +1432,21 @@ $('#extra').on('click',function(e){
 $('#wrapper').on('click', function(){
 	$('#button-wrap').removeClass('open');
 })
-$('#title').on('click', function(e){
-	e.preventDefault();
+$('#title').on('click', function(){
 	$('#extra-modal').fadeIn(300);
+	$('#button-wrap').removeClass('open');
+})
+$('#jobs').on('click', function(){
+	$('#positions-modal').fadeIn(300);
 	$('#button-wrap').removeClass('open');
 })
 $('.icon-close-modal').on('click', function(e){
 	e.preventDefault();
 	$('#extra-modal').fadeOut(300);
+	$('#positions-modal').fadeOut(300);
+})
+$('*').not('.button-wrap').not('#extra').click(function(){
+	$('#button-wrap').removeClass('open');
 })
 
 // publications

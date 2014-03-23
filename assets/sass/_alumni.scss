@@ -35,7 +35,7 @@
 	    -o-transition: all 300ms ease-in-out;
 	    transition: all 300ms ease-in-out;
 	}
-	#title{
+	#title, #jobs{
 		margin-left: 150px;
 		color: $white;
 		font-family: $museobold, Helvetica, sans;
@@ -56,11 +56,17 @@
 	#extra{
 		font-size: 0;
 	}
-	#title{
+	#title, #jobs{
 		margin-left: 0;
 	}
 }
-#extra-modal{
+.team{
+	#button-wrap.open{
+		width: 242px;
+		height: 108px;
+	}
+}
+#extra-modal, #positions-modal{
 	display: none;
 	width: 100%;
 	height: 100%;
@@ -101,7 +107,7 @@
 			margin: 10px 0 0 10px;
 		}
 	}
-	h4, p{
+	h4, p, ul{
 		width: 60%;
 		font-family: $museobold, Helvetica, sans;
 		color: $white;
@@ -125,6 +131,25 @@
 	p{
 		@include breakpoint(tablet-small){
 			font-size: 0.8em;;
+		}
+		a{
+			color: $white;
+			-webkit-transition: all 300ms ease-in-out;
+		    -moz-transition: all 300ms ease-in-out;
+		    -o-transition: all 300ms ease-in-out;
+		    transition: all 300ms ease-in-out;
+			&:hover, &:focus, &:active{
+				color: $grey;
+			}
+		}
+	}
+	ul{
+		list-style-type: none;
+		li{
+			font-family: $museobold, Helvetica, sans;
+			color: $white;
+			text-align: center;
+			width: 100%;
 		}
 	}
 	.alumni-wrap{

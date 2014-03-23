@@ -111,6 +111,7 @@
 		background-size: cover;
 		background-position: 50% 50%;
 		margin: 0;
+		padding-bottom: 0;
 		float: left;
 		overflow: hidden;
 		@include breakpoint(mobile-landscape){
