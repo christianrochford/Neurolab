@@ -19,6 +19,20 @@ $('header').on('click', '#menu-close', function(e){
 	$(this).hide();
 })
 
+// Custom scrollbar
+$(document).ready(
+    function() {  
+      $('html').niceScroll({
+      	cursorcolor: 'rgba(62,117,187,0.5)',
+      	cursorwidth: '8px',
+      	cursorborder: 'none',
+      	cursorborderradius: '0',
+      	cursoropacitymin: '3',
+      	cursoropacitymax: '8'
+      });
+    }
+  );
+
 // initialize skrollr
 if($(window).width() > 868){
 	skrollr.init({
