@@ -104,6 +104,33 @@ $museolight: 'museo_sans_300regular';
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-link:before {
+    content: "\e61b";
+}
+.icon-twitter:before {
+    content: "\e61a";
+}
+.icon-automobile:before {
+    content: "\e614";
+}
+.icon-airplane:before {
+    content: "\e613";
+}
+.icon-bus:before {
+    content: "\e615";
+}
+.icon-metro:before {
+    content: "\e616";
+}
+.icon-phone:before {
+    content: "\e617";
+}
+.icon-copy:before {
+    content: "\e618";
+}
+.icon-angle-up:before {
+    content: "\e619";
+}
 .icon-social:before {
     content: "\e600";
 }
@@ -160,28 +187,4 @@ $museolight: 'museo_sans_300regular';
 }
 .icon-svg:before {
     content: "\e612";
-}
-.icon-airplane:before {
-    content: "\e613";
-}
-.icon-automobile:before {
-    content: "\e614";
-}
-.icon-bus:before {
-    content: "\e615";
-}
-.icon-metro:before {
-    content: "\e616";
-}
-.icon-twitter:before {
-    content: "\e61a";
-}
-.icon-phone:before {
-    content: "\e617";
-}
-.icon-copy:before {
-    content: "\e618";
-}
-.icon-angle-up:before {
-    content: "\e619";
 }
