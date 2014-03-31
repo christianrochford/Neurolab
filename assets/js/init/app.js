@@ -132,10 +132,23 @@ $('#jobs').on('click', function(){
 	$('#positions-modal').fadeIn(300);
 	$('#button-wrap').removeClass('open');
 })
+$('.theme').on('click', function(e){
+	e.preventDefault();
+	var number = $(this).attr('rel');
+	var link = '#theme-modal-' + number;
+	$(link).fadeIn(300);
+})
+$('.technique').on('click', function(e){
+	e.preventDefault();
+	var number = $(this).attr('rel');
+	var link = '#technique-modal-' + number;
+	$(link).fadeIn(300);
+})
 $('.icon-close-modal').on('click', function(e){
 	e.preventDefault();
 	$('#extra-modal').fadeOut(300);
 	$('#positions-modal').fadeOut(300);
+	$('.research-modal').fadeOut(300);
 })
 $('*').not('.button-wrap').not('#extra').click(function(){
 	$('#button-wrap').removeClass('open');

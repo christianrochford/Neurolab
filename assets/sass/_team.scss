@@ -8,6 +8,9 @@
 		height: 600px;
 		margin-top: 47px;
 		position: relative;
+		@include breakpoint(mobile){
+			height: 245px !important;
+		}
 		.arrow-wrap{
 			#team-arrow-down{
 				color: $white;

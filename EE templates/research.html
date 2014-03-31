@@ -6,7 +6,7 @@
 			{exp:channel_images:images entry_id="{entry_id}" limit="1" field="research_intro_image"}
 			<div id="img" data-0="background-position:0px 0px;" data-130000="background-position:0px -20000px;" style="background-image: url(
 			{image:url:small}
-			);"></div>
+			)"></div>
 			{/exp:channel_images:images}
 			<div class="text-wrap">
 				{research_intro}
@@ -23,7 +23,7 @@
 						<h4>Our research is organised along several complementary themes:</h4>
 						<ul>
 						{research_themes}
-							<li><a href="{link}">{themes}</a></li>
+							<li><a href="#" class="theme" rel="{number}">{theme}</a></li>
 						{/research_themes}
 						</ul>
 					</div>
@@ -31,7 +31,7 @@
 					<h4>We approach each theme with a variety of techniques:</h4>
 						<ul>
 							{research_techniques}
-							<li><a href="{link}">{techniques}</a></li>
+							<li><a href="#" class="technique" rel="{number}">{technique}</a></li>
 							{/research_techniques}
 						</ul>
 						</ul>
@@ -62,7 +62,8 @@
 			<p id="extra">+</p>
 			<div id="title">Funding</div>
 		</div>
-		
+	
+	<!-- modals -->
 	<div id="extra-modal">
 		<a href="#" class="icon-close-modal"></a>
 			<h4>Funded Projects</h4>
@@ -74,5 +75,19 @@
 			<p>{sources}</p>
 			{/funding_sources}
 	</div>
+	{research_themes}
+	<div id="theme-modal-{number}" class="research-modal">
+		<a href="#" class="icon-close-modal"></a>
+		<h4>{theme}</h4>
+		{description}
+	</div>
+	{/research_themes}
+	{research_techniques}
+	<div id="technique-modal-{number}" class="research-modal">
+		<a href="#" class="icon-close-modal"></a>
+		<h4>{technique}</h4>
+		{description}
+	</div>
+	{/research_techniques}
 {/exp:channel:entries}
 {embed="base/_footer"}
