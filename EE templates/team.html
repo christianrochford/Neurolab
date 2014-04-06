@@ -36,10 +36,10 @@
 		  {team_members_details}
 		    <li>
 		      {description}
-		      {if website}<p><a href="{website}" target="_blank">Personal Website</a></p>{/if}
-		      {if twitter}<p><a href="https://twitter.com/{twitter}" target="_blank">@{twitter}</a></p>{/if}
-		      {if email-address}<p><a href="mailto:{email-address}?Subject=Website%20Enquiry" target="_blank">email</a></p>{/if}
-		      {if CV}<p><a href="{CV}" target="_blank">CV</a></p>{/if}
+		      {if website}<a href="{website}" target="_blank" class="icon-link" aria-hidden="true"></a>{/if}
+		      {if twitter}<a href="https://twitter.com/{twitter}" target="_blank" class="icon-twitter" aria-hidden="true"></a>{/if}
+		      {if email-address}<a href="mailto:{email-address}?Subject=Website%20Enquiry" target="_blank" class="icon-mail" aria-hidden="true"></a>{/if}
+		      {if CV}<a href="{CV}" target="_blank" class="icon-copy" aria-hidden="true"></a>{/if}
 		    </li>
 		  {/team_members_details}
 		  {/exp:channel:entries}

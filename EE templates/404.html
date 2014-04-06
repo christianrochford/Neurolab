@@ -1,0 +1,20 @@
+{embed="base/_head"}
+<body class="research" id="skrollr-body">
+{embed="base/_header"}
+{exp:channel:entries channel="research" disable=”categories" disable=”category_fields" disable=”custom_fields" disable=”member_data" disable=”pagination"}
+		<div id="research">
+			{exp:channel_images:images entry_id="{entry_id}" limit="1" field="research_intro_image"}
+			<div id="img" data-0="background-position:0px 0px;" data-130000="background-position:0px -20000px;" style="background-image: url(
+			{image:url:small}
+			)"></div>
+			{/exp:channel_images:images}
+			<div class="text-wrap">
+				<p>Seems to be a problem with the Neuronal Networks captain!<br>
+				You're looking for a page that doesn't exist.<br>
+				Try one of the links in the menu above.</p>
+			</div>
+			<div class="overbox"></div>
+		</div>
+
+{/exp:channel:entries}
+{embed="base/_footer"}
