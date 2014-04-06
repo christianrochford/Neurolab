@@ -125,21 +125,25 @@ $('#wrapper').on('click', function(){
 	$('#button-wrap').removeClass('open');
 })
 $('#title').on('click', function(){
+	$('html, body').animate({scrollTop: 0}, 500);
 	$('#extra-modal').fadeIn(300);
 	$('#button-wrap').removeClass('open');
 })
 $('#jobs').on('click', function(){
+	$('html, body').animate({scrollTop: 0}, 500);
 	$('#positions-modal').fadeIn(300);
 	$('#button-wrap').removeClass('open');
 })
 $('.theme').on('click', function(e){
 	e.preventDefault();
+	$('html, body').animate({scrollTop: 0}, 500);
 	var number = $(this).attr('rel');
 	var link = '#theme-modal-' + number;
 	$(link).fadeIn(300);
 })
 $('.technique').on('click', function(e){
 	e.preventDefault();
+	$('html, body').animate({scrollTop: 0}, 500);
 	var number = $(this).attr('rel');
 	var link = '#technique-modal-' + number;
 	$(link).fadeIn(300);
