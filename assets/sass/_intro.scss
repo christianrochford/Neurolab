@@ -44,7 +44,6 @@
 					p{
 						font-family: $museoregular, Helvetica, sans;
 						color: $white;
-						font-weight: 900;
 						display: table-cell;
 						vertical-align: middle;
 						@include breakpoint(tablet){
@@ -69,7 +68,6 @@
 				#twitter-link{
 					display: block;
 					color: $white;
-					font-weight: 900;
 					position: absolute;
 					left: -100%;
 					bottom: -10px;
@@ -130,7 +128,6 @@
 					font-family: $museoregular, Helvetica, sans;
 					color: $white;
 					text-transform: lowercase;
-					font-weight: 900;
 					font-size: 1em;
 					width: 80%;
 					padding: 0 10%;
@@ -150,7 +147,6 @@
 		#news-link{
 			display: block;
 			color: $white;
-			font-weight: 900;
 			position: absolute;
 			left: -100%;
 			bottom: 20px;
@@ -226,7 +222,6 @@
 					color: $white;
 					text-transform: lowercase;
 					font-size: 1em;
-					font-weight: 900;
 					width: 80%;
 					padding: 0 10%;
 					text-align: center;
