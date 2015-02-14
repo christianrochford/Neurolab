@@ -22,6 +22,12 @@
 				</div>
 				{/exp:channel_images:images}
 				{/exp:channel:entries}
+				<div id="img4" style="background-image: url('{site_url}assets/img/cameras.jpg')">
+					<div class="overbox"></div>
+					<div id="play-wrap">
+						<a href="#video" class="icon-play" aria-hidden="true"></a>
+					</div>
+				</div>
 				{exp:channel:entries channel="home" entry_id="1" order_by="date" limit="1" disable="categories" disable="category_fields" disable="custom_fields" disable="member_data" disable="pagination"}
 				{exp:channel_images:images entry_id="{entry_id}" limit="1" field="image_quote_2"}
 				<div id="img3" style="background-image: url(
@@ -93,4 +99,15 @@
 			</div>
 		</div>
 		{/exp:channel:entries}
+
+		<div id="modal-bg"></div>
+		  <div class="row video-modal" id="video">
+		    <div id="background"></div>
+		    <div class="columns twelve">
+		      <a href="#" class="icon-close"></a>
+		      <div id="player">
+		      </div>
+		    </div>
+		  </div>
+
 {embed="base/_footer"}

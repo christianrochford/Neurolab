@@ -24,10 +24,7 @@
 			position: relative;
 			line-height: 5em;
 			@include breakpoint (mobile-landscape){
-				line-height: 2em;
-			}
-			@include breakpoint (mobile-landscape){
-				line-height: 4em;
+				line-height: 3em;
 			}
 			a{
 				font-family: $museobold, Helvetica, sans;
@@ -51,7 +48,7 @@
 			    z-index: -1;
 			    margin-left: -12px;
 				@include breakpoint (mobile-landscape){
-					top: -52px;
+					top: -46px;
 				}
 			}
 			&:first-child:after{

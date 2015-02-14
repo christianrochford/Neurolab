@@ -117,6 +117,9 @@
 			position: absolute;
 			top: 200px;
 		}
+		.overbox{
+			background-color: rgba(62, 117, 187, 0.8);
+		}
 		ul li{
 			width: 100%;
 			height: 100%;
@@ -245,8 +248,31 @@
 				}
 			}
 		}
+		#img4{
+			@include breakpoint(mobile-landscape){
+				display: none;
+			}
+			#play-wrap{
+				width: 100%;
+				height: 100%;
+				position: relative;
+				.icon-play{
+					color: $white;
+					color: $white-opaque;
+					font-size: 4em;
+					display: inline-block;
+					position: relative;
+					top: 50%;
+					left: 50%;
+					margin: -28px 0 0 -28px;
+					&:hover, &:focus, &:active{
+						color: $white;
+					}
+				}
+			}
+		}
 		#img3{
-			width: 100%;
+			width: 66.666%;
 			height: 33.4%;
 			@include breakpoint(mobile-landscape){
 				display: none;
@@ -284,4 +310,70 @@
 			display: none;
 		}
 	}	
+}
+
+#modal-bg{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 46px;
+	left: 0;
+	background: $white;
+	background: $white-opaque;
+	z-index: 400;
+	@include breakpoint(mobile-landscape){
+		display: none;
+	}
+}
+.video-modal{
+	display: none;
+	width: 100%;
+	min-width: 0;
+	margin: 0 auto;
+	position: fixed;
+	top: 90px;
+	left: 0;
+	z-index: 497;
+	padding: 10px 10px 20px;
+	transition: all 300ms ease-in-out;
+	@include breakpoint(mobile-landscape){
+		display: none;
+	}
+	#background{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 498;
+	}
+	.twelve{
+		text-align: center;
+	}
+	.icon-close{
+		display: block;
+		width: 30px;
+		height: 30px;
+		font-size: 1.6em;
+		font-weight: 900;
+		color: $blue;
+		position: absolute;
+		top: -30px;
+		right: 40px;
+		z-index: 500;
+		&:hover, &:focus, &:active{
+			font-size: 1.8em;
+	    }
+	}
+	#player{
+		width: 560px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 499;
+		transition: all 300ms ease-in-out;
+		iframe{
+			width: 100%;
+		}
+	}
 }

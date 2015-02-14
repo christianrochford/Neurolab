@@ -21,8 +21,47 @@
 			</div>
 		</div>
 		{/exp:channel:entries}
+	<div id="postroch"><p>Site by <a href="http://postroch.com" target="_blank">Postroch</a></p></div>
 	</footer>
 	<script src="assets/dist/bestmannlab-build.min.js"></script>
+	{if '{segment_1}'==''}
+	{exp:channel:entries channel="home" dynamic="no" disable=”categories" disable=”category_fields" disable=”custom_fields" disable=”member_data" disable=”pagination"}
+	  <script>
+	  	var tag = document.createElement('script');
+	  	tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	  	var player;
+		  function onYouTubeIframeAPIReady() {
+		    player = new YT.Player('player', {
+		      height: '315',
+		      width: '560',
+		      videoId: '{youtube_video_id}',
+		    });
+		  }
+      	  var done = false;
+      function stopVideo() {
+        player.stopVideo();
+      }
+	  	$(document).ready(function(){
+		  $('.icon-play').click(function(e) {
+		  	e.preventDefault();
+		    $('#modal-bg').fadeIn(300);
+		    $('#video').fadeIn(300);
+		    player.playVideo();
+		    //$("#video").fitVids();
+		  });
+
+		  $('#modal-bg, .icon-close, #menu, #menu-close').click(function(e) {
+		    e.preventDefault();
+		    $('#modal-bg, .video-modal').fadeOut(300);
+		    player.stopVideo();
+		    player.seekTo(0);
+		  });
+	  	});
+	  </script>
+	{/exp:channel:entries}
+	{/if}
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

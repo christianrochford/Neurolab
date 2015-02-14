@@ -3,7 +3,7 @@
 	height: 50px;
 	position: fixed;
 	bottom: 80px;
-	right: -50px;
+	right: 0px;
 	z-index: 2;
 	background-color: $blue-opaque;
 	-webkit-transition: all 300ms ease-in-out;
@@ -14,10 +14,7 @@
     	bottom: 120px;
     }
     @include breakpoint(mobile-landscape){
-    	bottom: 196px;
-    }
-    @include breakpoint(mobile-landscape){
-    	bottom: 246px;
+    	bottom: 100px;
     }
 	&:hover, &:focus, &:active{
 		cursor: pointer;
@@ -39,7 +36,7 @@
 		margin-left: 150px;
 		color: $white;
 		font-family: $museobold, Helvetica, sans;
-		font-size: 1.6em;
+		font-size: 1.4em;
 		padding: 16px 36px;
 		text-transform: lowercase;
 		-webkit-transition: all 300ms ease-in-out;
@@ -47,9 +44,6 @@
 	    -o-transition: all 300ms ease-in-out;
 	    transition: all 300ms ease-in-out;
 	}
-}
-#button-wrap.visible{
-	right: 0;
 }
 #button-wrap.open{
 	width: 150px;
@@ -63,7 +57,7 @@
 .team{
 	#button-wrap.open{
 		width: 242px;
-		height: 108px;
+		height: 105px;
 	}
 }
 #extra-modal, #positions-modal, .research-modal{
@@ -156,6 +150,7 @@
 		width: 50%;
 		float: left;
 		padding: 0 20px;
+		min-height: 103px;
 		@include breakpoint(mobile){
 			width: 100%;
 		}
@@ -182,6 +177,6 @@
 		position: fixed;
 		top: 46px;
 		z-index: -1;
-		background-color: $blue-opaque-dark;
+		background-color: $blue;
 	}
 }

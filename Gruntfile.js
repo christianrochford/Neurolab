@@ -27,6 +27,7 @@ module.exports = function(grunt) {
         dest: 'assets/dist/<%= pkg.name %>.js'
       }
     },
+
     uglify: {
       options: {
         force: true, 
@@ -38,12 +39,14 @@ module.exports = function(grunt) {
         }
       }
     },
+
     qunit: {
       options: {
         force: true, 
       },
       files: ['test/**/*.html']
     },
+
     jshint: {
       files: ['Gruntfile.js', 'assets/**/*.js', 'test/**/*.js'],
       options: {
@@ -57,6 +60,7 @@ module.exports = function(grunt) {
         }
       }
     },
+
     watch: {
       files: ['<%= jshint.files %>'],
       css: {
@@ -65,6 +69,7 @@ module.exports = function(grunt) {
       },
       tasks: ['jshint', 'qunit']
     }
+    
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -77,6 +82,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('test', ['jshint', 'qunit']);
 
-  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify', 'compass']);
+  grunt.registerTask('default', ['concat', 'uglify', 'compass']);
 
 };

@@ -6,7 +6,7 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		z-index: 3;
+		z-index: 999;
 		box-shadow: 0 0 5px 0px $blue;
 		h1{
 			font-family: $museobold, Helvetica, sans;
@@ -36,13 +36,13 @@
 		    -moz-transition: right 300ms ease-in-out;
 		    -o-transition: right 300ms ease-in-out;
 		    transition: right 300ms ease-in-out;
-			@include breakpoint (tablet){
+			@include breakpoint (max-width, 800px){
 				display: none;
 			}
 			ul{
 				width: 100%;
 				li{
-					width: 16.6666%;
+					width: 14.2%;
 					float: left;
 					position: relative;
 					a{
@@ -81,7 +81,7 @@
 		    -moz-transition: right 300ms ease-in-out;
 		    -o-transition: right 300ms ease-in-out;
 		    transition: right 300ms ease-in-out;
-		    @include breakpoint (tablet){
+		    @include breakpoint (max-width, 800px){
 				display: block;
 			}
 		    .menu-bar{
